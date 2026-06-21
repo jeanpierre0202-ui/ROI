@@ -1,0 +1,28 @@
+# Render blueprint — ONE self-contained web service that serves the board AND
+# rebuilds it daily in a background thread (no separate cron, no shared-disk
+# problem). Render cron jobs can't share a disk with a web service, so we keep
+# the schedule inside the service instead.
+#
+# Frontend: deploy web/ as a separate FREE static site (build: `npm run build`,
+# publish dir: web/dist) and point it at this API's /api/board, OR just use the
+# GitHub Actions path and host the static site alone.
+services:
+  - type: web
+    name: roi-api
+    runtime: python
+    plan: starter            # ~$7/mo always-on; "free" instance also works but sleeps
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: ROI_AUTO_REFRESH
+        value: "1"
+      - key: ROI_REFRESH_HOURS
+        value: "24"
+      - key: ROI_PRICE_PROVIDER
+        value: stooq
+      - key: FRED_API_KEY
+        sync: false
+      - key: SEC_USER_AGENT
+        sync: false
+      - key: REFRESH_TOKEN
+        sync: false
