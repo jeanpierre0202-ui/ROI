@@ -2,7 +2,7 @@ name: ROI daily board
 
 on:
   schedule:
-    - cron: "0 11 * * 1-5"   # 11:00 UTC, Mon–Fri
+    - cron: "0 11 * * 1-5"
   workflow_dispatch: {}
 
 permissions:
@@ -24,10 +24,9 @@ jobs:
       - name: Build board
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
-          ALPHAVANTAGE_API_KEY: ${{ secrets.ALPHAVANTAGE_API_KEY }}
+          TIINGO_API_KEY: ${{ secrets.TIINGO_API_KEY }}
           COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
-          ROI_PRICE_PROVIDER: stooq
         run: python -m engine.build_board
 
       - name: Commit fresh board
