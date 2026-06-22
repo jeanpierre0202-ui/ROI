@@ -214,8 +214,9 @@ def enrich(equities: Dict, crypto_board: Dict):
         best_rank[t] = min(best_rank.get(t, 99), it.get("rank", 99))
         kind_of[t], name_of[t] = kind, it.get("name") or t
     ordered = sorted(best_rank, key=lambda t: best_rank[t])[:config.SYNTHESIS_MAX_NAMES]
-    if config.ANTHROPIC_API_KEY and ordered:
-        print(f"[synthesis] AI dossiers for top {len(ordered)} names via {config.SYNTHESIS_MODEL}")
+    prov = config.active_provider()
+    if prov != "none" and ordered:
+        print(f"[synthesis] AI dossiers for top {len(ordered)} names via {prov}")
     dossier_cache = {}
     for t in ordered:
         rep = next((it for it, k, h in entries if it["ticker"] == t), None)
@@ -239,6 +240,8 @@ def enrich(equities: Dict, crypto_board: Dict):
 def main():
     started = time.time()
     print("=== ROI board build ===", datetime.now(timezone.utc).isoformat())
+    print(f"[diag] provider={config.active_provider()} gemini_key={bool(config.GEMINI_API_KEY)} "
+          f"tiingo_key={bool(os.getenv('TIINGO_API_KEY'))} max_names={config.SYNTHESIS_MAX_NAMES}")
     macro = {"available": False}
     try:
         macro = fred.macro()
@@ -248,21 +251,21 @@ def main():
         traceback.print_exc()
     cong = {}
     try:
-        cong = congress.recent_trades(days=60)
-        print(f"[congress] {len(cong)} tickers with recent disclosures")
+        _t = time.time(); cong = congress.recent_trades(days=60)
+        print(f"[congress] {len(cong)} tickers with recent disclosures ({time.time()-_t:.0f}s)")
     except Exception:
         traceback.print_exc()
     fil = {}
     try:
-        fil = edgar.recent_filings(list(config.universe().keys()), days=30)
-        print(f"[edgar] {len(fil)} tickers with recent filings")
+        _t = time.time(); fil = edgar.recent_filings(list(config.universe().keys()), days=30)
+        print(f"[edgar] {len(fil)} tickers with recent filings ({time.time()-_t:.0f}s)")
     except Exception:
         traceback.print_exc()
 
-    equities = build_equities(cong, fil)
-    crypto_board = build_crypto()
+    _t = time.time(); equities = build_equities(cong, fil); print(f"[equities] built ({time.time()-_t:.0f}s)")
+    _t = time.time(); crypto_board = build_crypto(); print(f"[crypto] built ({time.time()-_t:.0f}s)")
     try:
-        enrich(equities, crypto_board)
+        _t = time.time(); enrich(equities, crypto_board); print(f"[synthesis] enriched ({time.time()-_t:.0f}s)")
     except Exception:
         traceback.print_exc()
 
@@ -275,7 +278,7 @@ def main():
             "macro": "FRED" if macro.get("available") else "unavailable",
             "filings": "SEC EDGAR", "congress": "House/Senate Stock Watcher (community)",
             "crypto": "CoinGecko", "news": "GDELT global",
-            "synthesis": config.SYNTHESIS_MODEL if config.ANTHROPIC_API_KEY else "consensus-only (no AI key)",
+            "synthesis": config.active_provider() if config.active_provider() != "none" else "consensus-only (no AI key)",
         },
     }
     for p in OUT_PATHS:
