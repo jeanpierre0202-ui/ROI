@@ -13,22 +13,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
       - name: Install deps
         run: pip install -r requirements.txt
-
       - name: Build board
         env:
-          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
           TIINGO_API_KEY: ${{ secrets.TIINGO_API_KEY }}
-          COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ROI_SYNTHESIS_MAX_NAMES: "12"
         run: python -m engine.build_board
-
       - name: Commit fresh board
         run: |
           git config user.name  "roi-bot"
