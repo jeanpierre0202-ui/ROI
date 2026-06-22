@@ -12,17 +12,39 @@ SEC_USER_AGENT = os.getenv("SEC_USER_AGENT", "ROI Research roi-research@example.
 PRICE_PROVIDER = os.getenv("ROI_PRICE_PROVIDER", "stooq").strip().lower()
 
 # ---- synthesis layer (the "juice") ----------------------------------------
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "").strip()
+GROQ_API_KEY = os.getenv("GROQ_API_KEY", "").strip()
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "").strip()
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "").strip()
-SYNTHESIS_MODEL = os.getenv("ROI_SYNTHESIS_MODEL", "claude-sonnet-4-6").strip()
-SYNTHESIS_WEB_SEARCH = os.getenv("ROI_SYNTHESIS_WEB_SEARCH", "1").strip() not in ("0", "false", "no", "")
-# how many unique names (across all boards) get the full AI dossier each run.
-# Consensus/conviction is computed for ALL names for free; dossiers cost API calls.
+
+SYNTHESIS_PROVIDER = os.getenv("ROI_SYNTHESIS_PROVIDER", "auto").strip().lower()
+GEMINI_MODEL = os.getenv("ROI_GEMINI_MODEL", "gemini-2.0-flash").strip()
+GROQ_MODEL = os.getenv("ROI_GROQ_MODEL", "llama-3.3-70b-versatile").strip()
+OPENROUTER_MODEL = os.getenv("ROI_OPENROUTER_MODEL", "google/gemini-2.0-flash-exp:free").strip()
+ANTHROPIC_MODEL = os.getenv("ROI_SYNTHESIS_MODEL", "claude-sonnet-4-6").strip()
+SYNTHESIS_WEB_SEARCH = os.getenv("ROI_SYNTHESIS_WEB_SEARCH", "0").strip() not in ("0", "false", "no", "")
+
 try:
     SYNTHESIS_MAX_NAMES = int(os.getenv("ROI_SYNTHESIS_MAX_NAMES", "12"))
 except ValueError:
     SYNTHESIS_MAX_NAMES = 12
 
-# optional social / news enrichers
+
+def active_provider() -> str:
+    """Which LLM will write dossiers, based on override + available keys."""
+    if SYNTHESIS_PROVIDER != "auto":
+        return SYNTHESIS_PROVIDER
+    if GEMINI_API_KEY:
+        return "gemini"
+    if GROQ_API_KEY:
+        return "groq"
+    if OPENROUTER_API_KEY:
+        return "openrouter"
+    if ANTHROPIC_API_KEY:
+        return "anthropic"
+    return "none"
+
+
 MARKETAUX_API_KEY = os.getenv("MARKETAUX_API_KEY", "").strip()
 REDDIT_CLIENT_ID = os.getenv("REDDIT_CLIENT_ID", "").strip()
 REDDIT_CLIENT_SECRET = os.getenv("REDDIT_CLIENT_SECRET", "").strip()
