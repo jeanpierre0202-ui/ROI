@@ -1,56 +1,70 @@
 """
 config.py — what ROI watches, and how it reads its keys.
-
-The equity universe is intentionally a curated, liquid set across sectors.
-Override it with ROI_UNIVERSE (comma-separated tickers) in the environment.
 """
 from __future__ import annotations
 import os
 
-# ---- API keys (all optional; the engine degrades gracefully without them) ----
+# ---- API keys -------------------------------------------------------------
 FRED_API_KEY = os.getenv("FRED_API_KEY", "").strip()
 ALPHAVANTAGE_API_KEY = os.getenv("ALPHAVANTAGE_API_KEY", "").strip()
 COINGECKO_API_KEY = os.getenv("COINGECKO_API_KEY", "").strip()
-ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "").strip()
-# SEC requires a descriptive UA with a contact. Set yours.
 SEC_USER_AGENT = os.getenv("SEC_USER_AGENT", "ROI Research roi-research@example.com").strip()
+PRICE_PROVIDER = os.getenv("ROI_PRICE_PROVIDER", "stooq").strip().lower()
 
-PRICE_PROVIDER = os.getenv("ROI_PRICE_PROVIDER", "stooq").strip().lower()  # stooq | alphavantage
+# ---- synthesis layer (the "juice") ----------------------------------------
+ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "").strip()
+SYNTHESIS_MODEL = os.getenv("ROI_SYNTHESIS_MODEL", "claude-sonnet-4-6").strip()
+SYNTHESIS_WEB_SEARCH = os.getenv("ROI_SYNTHESIS_WEB_SEARCH", "1").strip() not in ("0", "false", "no", "")
+# how many unique names (across all boards) get the full AI dossier each run.
+# Consensus/conviction is computed for ALL names for free; dossiers cost API calls.
+try:
+    SYNTHESIS_MAX_NAMES = int(os.getenv("ROI_SYNTHESIS_MAX_NAMES", "12"))
+except ValueError:
+    SYNTHESIS_MAX_NAMES = 12
 
-# ---- equity universe -------------------------------------------------------
-_DEFAULT_UNIVERSE = {
-    # Mega-cap tech / comms
-    "AAPL": "Technology", "MSFT": "Technology", "NVDA": "Semiconductors",
-    "GOOGL": "Communication Svcs", "META": "Communication Svcs", "AMZN": "Consumer Discretionary",
-    "AVGO": "Semiconductors", "AMD": "Semiconductors", "ORCL": "Technology", "CRM": "Technology",
-    "ADBE": "Technology", "NFLX": "Communication Svcs",
-    # Financials
-    "JPM": "Financials", "BAC": "Financials", "GS": "Financials", "V": "Financials",
-    "MA": "Financials", "BRK-B": "Financials",
-    # Healthcare
-    "UNH": "Healthcare", "LLY": "Healthcare", "JNJ": "Healthcare", "ABBV": "Healthcare",
-    "MRK": "Healthcare",
-    # Industrials / energy / materials
-    "CAT": "Industrials", "BA": "Industrials", "GE": "Industrials",
-    "XOM": "Energy", "CVX": "Energy",
-    # Consumer staples / discretionary
-    "COST": "Consumer Staples", "WMT": "Consumer Staples", "PG": "Consumer Staples",
-    "HD": "Consumer Discretionary", "MCD": "Consumer Discretionary", "TSLA": "Consumer Discretionary",
-    # Utilities / real estate
-    "NEE": "Utilities", "PLD": "Real Estate",
+# optional social / news enrichers
+MARKETAUX_API_KEY = os.getenv("MARKETAUX_API_KEY", "").strip()
+REDDIT_CLIENT_ID = os.getenv("REDDIT_CLIENT_ID", "").strip()
+REDDIT_CLIENT_SECRET = os.getenv("REDDIT_CLIENT_SECRET", "").strip()
+REDDIT_USER_AGENT = os.getenv("REDDIT_USER_AGENT", "roi-research/1.0").strip()
+
+# ---- equity universe + company names --------------------------------------
+_UNIVERSE = {
+    "AAPL": ("Apple", "Technology"), "MSFT": ("Microsoft", "Technology"),
+    "NVDA": ("Nvidia", "Semiconductors"), "GOOGL": ("Alphabet", "Communication Svcs"),
+    "META": ("Meta Platforms", "Communication Svcs"), "AMZN": ("Amazon", "Consumer Discretionary"),
+    "AVGO": ("Broadcom", "Semiconductors"), "AMD": ("AMD", "Semiconductors"),
+    "ORCL": ("Oracle", "Technology"), "CRM": ("Salesforce", "Technology"),
+    "ADBE": ("Adobe", "Technology"), "NFLX": ("Netflix", "Communication Svcs"),
+    "JPM": ("JPMorgan Chase", "Financials"), "BAC": ("Bank of America", "Financials"),
+    "GS": ("Goldman Sachs", "Financials"), "V": ("Visa", "Financials"),
+    "MA": ("Mastercard", "Financials"), "BRK-B": ("Berkshire Hathaway", "Financials"),
+    "UNH": ("UnitedHealth", "Healthcare"), "LLY": ("Eli Lilly", "Healthcare"),
+    "JNJ": ("Johnson & Johnson", "Healthcare"), "ABBV": ("AbbVie", "Healthcare"),
+    "MRK": ("Merck", "Healthcare"), "CAT": ("Caterpillar", "Industrials"),
+    "BA": ("Boeing", "Industrials"), "GE": ("GE Aerospace", "Industrials"),
+    "XOM": ("Exxon Mobil", "Energy"), "CVX": ("Chevron", "Energy"),
+    "COST": ("Costco", "Consumer Staples"), "WMT": ("Walmart", "Consumer Staples"),
+    "PG": ("Procter & Gamble", "Consumer Staples"), "HD": ("Home Depot", "Consumer Discretionary"),
+    "MCD": ("McDonald's", "Consumer Discretionary"), "TSLA": ("Tesla", "Consumer Discretionary"),
+    "NEE": ("NextEra Energy", "Utilities"), "PLD": ("Prologis", "Real Estate"),
 }
 
 
 def universe() -> dict:
     raw = os.getenv("ROI_UNIVERSE", "").strip()
     if not raw:
-        return dict(_DEFAULT_UNIVERSE)
+        return {t: s for t, (_n, s) in _UNIVERSE.items()}
     out = {}
     for t in raw.split(","):
         t = t.strip().upper()
         if t:
-            out[t] = _DEFAULT_UNIVERSE.get(t, "Other")
+            out[t] = _UNIVERSE.get(t, ("", "Other"))[1]
     return out
+
+
+def company_name(ticker: str) -> str:
+    return _UNIVERSE.get(ticker.upper(), (ticker, ""))[0] or ticker
 
 
 # ---- crypto sectors --------------------------------------------------------

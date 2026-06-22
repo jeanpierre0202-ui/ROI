@@ -158,6 +158,8 @@ function Card({ it, horizon, open, onToggle }) {
               </div>
             </div>
           </div>
+          {it.consensus && <Consensus c={it.consensus} news={it.news} />}
+          {it.dossier && <Dossier d={it.dossier} />}
           {(it.flow_note || it.catalyst_note) && (
             <div className="flow">
               {it.flow_note && <span><b style={{ color: C.gold }}>Flows.</b> {it.flow_note}</span>}
@@ -165,6 +167,67 @@ function Card({ it, horizon, open, onToggle }) {
             </div>
           )}
           <div className="srcs">{(it.sources || []).map((s, i) => <Src key={i} s={s} />)}</div>
+        </div>
+      )}
+    </div>
+  );
+}
+function VoteChip({ source, label }) {
+  const dir = label === "Bullish" ? 1 : label === "Bearish" ? -1 : 0;
+  const col = dir > 0 ? C.emerald : dir < 0 ? C.rose : C.mut;
+  const glyph = dir > 0 ? "▲" : dir < 0 ? "▼" : "●";
+  return (
+    <div className="vchip" style={{ borderColor: col + "55" }}>
+      <span className="vchip-s">{source}</span>
+      <span className="vchip-d" style={{ color: col }}>{glyph} {label}</span>
+    </div>
+  );
+}
+function Consensus({ c, news }) {
+  const col = c.direction === "Bullish" ? C.emerald : c.direction === "Bearish" ? C.rose : C.gold;
+  return (
+    <div className="cons">
+      <div className="cons-h">
+        <div className="lbl">Synthesis — where the evidence points</div>
+        <span className="cons-dir" style={{ color: col }}>{c.direction}</span>
+      </div>
+      <div className="conv">
+        <div className="conv-bar"><div className="conv-fill" style={{ width: `${c.conviction}%`, background: col }} /></div>
+        <span className="conv-n">{c.conviction} conviction</span>
+      </div>
+      <div className="votes">{(c.votes || []).map((v, i) => <VoteChip key={i} {...v} />)}</div>
+      <p className="cons-note">{c.note}</p>
+      {news?.available && (
+        <p className="cons-news">
+          Global news: tone {news.tone > 0 ? "+" : ""}{news.tone}, {news.volume} articles
+          {news.countries?.length ? ` · ${news.countries.slice(0, 3).join(", ")}` : ""}
+        </p>
+      )}
+      <p className="fine">Conviction = how much independent signals agree — not a probability of profit. Disagreement is shown above.</p>
+    </div>
+  );
+}
+function Dossier({ d }) {
+  const r = d.risk || {};
+  return (
+    <div className="doss">
+      <div className="lbl">ROI dossier — triangulated read</div>
+      {d.conclusion && <p className="doss-c">{d.conclusion}</p>}
+      <div className="doss-bb">
+        <div className="doss-col">
+          <div className="doss-k" style={{ color: C.emerald }}>Bull case</div>
+          <ul>{(d.bull || []).map((x, i) => <li key={i}>{x}</li>)}</ul>
+        </div>
+        <div className="doss-col">
+          <div className="doss-k" style={{ color: C.rose }}>Bear case</div>
+          <ul>{(d.bear || []).map((x, i) => <li key={i}>{x}</li>)}</ul>
+        </div>
+      </div>
+      {(r.economic || r.geopolitical || r.environmental_social) && (
+        <div className="doss-risk">
+          {r.economic && <span><b>Economic.</b> {r.economic}</span>}
+          {r.geopolitical && <span><b>Geopolitical.</b> {r.geopolitical}</span>}
+          {r.environmental_social && <span><b>Environmental / social.</b> {r.environmental_social}</span>}
         </div>
       )}
     </div>
@@ -402,6 +465,26 @@ header { padding:26px 0 14px; display:flex; align-items:flex-end; justify-conten
 .acts { display:flex; flex-direction:column; gap:8px; margin-top:8px; }
 .act { display:flex; gap:8px; font-size:12px; line-height:1.5; } .act b { font-weight:700; }
 .flow { display:flex; flex-wrap:wrap; gap:14px; margin-top:14px; font-size:12px; color:${C.text}; }
+.cons { margin-top:16px; padding:14px; border:1px solid ${C.line}; border-radius:10px; background:${C.panel2}; }
+.cons-h { display:flex; align-items:center; justify-content:space-between; gap:10px; }
+.cons-dir { font-family:${serif}; font-size:15px; font-weight:600; }
+.conv { display:flex; align-items:center; gap:10px; margin-top:10px; }
+.conv-bar { flex:1; height:7px; border-radius:999px; background:${C.lineSoft}; overflow:hidden; }
+.conv-fill { height:7px; border-radius:999px; transition:width .4s; }
+.conv-n { font-family:${mono}; font-size:11px; color:${C.mut}; white-space:nowrap; }
+.votes { display:flex; flex-wrap:wrap; gap:7px; margin-top:12px; }
+.vchip { display:flex; flex-direction:column; gap:1px; padding:5px 9px; border:1px solid ${C.line}; border-radius:7px; background:${C.panel}; }
+.vchip-s { font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:${C.mut2}; }
+.vchip-d { font-family:${mono}; font-size:11.5px; }
+.cons-note { font-size:12px; color:${C.text}; margin:11px 0 0; line-height:1.55; }
+.cons-news { font-size:11px; color:${C.mut}; font-family:${mono}; margin:6px 0 0; }
+.doss { margin-top:14px; padding:14px; border:1px solid rgba(45,166,138,0.28); border-radius:10px; background:rgba(45,166,138,0.05); }
+.doss-c { font-size:13px; line-height:1.6; margin:8px 0 12px; color:${C.text}; }
+.doss-bb { display:grid; grid-template-columns:1fr 1fr; gap:16px; } @media(max-width:640px){ .doss-bb{ grid-template-columns:1fr; } }
+.doss-k { font-size:10px; letter-spacing:.07em; text-transform:uppercase; font-weight:700; margin-bottom:5px; }
+.doss-col ul { margin:0; padding-left:16px; } .doss-col li { font-size:12px; line-height:1.55; margin-bottom:4px; }
+.doss-risk { display:flex; flex-direction:column; gap:5px; margin-top:12px; padding-top:11px; border-top:1px solid ${C.lineSoft}; font-size:11.5px; color:${C.mut}; line-height:1.5; }
+.doss-risk b { color:${C.text}; font-weight:650; }
 .srcs { display:flex; flex-wrap:wrap; gap:6px 16px; margin-top:12px; }
 .src { display:inline-flex; align-items:center; gap:4px; font-size:11px; color:${C.gold}; text-decoration:none; }
 .src:hover { text-decoration:underline; }
