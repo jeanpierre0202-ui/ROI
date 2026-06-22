@@ -28,6 +28,55 @@ const fmtUSD = (n) => {
 };
 const fmtPct = (n) => (n == null || isNaN(n) ? "—" : (n >= 0 ? "+" : "") + Number(n).toFixed(2) + "%");
 
+/* ---- plain-English glossary: tap any term to see a one-line definition ---- */
+const DEFS = {
+  "RSI (14)": "A 0–100 gauge of how fast the price has been moving. Above ~70 it's been bought heavily ('hot'); below ~30 sold heavily ('cold'); 50 is the middle.",
+  "Volatility": "How much the price swings up and down. Higher means bigger moves, so more risk either way.",
+  "Pivot": "A recent average price. Trading above it is generally healthier than trading below it.",
+  "Support": "A price floor the asset has bounced off before. Slipping below it can hint at more weakness.",
+  "Security": "A resilience score — how steady and easy-to-trade the asset is. Higher is sturdier.",
+  "Signal": "ROI's overall score, blending the bars below. A ranking aid, not the odds of making money.",
+  "24h": "How much the price changed in the last day.",
+  "30d": "How much the price changed over the last month.",
+  "conviction": "How much the different signals AGREE on a direction. High means they line up; low means they conflict. It is NOT a chance of profit.",
+  "Bullish": "Leaning up — the evidence points toward the price rising.",
+  "Bearish": "Leaning down — the evidence points toward the price falling.",
+  "Mixed": "The signals are pulling in different directions, so there's no clear read.",
+};
+function Term({ label, children }) {
+  const [open, setOpen] = useState(false);
+  const def = DEFS[label] || DEFS[children];
+  if (!def) return <>{children ?? label}</>;
+  return (
+    <span className="term" onClick={(e) => { e.stopPropagation(); setOpen((o) => !o); }}>
+      {children ?? label}
+      <span className="term-q">?</span>
+      {open && <span className="term-pop" onClick={(e) => e.stopPropagation()}>{def}</span>}
+    </span>
+  );
+}
+
+/* ---- plain-language headline: the "what does this mean" sentence, no jargon ---- */
+function plainHeadline(it) {
+  const d7 = it.changes?.d7 ?? 0;
+  const move =
+    d7 >= 5 ? `is up ${Math.round(d7)}% this week` :
+    d7 <= -5 ? `is down ${Math.round(Math.abs(d7))}% this week` :
+    d7 >= 1.5 ? "is up a little this week" :
+    d7 <= -1.5 ? "is down a little this week" :
+    "has been fairly flat this week";
+  const c = it.consensus;
+  let read;
+  if (!c || c.direction === "Mixed") {
+    read = "and right now the signals pull in different directions, so there's no clear read";
+  } else if (c.direction === "Bullish") {
+    read = c.conviction >= 60 ? "and most signals agree it's looking strong" : "and signals lean mildly positive";
+  } else {
+    read = c.conviction >= 60 ? "and most signals lean toward it slipping" : "and signals lean mildly negative";
+  }
+  return `${it.name} ${move}, ${read}.`;
+}
+
 function CrownMark({ size = 34 }) {
   return (
     <svg width={size} height={size * 0.8} viewBox="0 0 40 32" aria-hidden>
@@ -124,6 +173,7 @@ function Card({ it, horizon, open, onToggle }) {
       </button>
       {open && (
         <div className="card-b">
+          <p className="headline">{plainHeadline(it)}</p>
           <p className="thesis">{it.thesis}</p>
           <div className="stats">
             <Stat k="RSI (14)" v={it.rsi?.toFixed(0)} note={it.rsi >= 70 ? "overbought" : it.rsi <= 30 ? "oversold" : "neutral"} />
@@ -189,11 +239,11 @@ function Consensus({ c, news }) {
     <div className="cons">
       <div className="cons-h">
         <div className="lbl">Synthesis — where the evidence points</div>
-        <span className="cons-dir" style={{ color: col }}>{c.direction}</span>
+        <span className="cons-dir" style={{ color: col }}><Term label={c.direction}>{c.direction}</Term></span>
       </div>
       <div className="conv">
         <div className="conv-bar"><div className="conv-fill" style={{ width: `${c.conviction}%`, background: col }} /></div>
-        <span className="conv-n">{c.conviction} conviction</span>
+        <span className="conv-n">{c.conviction} <Term label="conviction">conviction</Term></span>
       </div>
       <div className="votes">{(c.votes || []).map((v, i) => <VoteChip key={i} {...v} />)}</div>
       <p className="cons-note">{c.note}</p>
@@ -235,7 +285,7 @@ function Dossier({ d }) {
 }
 function Stat({ k, v, note, tone }) {
   const col = tone === "up" ? C.emerald : tone === "down" ? C.rose : C.text;
-  return <div className="stat"><div className="stat-k">{k}</div><div className="stat-v" style={{ color: col }}>{v}</div>{note && <div className="stat-n">{note}</div>}</div>;
+  return <div className="stat"><div className="stat-k"><Term label={k}>{k}</Term></div><div className="stat-v" style={{ color: col }}>{v}</div>{note && <div className="stat-n">{note}</div>}</div>;
 }
 
 function SectorGroups({ items, horizon, openKey, setOpenKey }) {
@@ -449,6 +499,16 @@ header { padding:26px 0 14px; display:flex; align-items:flex-end; justify-conten
 .dial { display:flex; flex-direction:column; align-items:center; }
 .dial-l { font-size:9.5px; letter-spacing:.09em; color:${C.mut}; margin-top:4px; text-transform:uppercase; }
 .card-b { padding:0 14px 16px; border-top:1px solid ${C.lineSoft}; }
+.headline { font-size:15.5px; line-height:1.5; color:${C.text}; margin:14px 0 6px; font-weight:550; }
+.thesis-label, .term { position:relative; }
+.term { cursor:help; border-bottom:1px dotted ${C.mut}; }
+.term-q { display:inline-block; font-size:8px; font-weight:700; color:${C.ink}; background:${C.mut};
+  border-radius:50%; width:12px; height:12px; line-height:12px; text-align:center; margin-left:3px;
+  vertical-align:super; }
+.term-pop { position:absolute; left:0; top:130%; z-index:50; width:240px; max-width:78vw;
+  background:${C.panel}; border:1px solid ${C.gold}; border-radius:9px; padding:9px 11px;
+  font-size:12px; line-height:1.5; color:${C.text}; font-weight:400; letter-spacing:0;
+  box-shadow:0 10px 30px rgba(0,0,0,0.5); white-space:normal; text-transform:none; }
 .thesis { font-size:13px; line-height:1.6; margin:12px 0; }
 .stats { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:16px; }
 @media(max-width:640px){ .stats{ grid-template-columns:repeat(2,1fr); } }
