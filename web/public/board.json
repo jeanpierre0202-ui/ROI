@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T15:02:03.812022+00:00",
+  "generated_at": "2026-06-24T17:24:22.216231+00:00",
   "macro": {
     "available": true,
     "regime": "expansion-leaning",
@@ -298,7 +298,7 @@
         },
         "news": {
           "available": true,
-          "tone": 0.0,
+          "tone": 0.56,
           "volume": 15,
           "countries": [
             "United States",
@@ -433,10 +433,6 @@
           {
             "title": "FRED (St. Louis Fed)",
             "url": "https://fred.stlouisfed.org/"
-          },
-          {
-            "title": "GDELT global news",
-            "url": "https://www.gdeltproject.org/"
           }
         ],
         "rank": 3,
@@ -444,68 +440,21 @@
         "signal": 65,
         "consensus": {
           "direction": "Bullish",
-          "conviction": 41,
+          "conviction": 66,
           "votes": [
             {
               "source": "Quant",
               "label": "Bullish"
-            },
-            {
-              "source": "Global news",
-              "label": "Neutral"
             }
           ],
-          "note": "1 of 2 signals lean bullish."
+          "note": "1 of 1 signals lean bullish."
         },
         "news": {
-          "available": true,
+          "available": false,
           "tone": 0.0,
-          "volume": 15,
-          "countries": [
-            "United States",
-            "Germany",
-            "Nigeria",
-            "Qatar",
-            "Australia"
-          ],
-          "headlines": [
-            {
-              "title": "Chevron is Building a Massive Power Plant to Support a Microsoft AI Data Center . Here What it Means for the Energy Stock . ",
-              "url": "https://finance.yahoo.com/energy/articles/chevron-building-massive-power-plant-185001874.html",
-              "domain": "finance.yahoo.com",
-              "country": "United States"
-            },
-            {
-              "title": "Dow flat , Nasdaq slumps as investors pull back from AI stocks",
-              "url": "https://www.proactiveinvestors.com/companies/news/1094335/dow-flat-nasdaq-slumps-as-investors-pull-back-from-ai-stocks-1094335.html",
-              "domain": "proactiveinvestors.com",
-              "country": "United States"
-            },
-            {
-              "title": "An off - grid power project gets a major proof of concept . What it means for GE Vernova",
-              "url": "https://www.cnbc.com/2026/06/23/an-off-grid-power-project-gets-a-major-proof-of-concept-what-it-means-for-ge-vernova.html",
-              "domain": "cnbc.com",
-              "country": "United States"
-            },
-            {
-              "title": "Nasdaq sell - off continues as SanDisk and Western Digital lead , amid tech  rotation not liquidation  ",
-              "url": "https://www.proactiveinvestors.com/companies/news/1094335/nasdaq-sell-off-continues-as-sandisk-and-western-digital-lead-amid-tech-rotation-not-liquidation-1094335.html",
-              "domain": "proactiveinvestors.com",
-              "country": "United States"
-            },
-            {
-              "title": "Follett Content Launches tonies\u00ae + Book Bundles for Libraries",
-              "url": "http://www.prnewswire.com/news-releases/follett-content-launches-tonies--book-bundles-for-libraries-302808107.html",
-              "domain": "prnewswire.com",
-              "country": "United States"
-            },
-            {
-              "title": "Follett Content Launches tonies\u00ae + Book Bundles for Libraries",
-              "url": "https://www.prnewswire.com/news-releases/follett-content-launches-tonies--book-bundles-for-libraries-302808107.html",
-              "domain": "prnewswire.com",
-              "country": "United States"
-            }
-          ]
+          "volume": 0,
+          "countries": [],
+          "headlines": []
         }
       },
       {
@@ -596,6 +545,10 @@
           {
             "title": "FRED (St. Louis Fed)",
             "url": "https://fred.stlouisfed.org/"
+          },
+          {
+            "title": "GDELT global news",
+            "url": "https://www.gdeltproject.org/"
           }
         ],
         "rank": 4,
@@ -608,16 +561,63 @@
             {
               "source": "Quant",
               "label": "Neutral"
+            },
+            {
+              "source": "Global news",
+              "label": "Neutral"
             }
           ],
           "note": "Sources point in different directions \u2014 no clear edge."
         },
         "news": {
-          "available": false,
+          "available": true,
           "tone": 0.0,
-          "volume": 0,
-          "countries": [],
-          "headlines": []
+          "volume": 15,
+          "countries": [
+            "United States",
+            "China",
+            "Indonesia",
+            "Israel",
+            "Afghanistan"
+          ],
+          "headlines": [
+            {
+              "title": "Dua Peserta SPPI Meninggal , Pakar UGM Minta Latsarmil KDMP Dievaluasi",
+              "url": "https://nasional.kompas.com/read/2026/06/24/22433321/dua-peserta-sppi-meninggal-pakar-ugm-minta-latsarmil-kdmp-dievaluasi",
+              "domain": "nasional.kompas.com",
+              "country": "Indonesia"
+            },
+            {
+              "title": "Memory chip giant SK Hynix to raise USD29 billion in US ADR listing",
+              "url": "http://www.sandiegosun.com/news/279144842/memory-chip-giant-sk-hynix-to-raise-usd29-billion-in-us-adr-listing",
+              "domain": "sandiegosun.com",
+              "country": "United States"
+            },
+            {
+              "title": "Micron Earnings Are the Next Big Test for the AI Trade",
+              "url": "https://www.businessinsider.com/micron-earnings-mu-stock-memory-chips-stocks-ai-trade-2026-6",
+              "domain": "businessinsider.com",
+              "country": "United States"
+            },
+            {
+              "title": "Memory chip giant SK Hynix to raise USD29 billion in US ADR listing",
+              "url": "http://www.israelherald.com/news/279144842/memory-chip-giant-sk-hynix-to-raise-usd29-billion-in-us-adr-listing",
+              "domain": "israelherald.com",
+              "country": "Israel"
+            },
+            {
+              "title": "Memory chip giant SK Hynix to raise USD29 billion in US ADR listing",
+              "url": "http://www.hongkongherald.com/news/279144842/memory-chip-giant-sk-hynix-to-raise-usd29-billion-in-us-adr-listing",
+              "domain": "hongkongherald.com",
+              "country": "China"
+            },
+            {
+              "title": "Memory chip giant SK Hynix to raise USD29 billion in US ADR listing",
+              "url": "http://www.afghanistansun.com/news/279144842/memory-chip-giant-sk-hynix-to-raise-usd29-billion-in-us-adr-listing",
+              "domain": "afghanistansun.com",
+              "country": "Afghanistan"
+            }
+          ]
         }
       },
       {
@@ -738,44 +738,47 @@
           "volume": 15,
           "countries": [
             "United States",
-            "India"
+            "Azerbaijan",
+            "United Kingdom",
+            "Israel",
+            "China"
           ],
           "headlines": [
             {
-              "title": "NVIDIA ( NVDA ) Remains a Must - Own for Bernstein Despite Tech Sell - Off",
-              "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-nvda-remains-must-own-134815729.html",
+              "title": "Can the Zoom Dip Get Even Worse ? ",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/zoom-dip-even-worse-162000992.html",
               "domain": "finance.yahoo.com",
               "country": "United States"
             },
             {
-              "title": "Micron Faces Its AI Earnings Test",
-              "url": "https://finance.yahoo.com/technology/ai/articles/micron-faces-ai-earnings-test-134502451.html",
-              "domain": "finance.yahoo.com",
-              "country": "United States"
+              "title": "Inside Micron high - stakes earnings report as tech whipsaws",
+              "url": "https://news.az/news/inside-micron-s-high-stakes-earnings-report-as-tech-whipsaws",
+              "domain": "news.az",
+              "country": "Azerbaijan"
             },
             {
-              "title": "Memory chip giant SK Hynix to raise USD29 billion in US ADR listing",
-              "url": "http://www.sanantoniopost.com/news/279144842/memory-chip-giant-sk-hynix-to-raise-usd29-billion-in-us-adr-listing",
-              "domain": "sanantoniopost.com",
-              "country": "United States"
-            },
-            {
-              "title": "Tech stocks live : Semiconductor stocks steady after sell - off , with Micron earnings on deck",
-              "url": "https://finance.yahoo.com/technology/live/tech-stocks-live-semiconductor-stocks-steady-after-sell-off-with-micron-earnings-on-deck-143422690.html",
-              "domain": "finance.yahoo.com",
-              "country": "United States"
-            },
-            {
-              "title": "Does the Tech Stock Frenzy Make You Nervous ? Here Are 3 Steady , High - Yield Dividend Pipeline Stocks to Invest In Instead . ",
-              "url": "https://finance.yahoo.com/markets/stocks/articles/does-tech-stock-frenzy-nervous-133500052.html",
+              "title": "Sandisk Stock Is Up 720 % in 2026 . Is the Rally Still Worth Chasing ? ",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/sandisk-stock-720-2026-rally-162200155.html",
               "domain": "finance.yahoo.com",
               "country": "United States"
             },
             {
               "title": "Memory chip giant SK Hynix to raise USD29 billion in US ADR listing",
-              "url": "http://www.calcuttanews.net/news/279144842/memory-chip-giant-sk-hynix-to-raise-usd29-billion-in-us-adr-listing",
-              "domain": "calcuttanews.net",
-              "country": "India"
+              "url": "http://www.sandiegosun.com/news/279144842/memory-chip-giant-sk-hynix-to-raise-usd29-billion-in-us-adr-listing",
+              "domain": "sandiegosun.com",
+              "country": "United States"
+            },
+            {
+              "title": "Dow powers ahead as big tech stabilizes ahead of Micron earnings",
+              "url": "https://www.proactiveinvestors.co.uk/companies/news/1094417/dow-powers-ahead-as-big-tech-stabilizes-ahead-of-micron-earnings-1094417.html",
+              "domain": "proactiveinvestors.co.uk",
+              "country": "United Kingdom"
+            },
+            {
+              "title": "Memory chip giant SK Hynix to raise USD29 billion in US ADR listing",
+              "url": "http://www.israelherald.com/news/279144842/memory-chip-giant-sk-hynix-to-raise-usd29-billion-in-us-adr-listing",
+              "domain": "israelherald.com",
+              "country": "Israel"
             }
           ]
         }
@@ -868,6 +871,10 @@
           {
             "title": "FRED (St. Louis Fed)",
             "url": "https://fred.stlouisfed.org/"
+          },
+          {
+            "title": "GDELT global news",
+            "url": "https://www.gdeltproject.org/"
           }
         ],
         "rank": 6,
@@ -875,21 +882,66 @@
         "signal": 64,
         "consensus": {
           "direction": "Bullish",
-          "conviction": 66,
+          "conviction": 41,
           "votes": [
             {
               "source": "Quant",
               "label": "Bullish"
+            },
+            {
+              "source": "Global news",
+              "label": "Neutral"
             }
           ],
-          "note": "1 of 1 signals lean bullish."
+          "note": "1 of 2 signals lean bullish."
         },
         "news": {
-          "available": false,
+          "available": true,
           "tone": 0.0,
-          "volume": 0,
-          "countries": [],
-          "headlines": []
+          "volume": 15,
+          "countries": [
+            "United States",
+            "China",
+            "Canada"
+          ],
+          "headlines": [
+            {
+              "title": "Shift4 Payments ( NYSE : FOUR ) Stock Price Up 7 . 8 % \u2013 Still a Buy ? ",
+              "url": "https://www.tickerreport.com/banking-finance/13484836/shift4-payments-nysefour-stock-price-up-7-8-still-a-buy.html",
+              "domain": "tickerreport.com",
+              "country": "United States"
+            },
+            {
+              "title": "Sims Metal Management ( OTCMKTS : SMSMY ) Stock Price Down 10 % \u2013 What Next ? ",
+              "url": "https://www.themarketsdaily.com/2026/06/24/sims-metal-management-otcmktssmsmy-stock-price-down-10-whats-next.html",
+              "domain": "themarketsdaily.com",
+              "country": "United States"
+            },
+            {
+              "title": "Booking ( NASDAQ : BKNG ) Stock Price Up 7 . 5 % \u2013 Here Why",
+              "url": "https://www.dailypolitical.com/2026/06/24/booking-nasdaqbkng-stock-price-up-7-5-heres-why.html",
+              "domain": "dailypolitical.com",
+              "country": "United States"
+            },
+            {
+              "title": "CNN WIRE - Trump refuses to sign bipartisan housing bill - Westfair Communications",
+              "url": "https://westfaironline.com/world-news/cnn-wire-trump-refuses-to-sign-bipartisan-housing-bill/",
+              "domain": "westfaironline.com",
+              "country": "United States"
+            },
+            {
+              "title": "South Korea SK Hynix targets $29 - billion U . S . listing",
+              "url": "https://www.theglobeandmail.com/investing/article-sk-hynix-targets-29-billion-us-listing/",
+              "domain": "theglobeandmail.com",
+              "country": "Canada"
+            },
+            {
+              "title": "Analyst Weekly Ratings Changes for Intellia Therapeutics ( NTLA ) ",
+              "url": "https://www.dailypolitical.com/2026/06/24/analysts-weekly-ratings-changes-for-intellia-therapeutics-ntla.html",
+              "domain": "dailypolitical.com",
+              "country": "United States"
+            }
+          ]
         }
       },
       {
@@ -1006,51 +1058,10 @@
         },
         "news": {
           "available": true,
-          "tone": 1.26,
-          "volume": 15,
-          "countries": [
-            "United States",
-            "Taiwan",
-            "United Kingdom"
-          ],
-          "headlines": [
-            {
-              "title": "Bunzl ( LON : BNZL ) Receives Buy Rating from Deutsche Bank Aktiengesellschaft",
-              "url": "https://www.dailypolitical.com/2026/06/24/bunzl-lonbnzl-receives-buy-rating-from-deutsche-bank-aktiengesellschaft.html",
-              "domain": "dailypolitical.com",
-              "country": "United States"
-            },
-            {
-              "title": "\u8a18\u61b6\u9ad4\u5927\u5674\u767c \u529b\u7a4d\u96fb\u80a1\u50f9\u6311\u6230\u524d\u9ad8 \u5f80\u767e\u5143\u9081\u9032",
-              "url": "https://n.yam.com/Article/20260624512456",
-              "domain": "n.yam.com",
-              "country": "Taiwan"
-            },
-            {
-              "title": "Jefferies Financial Group Reaffirms Underperform Rating for Burberry Group ( LON : BRBY ) ",
-              "url": "https://www.themarketsdaily.com/2026/06/24/jefferies-financial-group-reaffirms-underperform-rating-for-burberry-group-lonbrby.html",
-              "domain": "themarketsdaily.com",
-              "country": "United States"
-            },
-            {
-              "title": "Primary Health Propertie ( PHP ) House Stock Rating Reaffirmed at Shore Capital Group",
-              "url": "https://www.dailypolitical.com/2026/06/24/primary-health-properties-php-house-stock-rating-reaffirmed-at-shore-capital-group.html",
-              "domain": "dailypolitical.com",
-              "country": "United States"
-            },
-            {
-              "title": "Replimune Group ( NASDAQ : REPL ) Trading 9 . 6 % Higher \u2013 Here What Happened",
-              "url": "https://www.themarketsdaily.com/2026/06/24/replimune-group-nasdaqrepl-trading-9-6-higher-heres-what-happened.html",
-              "domain": "themarketsdaily.com",
-              "country": "United States"
-            },
-            {
-              "title": "Wendy ( NASDAQ : WEN ) Reaches New 52 - Week Low \u2013 Should You Sell ? ",
-              "url": "https://www.themarketsdaily.com/2026/06/24/wendys-nasdaqwen-reaches-new-52-week-low-should-you-sell.html",
-              "domain": "themarketsdaily.com",
-              "country": "United States"
-            }
-          ]
+          "tone": 1.28,
+          "volume": 0,
+          "countries": [],
+          "headlines": []
         }
       },
       {
@@ -1167,10 +1178,50 @@
         },
         "news": {
           "available": true,
-          "tone": 0.31,
-          "volume": 0,
-          "countries": [],
-          "headlines": []
+          "tone": 0.0,
+          "volume": 15,
+          "countries": [
+            "United States",
+            "United Kingdom"
+          ],
+          "headlines": [
+            {
+              "title": "Elon Musk trillionaire status slips as SpaceX shares swing",
+              "url": "https://www.westerntelegraph.co.uk/news/national/26225032.elon-musks-trillionaire-status-slips-spacex-shares-swing/",
+              "domain": "westerntelegraph.co.uk",
+              "country": "United Kingdom"
+            },
+            {
+              "title": "Elon Musk trillionaire status slips as SpaceX shares swing",
+              "url": "https://www.dudleynews.co.uk/news/national/26225032.elon-musks-trillionaire-status-slips-spacex-shares-swing/",
+              "domain": "dudleynews.co.uk",
+              "country": "United Kingdom"
+            },
+            {
+              "title": "SpaceX IPO Raises Major Governance and Investor \u2011 Protection Risks",
+              "url": "https://natlawreview.com/article/spacex-ipo-governance-how-public-investors-lost-their-rights",
+              "domain": "natlawreview.com",
+              "country": "United States"
+            },
+            {
+              "title": "Elon Musk Loses Trillionaire Status",
+              "url": "https://wsyr.iheart.com/content/2026-06-24-elon-musk-loses-trillionaire-status/",
+              "domain": "wsyr.iheart.com",
+              "country": "United States"
+            },
+            {
+              "title": "Elon Musk trillionaire status slips as SpaceX shares swing",
+              "url": "https://www.eppingforestguardian.co.uk/news/national/26225032.elon-musks-trillionaire-status-slips-spacex-shares-swing/",
+              "domain": "eppingforestguardian.co.uk",
+              "country": "United Kingdom"
+            },
+            {
+              "title": "Elon Musk Loses Trillionaire Status | PowerTalk 1460 AM & 101 . 1 FM",
+              "url": "https://powertalk1460.iheart.com/content/2026-06-24-elon-musk-loses-trillionaire-status/",
+              "domain": "powertalk1460.iheart.com",
+              "country": "United States"
+            }
+          ]
         }
       }
     ],
@@ -1290,9 +1341,52 @@
         "news": {
           "available": true,
           "tone": 0.39,
-          "volume": 0,
-          "countries": [],
-          "headlines": []
+          "volume": 15,
+          "countries": [
+            "United States",
+            "Thailand",
+            "Germany",
+            "Canada",
+            "India"
+          ],
+          "headlines": [
+            {
+              "title": "Is Merck & Co ., Inc . ( MRK ) Strengthening Its Vaccine Portfolio With New Capvaxive Approval ? ",
+              "url": "https://finance.yahoo.com/healthcare/articles/merck-co-inc-mrk-strengthening-132652293.html",
+              "domain": "finance.yahoo.com",
+              "country": "United States"
+            },
+            {
+              "title": "Here Are Wednesday Best Wall Street Analyst Research Calls : Devon Energy , Flowserve , Klaviyo , Macerich , Merck , Nucor , Take - Two Interactive Software , T",
+              "url": "https://247wallst.com/investing/2026/06/24/here-are-wednesdays-best-wall-street-analyst-research-calls-devon-energy-flowserve-klaviyo-macerich-merck-nucor-take-two-interactive-software-twilio-and-more/",
+              "domain": "247wallst.com",
+              "country": "United States"
+            },
+            {
+              "title": "DAX Down 1 . 1 %; Rheinmetall Tanks 16 % ",
+              "url": "https://www.finanznachrichten.de/nachrichten-2026-06/68850074-dax-down-1-1-rheinmetall-tanks-16-020.htm",
+              "domain": "finanznachrichten.de",
+              "country": "Germany"
+            },
+            {
+              "title": "\u0e04\u0e25\u0e31\u0e07\u0e2a\u0e2b\u0e23\u0e31\u0e10\u0e2f \u0e40\u0e14\u0e34\u0e19\u0e2b\u0e19\u0e49\u0e32\u0e17\u0e25\u0e32\u0e22\u0e40\u0e04\u0e23\u0e37\u0e2d\u0e02\u0e48\u0e32\u0e22\u0e2a\u0e41\u0e01\u0e21\u0e40\u0e21\u0e2d\u0e23\u0e4c\u0e02\u0e49\u0e32\u0e21\u0e0a\u0e32\u0e15\u0e34 \u0e15\u0e31\u0e49\u0e07\u0e41\u0e15\u0e48\u0e04\u0e34\u0e27\u0e1a\u0e32\u0e16\u0e36\u0e07\u0e42\u0e23\u0e07\u0e41\u0e23\u0e21\u0e43\u0e19\u0e01\u0e23\u0e38\u0e07\u0e40\u0e17\u0e1e",
+              "url": "https://thaipublica.org/2026/06/us-treasury-cracks-down-on-overseas-scam-operations/",
+              "domain": "thaipublica.org",
+              "country": "Thailand"
+            },
+            {
+              "title": "Baystreet . ca - Why AbbVie is a Buy As Moderna Slips",
+              "url": "http://baystreet.ca/stockstowatch/23533/Why-AbbVie-is-a-Buy-As-Moderna-Slips",
+              "domain": "baystreet.ca",
+              "country": "Canada"
+            },
+            {
+              "title": "Dow flat , Nasdaq slumps as investors pull back from AI stocks",
+              "url": "https://www.proactiveinvestors.com/companies/news/1094335/dow-flat-nasdaq-slumps-as-investors-pull-back-from-ai-stocks-1094335.html",
+              "domain": "proactiveinvestors.com",
+              "country": "United States"
+            }
+          ]
         }
       },
       {
@@ -1383,6 +1477,10 @@
           {
             "title": "FRED (St. Louis Fed)",
             "url": "https://fred.stlouisfed.org/"
+          },
+          {
+            "title": "GDELT global news",
+            "url": "https://www.gdeltproject.org/"
           }
         ],
         "rank": 2,
@@ -1390,18 +1488,22 @@
         "signal": 65,
         "consensus": {
           "direction": "Bullish",
-          "conviction": 66,
+          "conviction": 78,
           "votes": [
             {
               "source": "Quant",
               "label": "Bullish"
+            },
+            {
+              "source": "Global news",
+              "label": "Bullish"
             }
           ],
-          "note": "1 of 1 signals lean bullish."
+          "note": "2 of 2 signals lean bullish."
         },
         "news": {
-          "available": false,
-          "tone": 0.0,
+          "available": true,
+          "tone": 1.24,
           "volume": 0,
           "countries": [],
           "headlines": []
@@ -1495,6 +1597,10 @@
           {
             "title": "FRED (St. Louis Fed)",
             "url": "https://fred.stlouisfed.org/"
+          },
+          {
+            "title": "GDELT global news",
+            "url": "https://www.gdeltproject.org/"
           }
         ],
         "rank": 3,
@@ -1502,18 +1608,22 @@
         "signal": 65,
         "consensus": {
           "direction": "Bullish",
-          "conviction": 66,
+          "conviction": 41,
           "votes": [
             {
               "source": "Quant",
               "label": "Bullish"
+            },
+            {
+              "source": "Global news",
+              "label": "Neutral"
             }
           ],
-          "note": "1 of 1 signals lean bullish."
+          "note": "1 of 2 signals lean bullish."
         },
         "news": {
-          "available": false,
-          "tone": 0.0,
+          "available": true,
+          "tone": 0.54,
           "volume": 0,
           "countries": [],
           "headlines": []
@@ -1741,7 +1851,7 @@
         },
         "news": {
           "available": true,
-          "tone": 0.0,
+          "tone": 0.62,
           "volume": 15,
           "countries": [
             "United States",
@@ -2041,6 +2151,10 @@
           {
             "title": "FRED (St. Louis Fed)",
             "url": "https://fred.stlouisfed.org/"
+          },
+          {
+            "title": "GDELT global news",
+            "url": "https://www.gdeltproject.org/"
           }
         ],
         "rank": 7,
@@ -2048,21 +2162,66 @@
         "signal": 63,
         "consensus": {
           "direction": "Bullish",
-          "conviction": 66,
+          "conviction": 41,
           "votes": [
             {
               "source": "Quant",
               "label": "Bullish"
+            },
+            {
+              "source": "Global news",
+              "label": "Neutral"
             }
           ],
-          "note": "1 of 1 signals lean bullish."
+          "note": "1 of 2 signals lean bullish."
         },
         "news": {
-          "available": false,
+          "available": true,
           "tone": 0.0,
-          "volume": 0,
-          "countries": [],
-          "headlines": []
+          "volume": 15,
+          "countries": [
+            "United States",
+            "China",
+            "Canada"
+          ],
+          "headlines": [
+            {
+              "title": "Shift4 Payments ( NYSE : FOUR ) Stock Price Up 7 . 8 % \u2013 Still a Buy ? ",
+              "url": "https://www.tickerreport.com/banking-finance/13484836/shift4-payments-nysefour-stock-price-up-7-8-still-a-buy.html",
+              "domain": "tickerreport.com",
+              "country": "United States"
+            },
+            {
+              "title": "Sims Metal Management ( OTCMKTS : SMSMY ) Stock Price Down 10 % \u2013 What Next ? ",
+              "url": "https://www.themarketsdaily.com/2026/06/24/sims-metal-management-otcmktssmsmy-stock-price-down-10-whats-next.html",
+              "domain": "themarketsdaily.com",
+              "country": "United States"
+            },
+            {
+              "title": "Booking ( NASDAQ : BKNG ) Stock Price Up 7 . 5 % \u2013 Here Why",
+              "url": "https://www.dailypolitical.com/2026/06/24/booking-nasdaqbkng-stock-price-up-7-5-heres-why.html",
+              "domain": "dailypolitical.com",
+              "country": "United States"
+            },
+            {
+              "title": "CNN WIRE - Trump refuses to sign bipartisan housing bill - Westfair Communications",
+              "url": "https://westfaironline.com/world-news/cnn-wire-trump-refuses-to-sign-bipartisan-housing-bill/",
+              "domain": "westfaironline.com",
+              "country": "United States"
+            },
+            {
+              "title": "South Korea SK Hynix targets $29 - billion U . S . listing",
+              "url": "https://www.theglobeandmail.com/investing/article-sk-hynix-targets-29-billion-us-listing/",
+              "domain": "theglobeandmail.com",
+              "country": "Canada"
+            },
+            {
+              "title": "Analyst Weekly Ratings Changes for Intellia Therapeutics ( NTLA ) ",
+              "url": "https://www.dailypolitical.com/2026/06/24/analysts-weekly-ratings-changes-for-intellia-therapeutics-ntla.html",
+              "domain": "dailypolitical.com",
+              "country": "United States"
+            }
+          ]
         }
       },
       {
@@ -2163,8 +2322,8 @@
         "tier": "crown",
         "signal": 63,
         "consensus": {
-          "direction": "Bearish",
-          "conviction": 41,
+          "direction": "Mixed",
+          "conviction": 4,
           "votes": [
             {
               "source": "Quant",
@@ -2172,14 +2331,14 @@
             },
             {
               "source": "Global news",
-              "label": "Neutral"
+              "label": "Bullish"
             }
           ],
-          "note": "1 of 2 signals lean bearish."
+          "note": "Sources point in different directions \u2014 no clear edge."
         },
         "news": {
           "available": true,
-          "tone": 0.0,
+          "tone": 1.24,
           "volume": 15,
           "countries": [
             "United States",
@@ -2233,13 +2392,13 @@
         "name": "Bitcoin",
         "ticker": "BTC",
         "sector": "Store of Value",
-        "price": 61222,
+        "price": 59779,
         "rsi": 56.7,
         "volatility": 6.69,
         "changes": {
-          "d1": -2.17,
-          "d7": -6.13,
-          "d30": -20.75
+          "d1": -4.16,
+          "d7": -9.2,
+          "d30": -23.03
         },
         "levels": {
           "pivot": 62539.840388,
@@ -2336,22 +2495,65 @@
         "news": {
           "available": true,
           "tone": -0.76,
-          "volume": 0,
-          "countries": [],
-          "headlines": []
+          "volume": 15,
+          "countries": [
+            "United States",
+            "Philippines",
+            "Turkey",
+            "United Kingdom",
+            "South Africa"
+          ],
+          "headlines": [
+            {
+              "title": "Hypersurface Acquires Acre to Launch the First On - Chain Bitcoin Premium Income Vault",
+              "url": "https://www.manilatimes.net/2026/06/25/tmt-newswire/globenewswire/hypersurface-acquires-acre-to-launch-the-first-on-chain-bitcoin-premium-income-vault/2372271",
+              "domain": "manilatimes.net",
+              "country": "Philippines"
+            },
+            {
+              "title": "Dolar , euro ve borsada son durum",
+              "url": "https://www.odatv.com/ekonomi/dolar-euro-ve-borsada-son-durum-120152207",
+              "domain": "odatv.com",
+              "country": "Turkey"
+            },
+            {
+              "title": "Online Casino Safety Guide : How to Spot a Secure Site Before Playing",
+              "url": "https://mymmanews.com/online-casino-safety-guide-how-to-spot-a-secure-site-before-playing/",
+              "domain": "mymmanews.com",
+              "country": "United States"
+            },
+            {
+              "title": "Elon Musk Grok AI Says Ethereum Hits $6 , 000 This Year . The Chart Says Prove It . ",
+              "url": "https://www.ibtimes.com/elon-musks-grok-ai-says-ethereum-hits-6000-this-year-chart-says-prove-it-3804483",
+              "domain": "ibtimes.com",
+              "country": "United States"
+            },
+            {
+              "title": "BitcoinIRA Celebrates 10 Years of Innovation as the Pioneer of Crypto Retirement Investing",
+              "url": "http://www.californiatelegraph.com/news/279145225/bitcoinira-celebrates-10-years-of-innovation-as-the-pioneer-of-crypto-retirement-investing",
+              "domain": "californiatelegraph.com",
+              "country": "United States"
+            },
+            {
+              "title": "Bitcoin at the 200 - Week Ma Hints at a Long Winter",
+              "url": "https://www.actionforex.com/contributors/fundamental-analysis/645050-bitcoin-at-the-200-week-ma-hints-at-a-long-winter/",
+              "domain": "actionforex.com",
+              "country": "United Kingdom"
+            }
+          ]
         }
       },
       {
         "name": "BNB",
         "ticker": "BNB",
         "sector": "Exchange / L1",
-        "price": 569.59,
+        "price": 555.01,
         "rsi": 56.7,
         "volatility": 6.61,
         "changes": {
-          "d1": -1.04,
-          "d7": -6.41,
-          "d30": -14.94
+          "d1": -3.19,
+          "d7": -8.28,
+          "d30": -16.76
         },
         "levels": {
           "pivot": 575.957093,
@@ -2447,66 +2649,23 @@
         },
         "news": {
           "available": true,
-          "tone": 0.0,
-          "volume": 15,
-          "countries": [
-            "United States",
-            "India",
-            "South Africa",
-            "Hong Kong",
-            "Philippines"
-          ],
-          "headlines": [
-            {
-              "title": "YZi Labs ends proxy war with BNB treasury company CEA Industries ( BNC ) ",
-              "url": "https://www.coindesk.com/business/2026/06/22/yzi-labs-nears-settlement-in-activist-campaign-at-bnb-treasury-firm-cea-industries",
-              "domain": "coindesk.com",
-              "country": "United States"
-            },
-            {
-              "title": "Binance Review 2026 : Trading Fees , Key Features , Security , and More Explained",
-              "url": "https://memeburn.com/binance-review/",
-              "domain": "memeburn.com",
-              "country": "South Africa"
-            },
-            {
-              "title": "Bitcoin falls to $62 , 600 as investors trim risk exposure after AI stock selloff ; technical indicators signal caution",
-              "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/bitcoin-falls-to-62600-as-investors-trim-risk-exposure-after-ai-stock-selloff-technical-indicators-signal-caution/articleshow/131956333.cms",
-              "domain": "economictimes.indiatimes.com",
-              "country": "India"
-            },
-            {
-              "title": "MyTonWallet Rebrands to My Wallet After Expanding to 11 Blockchains",
-              "url": "https://bravenewcoin.com/press-release/mytonwallet-rebrands-to-my-wallet-after-expanding-to-11-blockchains",
-              "domain": "bravenewcoin.com",
-              "country": "United States"
-            },
-            {
-              "title": "Crypto Market Today , June 22 : Bitcoin Holds Above $64 , 000 on Easing Geopolitical Tensions",
-              "url": "https://www.fool.com/coverage/stock-market-today/2026/06/22/crypto-market-today-june-22-bitcoin-holds-above-usd64-000-on-easing-geopolitical-tensions/?source=iedfolrf0000001",
-              "domain": "fool.com",
-              "country": "United States"
-            },
-            {
-              "title": "Crypto News Today : AlphaPepe Nears Third CEX Partnership as Ethereum Price Prediction Targets $7 , 000",
-              "url": "https://portal.sina.com.hk/finance/finance-globenewswire/globenewswire/2026/06/23/1830867/crypto-news-today-alphapepe-nears-third-cex-partnership-as-ethereum-price-prediction-targets-7000/",
-              "domain": "portal.sina.com.hk",
-              "country": "Hong Kong"
-            }
-          ]
+          "tone": 0.12,
+          "volume": 0,
+          "countries": [],
+          "headlines": []
         }
       },
       {
         "name": "Ethereum",
         "ticker": "ETH",
         "sector": "Smart Contract L1",
-        "price": 1651.58,
+        "price": 1587.96,
         "rsi": 60.7,
         "volatility": 8.49,
         "changes": {
-          "d1": -0.85,
-          "d7": -6.19,
-          "d30": -21.88
+          "d1": -4.07,
+          "d7": -10.32,
+          "d30": -25.29
         },
         "levels": {
           "pivot": 1663.95616,
@@ -2602,16 +2761,28 @@
         },
         "news": {
           "available": true,
-          "tone": -0.43,
+          "tone": 0.0,
           "volume": 15,
           "countries": [
             "United States",
             "Germany",
+            "United Kingdom",
             "South Africa",
-            "Switzerland",
-            "India"
+            "Switzerland"
           ],
           "headlines": [
+            {
+              "title": "Elon Musk Grok AI Says Ethereum Hits $6 , 000 This Year . The Chart Says Prove It . ",
+              "url": "https://www.ibtimes.com/elon-musks-grok-ai-says-ethereum-hits-6000-this-year-chart-says-prove-it-3804483",
+              "domain": "ibtimes.com",
+              "country": "United States"
+            },
+            {
+              "title": "Bitcoin at the 200 - Week Ma Hints at a Long Winter",
+              "url": "https://www.actionforex.com/contributors/fundamental-analysis/645050-bitcoin-at-the-200-week-ma-hints-at-a-long-winter/",
+              "domain": "actionforex.com",
+              "country": "United Kingdom"
+            },
             {
               "title": "Binance Review 2026 : Trading Fees , Key Features , Security , and More Explained",
               "url": "https://memeburn.com/binance-review/",
@@ -2625,28 +2796,16 @@
               "country": "United States"
             },
             {
-              "title": "Bitcoin im Klammergriff der B\u00e4ren : Warum der Krypto - Markt stagniert () ",
-              "url": "https://www.aktiencheck.de/analysen/Artikel-Bitcoin_Klammergriff_Baeren_Warum_Krypto_Markt_stagniert-19876945",
-              "domain": "aktiencheck.de",
-              "country": "Germany"
-            },
-            {
-              "title": "Bitcoin im Klammergriff der B\u00e4ren : Warum der Krypto - Markt stagniert () ",
-              "url": "https://www.aktiencheck.de/exklusiv/Artikel-Bitcoin_Klammergriff_Baeren_Warum_Krypto_Markt_stagniert-19876945",
-              "domain": "aktiencheck.de",
-              "country": "Germany"
-            },
-            {
               "title": "Here Are Wednesday Best Wall Street Analyst Research Calls : Devon Energy , Flowserve , Klaviyo , Macerich , Merck , Nucor , Take - Two Interactive Software , T",
               "url": "https://247wallst.com/investing/2026/06/24/here-are-wednesdays-best-wall-street-analyst-research-calls-devon-energy-flowserve-klaviyo-macerich-merck-nucor-take-two-interactive-software-twilio-and-more/",
               "domain": "247wallst.com",
               "country": "United States"
             },
             {
-              "title": "How It Really Works : The California Billionaire Wealth Tax",
-              "url": "https://ivn.us/2026/03/04/how-it-really-works/how-it-really-works-the-california-billionaire-wealth-tax-2026-03-03/",
-              "domain": "ivn.us",
-              "country": "United States"
+              "title": "Bitcoin im Klammergriff der B\u00e4ren : Warum der Krypto - Markt stagniert () ",
+              "url": "https://www.aktiencheck.de/analysen/Artikel-Bitcoin_Klammergriff_Baeren_Warum_Krypto_Markt_stagniert-19876945",
+              "domain": "aktiencheck.de",
+              "country": "Germany"
             }
           ]
         }
@@ -2655,13 +2814,13 @@
         "name": "Solana",
         "ticker": "SOL",
         "sector": "Smart Contract L1",
-        "price": 69.16,
+        "price": 66.56,
         "rsi": 57.9,
         "volatility": 10.87,
         "changes": {
-          "d1": -0.02,
-          "d7": -4.12,
-          "d30": -19.42
+          "d1": -3.18,
+          "d7": -9.62,
+          "d30": -22.77
         },
         "levels": {
           "pivot": 69.283573,
@@ -2757,7 +2916,7 @@
         },
         "news": {
           "available": true,
-          "tone": -0.05,
+          "tone": 0.0,
           "volume": 15,
           "countries": [
             "United States",
@@ -2767,6 +2926,12 @@
             "Nigeria"
           ],
           "headlines": [
+            {
+              "title": "Elon Musk Grok AI Says Ethereum Hits $6 , 000 This Year . The Chart Says Prove It . ",
+              "url": "https://www.ibtimes.com/elon-musks-grok-ai-says-ethereum-hits-6000-this-year-chart-says-prove-it-3804483",
+              "domain": "ibtimes.com",
+              "country": "United States"
+            },
             {
               "title": "Binance Review 2026 : Trading Fees , Key Features , Security , and More Explained",
               "url": "https://memeburn.com/binance-review/",
@@ -2796,12 +2961,6 @@
               "url": "https://cointelegraph.com/markets/170m-ether-positions-liquidated-as-crypto-market-tumbles-is-eth-doomed",
               "domain": "cointelegraph.com",
               "country": "China"
-            },
-            {
-              "title": "Morning Minute : Bitcoin at $65 , 000 as Iran Deal Wobbles",
-              "url": "https://finance.yahoo.com/markets/crypto/articles/morning-minute-bitcoin-65-000-151746073.html",
-              "domain": "finance.yahoo.com",
-              "country": "United States"
             }
           ]
         }
@@ -2810,13 +2969,13 @@
         "name": "Dogecoin",
         "ticker": "DOGE",
         "sector": "Meme / Culture",
-        "price": 0.076892,
+        "price": 0.074251,
         "rsi": 55.5,
         "volatility": 7.6,
         "changes": {
-          "d1": -3.17,
-          "d7": -11.02,
-          "d30": -25.2
+          "d1": -5.56,
+          "d7": -14.72,
+          "d30": -28.19
         },
         "levels": {
           "pivot": 0.079005,
@@ -2912,7 +3071,7 @@
         },
         "news": {
           "available": true,
-          "tone": 0.0,
+          "tone": -0.37,
           "volume": 15,
           "countries": [
             "United States",
@@ -2965,13 +3124,13 @@
         "name": "XRP",
         "ticker": "XRP",
         "sector": "Payments",
-        "price": 1.079,
+        "price": 1.057,
         "rsi": 41.6,
         "volatility": 8.12,
         "changes": {
-          "d1": -2.29,
-          "d7": -10.36,
-          "d30": -20.46
+          "d1": -3.79,
+          "d7": -12.89,
+          "d30": -22.35
         },
         "levels": {
           "pivot": 1.102166,
@@ -3073,10 +3232,15 @@
             "United States",
             "India",
             "Nigeria",
-            "Singapore",
-            "United Kingdom"
+            "Singapore"
           ],
           "headlines": [
+            {
+              "title": "Elon Musk Grok AI Says Ethereum Hits $6 , 000 This Year . The Chart Says Prove It . ",
+              "url": "https://www.ibtimes.com/elon-musks-grok-ai-says-ethereum-hits-6000-this-year-chart-says-prove-it-3804483",
+              "domain": "ibtimes.com",
+              "country": "United States"
+            },
             {
               "title": "BTC price news : Bitcoin drops to $62 , 000 as the chip selloff deepens for a second day",
               "url": "https://www.coindesk.com/markets/2026/06/24/bitcoin-drops-toward-usd62-000-as-the-chip-selloff-deepens-for-a-second-day",
@@ -3106,12 +3270,6 @@
               "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/60061465/bitcoin-ethereum-xrp-dogecoin-drop-amid-chip-sell-off-analyst-flags-key-btc-level",
               "domain": "benzinga.com",
               "country": "United States"
-            },
-            {
-              "title": "Talvurieks Review 2026 : Legit or Not ? - Truth Explained ! ",
-              "url": "https://thenationonlineng.net/talvurieks-review-2026-legit-or-not-truth-explained/",
-              "domain": "thenationonlineng.net",
-              "country": "Nigeria"
             }
           ]
         }
@@ -3120,13 +3278,13 @@
         "name": "TRON",
         "ticker": "TRX",
         "sector": "Smart Contract L1",
-        "price": 0.328615,
+        "price": 0.32573,
         "rsi": 71.3,
         "volatility": 2.86,
         "changes": {
-          "d1": -0.34,
-          "d7": 2.62,
-          "d30": -11.17
+          "d1": -1.29,
+          "d7": 1.42,
+          "d30": -12.02
         },
         "levels": {
           "pivot": 0.329516,
@@ -3196,6 +3354,10 @@
           {
             "title": "CoinGecko market data",
             "url": "https://www.coingecko.com/en/coins/tron"
+          },
+          {
+            "title": "GDELT global news",
+            "url": "https://www.gdeltproject.org/"
           }
         ],
         "rank": 7,
@@ -3203,34 +3365,81 @@
         "signal": 72,
         "consensus": {
           "direction": "Bearish",
-          "conviction": 66,
+          "conviction": 41,
           "votes": [
             {
               "source": "Quant",
               "label": "Bearish"
+            },
+            {
+              "source": "Global news",
+              "label": "Neutral"
             }
           ],
-          "note": "1 of 1 signals lean bearish."
+          "note": "1 of 2 signals lean bearish."
         },
         "news": {
-          "available": false,
-          "tone": 0.0,
-          "volume": 0,
-          "countries": [],
-          "headlines": []
+          "available": true,
+          "tone": -0.51,
+          "volume": 15,
+          "countries": [
+            "United States",
+            "India",
+            "South Africa",
+            "Nigeria",
+            "United Kingdom"
+          ],
+          "headlines": [
+            {
+              "title": "Binance Review 2026 : Trading Fees , Key Features , Security , and More Explained",
+              "url": "https://memeburn.com/binance-review/",
+              "domain": "memeburn.com",
+              "country": "South Africa"
+            },
+            {
+              "title": "BTC price news : Bitcoin drops to $62 , 000 as the chip selloff deepens for a second day",
+              "url": "https://www.coindesk.com/markets/2026/06/24/bitcoin-drops-toward-usd62-000-as-the-chip-selloff-deepens-for-a-second-day",
+              "domain": "coindesk.com",
+              "country": "United States"
+            },
+            {
+              "title": "Bitcoin falls to $62 , 600 as investors trim risk exposure after AI stock selloff ; technical indicators signal caution",
+              "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/bitcoin-falls-to-62600-as-investors-trim-risk-exposure-after-ai-stock-selloff-technical-indicators-signal-caution/articleshow/131956333.cms",
+              "domain": "economictimes.indiatimes.com",
+              "country": "India"
+            },
+            {
+              "title": "Talvurieks Review 2026 : Legit or Not ? - Truth Explained ! ",
+              "url": "https://thenationonlineng.net/talvurieks-review-2026-legit-or-not-truth-explained/",
+              "domain": "thenationonlineng.net",
+              "country": "Nigeria"
+            },
+            {
+              "title": "MyTonWallet Rebrands to My Wallet After Expanding to 11 Blockchains",
+              "url": "https://bravenewcoin.com/press-release/mytonwallet-rebrands-to-my-wallet-after-expanding-to-11-blockchains",
+              "domain": "bravenewcoin.com",
+              "country": "United States"
+            },
+            {
+              "title": "Crypto Market Today , June 22 : Bitcoin Holds Above $64 , 000 on Easing Geopolitical Tensions",
+              "url": "https://www.fool.com/coverage/stock-market-today/2026/06/22/crypto-market-today-june-22-bitcoin-holds-above-usd64-000-on-easing-geopolitical-tensions/?source=iedfolrf0000001",
+              "domain": "fool.com",
+              "country": "United States"
+            }
+          ]
         }
       },
       {
         "name": "Hyperliquid",
         "ticker": "HYPE",
         "sector": "Other",
-        "price": 60.77,
+        "price": 59.7,
         "rsi": 56.9,
         "volatility": 16.61,
         "changes": {
-          "d1": -4.0,
-          "d7": -15.67,
-          "d30": -4.04
+          "d1": -3.6,
+          "d7": -21.01,
+          "d30": -3.7
         },
         "levels": {
           "pivot": 62.446553,
@@ -3326,7 +3535,7 @@
         },
         "news": {
           "available": true,
-          "tone": 0.0,
+          "tone": -0.31,
           "volume": 15,
           "countries": [
             "United States",
@@ -3336,6 +3545,12 @@
             "United Kingdom"
           ],
           "headlines": [
+            {
+              "title": "Elon Musk Grok AI Says Ethereum Hits $6 , 000 This Year . The Chart Says Prove It . ",
+              "url": "https://www.ibtimes.com/elon-musks-grok-ai-says-ethereum-hits-6000-this-year-chart-says-prove-it-3804483",
+              "domain": "ibtimes.com",
+              "country": "United States"
+            },
             {
               "title": "BTC price news : Bitcoin drops to $62 , 000 as the chip selloff deepens for a second day",
               "url": "https://www.coindesk.com/markets/2026/06/24/bitcoin-drops-toward-usd62-000-as-the-chip-selloff-deepens-for-a-second-day",
@@ -3365,12 +3580,6 @@
               "url": "https://www.etftrends.com/coinshares-content-hub/hyperliquid-takes-traditional-derivatives-markets/",
               "domain": "etftrends.com",
               "country": "China"
-            },
-            {
-              "title": "MyTonWallet Rebrands to My Wallet After Expanding to 11 Blockchains",
-              "url": "https://bravenewcoin.com/press-release/mytonwallet-rebrands-to-my-wallet-after-expanding-to-11-blockchains",
-              "domain": "bravenewcoin.com",
-              "country": "United States"
             }
           ]
         }
@@ -3381,13 +3590,13 @@
         "name": "Cronos",
         "ticker": "CRO",
         "sector": "Other",
-        "price": 0.056233,
+        "price": 0.054996,
         "rsi": 54.3,
         "volatility": 7.03,
         "changes": {
-          "d1": -1.0,
-          "d7": -5.43,
-          "d30": -19.04
+          "d1": -2.57,
+          "d7": -8.21,
+          "d30": -20.94
         },
         "levels": {
           "pivot": 0.056481,
@@ -3483,50 +3692,23 @@
         },
         "news": {
           "available": true,
-          "tone": 0.0,
-          "volume": 4,
-          "countries": [
-            "United States"
-          ],
-          "headlines": [
-            {
-              "title": "Cronos Achieves Self Reported Market Cap of $5 . 75 Billion ( CRO ) ",
-              "url": "https://www.tickerreport.com/banking-finance/13483022/cronos-achieves-self-reported-market-cap-of-5-75-billion-cro.html",
-              "domain": "tickerreport.com",
-              "country": "United States"
-            },
-            {
-              "title": "Stratis ( STRAX ) Hits Market Cap of $21 . 46 Million",
-              "url": "https://www.dailypolitical.com/2026/06/21/stratis-strax-hits-market-cap-of-21-46-million.html",
-              "domain": "dailypolitical.com",
-              "country": "United States"
-            },
-            {
-              "title": "Cronos Trading Down 0 . 8 % Over Last Week ( CRO ) ",
-              "url": "https://www.dailypolitical.com/2026/06/17/cronos-trading-down-0-8-over-last-week-cro.html",
-              "domain": "dailypolitical.com",
-              "country": "United States"
-            },
-            {
-              "title": "Avalanche ( AVAX ) Market Cap Hits $2 . 96 Billion",
-              "url": "https://www.tickerreport.com/banking-finance/13478843/avalanche-avax-market-cap-hits-2-96-billion.html",
-              "domain": "tickerreport.com",
-              "country": "United States"
-            }
-          ]
+          "tone": -0.02,
+          "volume": 0,
+          "countries": [],
+          "headlines": []
         }
       },
       {
         "name": "Bitcoin",
         "ticker": "BTC",
         "sector": "Store of Value",
-        "price": 61222,
+        "price": 59779,
         "rsi": 56.7,
         "volatility": 6.69,
         "changes": {
-          "d1": -2.17,
-          "d7": -6.13,
-          "d30": -20.75
+          "d1": -4.16,
+          "d7": -9.2,
+          "d30": -23.03
         },
         "levels": {
           "pivot": 62539.840388,
@@ -3623,22 +3805,65 @@
         "news": {
           "available": true,
           "tone": -0.76,
-          "volume": 0,
-          "countries": [],
-          "headlines": []
+          "volume": 15,
+          "countries": [
+            "United States",
+            "Philippines",
+            "Turkey",
+            "United Kingdom",
+            "South Africa"
+          ],
+          "headlines": [
+            {
+              "title": "Hypersurface Acquires Acre to Launch the First On - Chain Bitcoin Premium Income Vault",
+              "url": "https://www.manilatimes.net/2026/06/25/tmt-newswire/globenewswire/hypersurface-acquires-acre-to-launch-the-first-on-chain-bitcoin-premium-income-vault/2372271",
+              "domain": "manilatimes.net",
+              "country": "Philippines"
+            },
+            {
+              "title": "Dolar , euro ve borsada son durum",
+              "url": "https://www.odatv.com/ekonomi/dolar-euro-ve-borsada-son-durum-120152207",
+              "domain": "odatv.com",
+              "country": "Turkey"
+            },
+            {
+              "title": "Online Casino Safety Guide : How to Spot a Secure Site Before Playing",
+              "url": "https://mymmanews.com/online-casino-safety-guide-how-to-spot-a-secure-site-before-playing/",
+              "domain": "mymmanews.com",
+              "country": "United States"
+            },
+            {
+              "title": "Elon Musk Grok AI Says Ethereum Hits $6 , 000 This Year . The Chart Says Prove It . ",
+              "url": "https://www.ibtimes.com/elon-musks-grok-ai-says-ethereum-hits-6000-this-year-chart-says-prove-it-3804483",
+              "domain": "ibtimes.com",
+              "country": "United States"
+            },
+            {
+              "title": "BitcoinIRA Celebrates 10 Years of Innovation as the Pioneer of Crypto Retirement Investing",
+              "url": "http://www.californiatelegraph.com/news/279145225/bitcoinira-celebrates-10-years-of-innovation-as-the-pioneer-of-crypto-retirement-investing",
+              "domain": "californiatelegraph.com",
+              "country": "United States"
+            },
+            {
+              "title": "Bitcoin at the 200 - Week Ma Hints at a Long Winter",
+              "url": "https://www.actionforex.com/contributors/fundamental-analysis/645050-bitcoin-at-the-200-week-ma-hints-at-a-long-winter/",
+              "domain": "actionforex.com",
+              "country": "United Kingdom"
+            }
+          ]
         }
       },
       {
         "name": "BNB",
         "ticker": "BNB",
         "sector": "Exchange / L1",
-        "price": 569.59,
+        "price": 555.01,
         "rsi": 56.7,
         "volatility": 6.61,
         "changes": {
-          "d1": -1.04,
-          "d7": -6.41,
-          "d30": -14.94
+          "d1": -3.19,
+          "d7": -8.28,
+          "d30": -16.76
         },
         "levels": {
           "pivot": 575.957093,
@@ -3734,66 +3959,23 @@
         },
         "news": {
           "available": true,
-          "tone": 0.0,
-          "volume": 15,
-          "countries": [
-            "United States",
-            "India",
-            "South Africa",
-            "Hong Kong",
-            "Philippines"
-          ],
-          "headlines": [
-            {
-              "title": "YZi Labs ends proxy war with BNB treasury company CEA Industries ( BNC ) ",
-              "url": "https://www.coindesk.com/business/2026/06/22/yzi-labs-nears-settlement-in-activist-campaign-at-bnb-treasury-firm-cea-industries",
-              "domain": "coindesk.com",
-              "country": "United States"
-            },
-            {
-              "title": "Binance Review 2026 : Trading Fees , Key Features , Security , and More Explained",
-              "url": "https://memeburn.com/binance-review/",
-              "domain": "memeburn.com",
-              "country": "South Africa"
-            },
-            {
-              "title": "Bitcoin falls to $62 , 600 as investors trim risk exposure after AI stock selloff ; technical indicators signal caution",
-              "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/bitcoin-falls-to-62600-as-investors-trim-risk-exposure-after-ai-stock-selloff-technical-indicators-signal-caution/articleshow/131956333.cms",
-              "domain": "economictimes.indiatimes.com",
-              "country": "India"
-            },
-            {
-              "title": "MyTonWallet Rebrands to My Wallet After Expanding to 11 Blockchains",
-              "url": "https://bravenewcoin.com/press-release/mytonwallet-rebrands-to-my-wallet-after-expanding-to-11-blockchains",
-              "domain": "bravenewcoin.com",
-              "country": "United States"
-            },
-            {
-              "title": "Crypto Market Today , June 22 : Bitcoin Holds Above $64 , 000 on Easing Geopolitical Tensions",
-              "url": "https://www.fool.com/coverage/stock-market-today/2026/06/22/crypto-market-today-june-22-bitcoin-holds-above-usd64-000-on-easing-geopolitical-tensions/?source=iedfolrf0000001",
-              "domain": "fool.com",
-              "country": "United States"
-            },
-            {
-              "title": "Crypto News Today : AlphaPepe Nears Third CEX Partnership as Ethereum Price Prediction Targets $7 , 000",
-              "url": "https://portal.sina.com.hk/finance/finance-globenewswire/globenewswire/2026/06/23/1830867/crypto-news-today-alphapepe-nears-third-cex-partnership-as-ethereum-price-prediction-targets-7000/",
-              "domain": "portal.sina.com.hk",
-              "country": "Hong Kong"
-            }
-          ]
+          "tone": 0.12,
+          "volume": 0,
+          "countries": [],
+          "headlines": []
         }
       },
       {
         "name": "Solana",
         "ticker": "SOL",
         "sector": "Smart Contract L1",
-        "price": 69.16,
+        "price": 66.56,
         "rsi": 57.9,
         "volatility": 10.87,
         "changes": {
-          "d1": -0.02,
-          "d7": -4.12,
-          "d30": -19.42
+          "d1": -3.18,
+          "d7": -9.62,
+          "d30": -22.77
         },
         "levels": {
           "pivot": 69.283573,
@@ -3889,7 +4071,7 @@
         },
         "news": {
           "available": true,
-          "tone": -0.05,
+          "tone": 0.0,
           "volume": 15,
           "countries": [
             "United States",
@@ -3899,6 +4081,12 @@
             "Nigeria"
           ],
           "headlines": [
+            {
+              "title": "Elon Musk Grok AI Says Ethereum Hits $6 , 000 This Year . The Chart Says Prove It . ",
+              "url": "https://www.ibtimes.com/elon-musks-grok-ai-says-ethereum-hits-6000-this-year-chart-says-prove-it-3804483",
+              "domain": "ibtimes.com",
+              "country": "United States"
+            },
             {
               "title": "Binance Review 2026 : Trading Fees , Key Features , Security , and More Explained",
               "url": "https://memeburn.com/binance-review/",
@@ -3928,12 +4116,6 @@
               "url": "https://cointelegraph.com/markets/170m-ether-positions-liquidated-as-crypto-market-tumbles-is-eth-doomed",
               "domain": "cointelegraph.com",
               "country": "China"
-            },
-            {
-              "title": "Morning Minute : Bitcoin at $65 , 000 as Iran Deal Wobbles",
-              "url": "https://finance.yahoo.com/markets/crypto/articles/morning-minute-bitcoin-65-000-151746073.html",
-              "domain": "finance.yahoo.com",
-              "country": "United States"
             }
           ]
         }
@@ -3942,13 +4124,13 @@
         "name": "Hyperliquid",
         "ticker": "HYPE",
         "sector": "Other",
-        "price": 60.77,
+        "price": 59.7,
         "rsi": 56.9,
         "volatility": 16.61,
         "changes": {
-          "d1": -4.0,
-          "d7": -15.67,
-          "d30": -4.04
+          "d1": -3.6,
+          "d7": -21.01,
+          "d30": -3.7
         },
         "levels": {
           "pivot": 62.446553,
@@ -4044,7 +4226,7 @@
         },
         "news": {
           "available": true,
-          "tone": 0.0,
+          "tone": -0.31,
           "volume": 15,
           "countries": [
             "United States",
@@ -4054,6 +4236,12 @@
             "United Kingdom"
           ],
           "headlines": [
+            {
+              "title": "Elon Musk Grok AI Says Ethereum Hits $6 , 000 This Year . The Chart Says Prove It . ",
+              "url": "https://www.ibtimes.com/elon-musks-grok-ai-says-ethereum-hits-6000-this-year-chart-says-prove-it-3804483",
+              "domain": "ibtimes.com",
+              "country": "United States"
+            },
             {
               "title": "BTC price news : Bitcoin drops to $62 , 000 as the chip selloff deepens for a second day",
               "url": "https://www.coindesk.com/markets/2026/06/24/bitcoin-drops-toward-usd62-000-as-the-chip-selloff-deepens-for-a-second-day",
@@ -4083,12 +4271,6 @@
               "url": "https://www.etftrends.com/coinshares-content-hub/hyperliquid-takes-traditional-derivatives-markets/",
               "domain": "etftrends.com",
               "country": "China"
-            },
-            {
-              "title": "MyTonWallet Rebrands to My Wallet After Expanding to 11 Blockchains",
-              "url": "https://bravenewcoin.com/press-release/mytonwallet-rebrands-to-my-wallet-after-expanding-to-11-blockchains",
-              "domain": "bravenewcoin.com",
-              "country": "United States"
             }
           ]
         }
@@ -4097,13 +4279,13 @@
         "name": "Dogecoin",
         "ticker": "DOGE",
         "sector": "Meme / Culture",
-        "price": 0.076892,
+        "price": 0.074251,
         "rsi": 55.5,
         "volatility": 7.6,
         "changes": {
-          "d1": -3.17,
-          "d7": -11.02,
-          "d30": -25.2
+          "d1": -5.56,
+          "d7": -14.72,
+          "d30": -28.19
         },
         "levels": {
           "pivot": 0.079005,
@@ -4199,7 +4381,7 @@
         },
         "news": {
           "available": true,
-          "tone": 0.0,
+          "tone": -0.37,
           "volume": 15,
           "countries": [
             "United States",
@@ -4252,13 +4434,13 @@
         "name": "Zcash",
         "ticker": "ZEC",
         "sector": "Other",
-        "price": 416.81,
+        "price": 400.61,
         "rsi": 52.3,
         "volatility": 15.61,
         "changes": {
-          "d1": -1.88,
-          "d7": -13.94,
-          "d30": -38.07
+          "d1": -3.14,
+          "d7": -18.42,
+          "d30": -40.37
         },
         "levels": {
           "pivot": 417.915528,
@@ -4404,13 +4586,13 @@
         "name": "Chainlink",
         "ticker": "LINK",
         "sector": "Oracles / DeFi",
-        "price": 7.51,
+        "price": 7.27,
         "rsi": 54.6,
         "volatility": 9.32,
         "changes": {
-          "d1": -1.76,
-          "d7": -8.36,
-          "d30": -21.41
+          "d1": -4.14,
+          "d7": -12.08,
+          "d30": -24.19
         },
         "levels": {
           "pivot": 7.599282,
@@ -4422,11 +4604,11 @@
           "trend30d": 50,
           "low_volatility": 92,
           "rsi_balance": 99,
-          "market_depth": 60
+          "market_depth": 63
         },
         "signal_long": 69,
         "signal_short": 67,
-        "security": 80,
+        "security": 81,
         "risk": "low",
         "spark": [
           8.154777,
@@ -4506,7 +4688,7 @@
         },
         "news": {
           "available": true,
-          "tone": 0.0,
+          "tone": 0.6,
           "volume": 11,
           "countries": [
             "United States",
