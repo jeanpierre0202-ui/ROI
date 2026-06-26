@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T14:48:02.630370+00:00",
+  "generated_at": "2026-06-26T17:15:02.553303+00:00",
   "macro": {
     "available": true,
     "regime": "expansion-leaning",
@@ -186,7 +186,7 @@
         },
         "news": {
           "available": true,
-          "tone": 0.58,
+          "tone": 0.52,
           "volume": 0,
           "countries": [],
           "headlines": []
@@ -280,6 +280,10 @@
           {
             "title": "FRED (St. Louis Fed)",
             "url": "https://fred.stlouisfed.org/"
+          },
+          {
+            "title": "GDELT global news",
+            "url": "https://www.gdeltproject.org/"
           }
         ],
         "rank": 2,
@@ -287,21 +291,68 @@
         "signal": 66,
         "consensus": {
           "direction": "Bullish",
-          "conviction": 66,
+          "conviction": 41,
           "votes": [
             {
               "source": "Quant",
               "label": "Bullish"
+            },
+            {
+              "source": "Global news",
+              "label": "Neutral"
             }
           ],
-          "note": "1 of 1 signals lean bullish."
+          "note": "1 of 2 signals lean bullish."
         },
         "news": {
-          "available": false,
+          "available": true,
           "tone": 0.0,
-          "volume": 0,
-          "countries": [],
-          "headlines": []
+          "volume": 15,
+          "countries": [
+            "Taiwan",
+            "United States",
+            "United Kingdom",
+            "Malaysia",
+            "Russia"
+          ],
+          "headlines": [
+            {
+              "title": "FTSE 100 Live : Blue - chips cut losses , Downing Street pushes defence plan",
+              "url": "https://www.proactiveinvestors.co.uk/companies/news/1094545/ftse-100-live-blue-chips-cut-losses-downing-street-pushes-defence-plan-1094545.html",
+              "domain": "proactiveinvestors.co.uk",
+              "country": "United Kingdom"
+            },
+            {
+              "title": "Triangle Securities Wealth Management Sells 7 , 247 Shares of Caterpillar Inc . $CAT",
+              "url": "https://www.dailypolitical.com/2026/06/26/triangle-securities-wealth-management-sells-7247-shares-of-caterpillar-inc-cat.html",
+              "domain": "dailypolitical.com",
+              "country": "United States"
+            },
+            {
+              "title": "Wells Fargo Sees Caterpillar ( CAT ) Benefiting From Data Center and Energy Demand",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/wells-fargo-sees-caterpillar-cat-033749800.html",
+              "domain": "finance.yahoo.com",
+              "country": "United States"
+            },
+            {
+              "title": "\u7f8e\u80a1\u590f\u5b63\u4e0d\u6de1 \uff1f AI\u7372\u5229\u6490\u76e4\u5347\u606f\u6210\u8003\u9a57",
+              "url": "https://n.yam.com/Article/20260626345310",
+              "domain": "n.yam.com",
+              "country": "Taiwan"
+            },
+            {
+              "title": "\u7f8e\u80a1\u590f\u5b63\u4e0d\u6de1 \uff1f AI\u7372\u5229\u6490\u76e4\u5347\u606f\u6210\u8003\u9a57",
+              "url": "https://n.yam.com/Article/20260626175561",
+              "domain": "n.yam.com",
+              "country": "Taiwan"
+            },
+            {
+              "title": "Congolese chefs put high - end spin on traditional cuisine",
+              "url": "https://www.thestar.com.my/lifestyle/living/2026/06/30/congolese-chefs-put-high-end-spin-on-traditional-cuisine",
+              "domain": "thestar.com.my",
+              "country": "Malaysia"
+            }
+          ]
         }
       },
       {
@@ -500,10 +551,6 @@
           {
             "title": "FRED (St. Louis Fed)",
             "url": "https://fred.stlouisfed.org/"
-          },
-          {
-            "title": "GDELT global news",
-            "url": "https://www.gdeltproject.org/"
           }
         ],
         "rank": 4,
@@ -511,68 +558,21 @@
         "signal": 64,
         "consensus": {
           "direction": "Bullish",
-          "conviction": 41,
+          "conviction": 66,
           "votes": [
             {
               "source": "Quant",
               "label": "Bullish"
-            },
-            {
-              "source": "Global news",
-              "label": "Neutral"
             }
           ],
-          "note": "1 of 2 signals lean bullish."
+          "note": "1 of 1 signals lean bullish."
         },
         "news": {
-          "available": true,
-          "tone": 0.25,
-          "volume": 15,
-          "countries": [
-            "United States",
-            "Ireland",
-            "Sweden",
-            "Malaysia",
-            "China"
-          ],
-          "headlines": [
-            {
-              "title": "Warren Buffett Favorite Holdings : 3 Stocks Worth Owning for a Lifetime",
-              "url": "https://finance.yahoo.com/markets/stocks/articles/warren-buffetts-favorite-holdings-3-223000801.html",
-              "domain": "finance.yahoo.com",
-              "country": "United States"
-            },
-            {
-              "title": "Brexit gave Ireland a financial services jobs boost . Will AI wipe it out ? ",
-              "url": "https://www.irishtimes.com/business/2026/06/26/brexit-gave-ireland-a-jobs-boost-in-financial-services-but-will-ai-wipe-it-out/",
-              "domain": "irishtimes.com",
-              "country": "Ireland"
-            },
-            {
-              "title": "DEBATT : Debatt : Ge Saminvest chans att finansiera AI - vinnarna",
-              "url": "https://www.di.se/debatt/ge-saminvest-mojlighet-att-finansiera-ai-vinnarna/",
-              "domain": "di.se",
-              "country": "Sweden"
-            },
-            {
-              "title": "Elon Musk : The trillionaire who cannot spend his trillion",
-              "url": "https://www.freemalaysiatoday.com/category/opinion/2026/06/26/elon-musk-the-trillionaire-who-cannot-spend-his-trillion",
-              "domain": "freemalaysiatoday.com",
-              "country": "Malaysia"
-            },
-            {
-              "title": "Would Warren Buffett Buy SpaceX Stock ? Here What the Oracle of Omaha Says About IPOs",
-              "url": "https://www.fool.com/investing/2026/06/25/would-warren-buffett-buy-spacex-stock-heres-what-t/?source=iedfolrf0000001",
-              "domain": "fool.com",
-              "country": "United States"
-            },
-            {
-              "title": "How WordPress and Tumblr are keeping the internet weird",
-              "url": "https://www.theverge.com/2022/3/15/22977857/wordpress-tumblr-simplenote-internet-automattic-matt-mullenweg-interview",
-              "domain": "theverge.com",
-              "country": "United States"
-            }
-          ]
+          "available": false,
+          "tone": 0.0,
+          "volume": 0,
+          "countries": [],
+          "headlines": []
         }
       },
       {
@@ -663,10 +663,6 @@
           {
             "title": "FRED (St. Louis Fed)",
             "url": "https://fred.stlouisfed.org/"
-          },
-          {
-            "title": "GDELT global news",
-            "url": "https://www.gdeltproject.org/"
           }
         ],
         "rank": 5,
@@ -674,66 +670,21 @@
         "signal": 63,
         "consensus": {
           "direction": "Bearish",
-          "conviction": 41,
+          "conviction": 66,
           "votes": [
             {
               "source": "Quant",
               "label": "Bearish"
-            },
-            {
-              "source": "Global news",
-              "label": "Neutral"
             }
           ],
-          "note": "1 of 2 signals lean bearish."
+          "note": "1 of 1 signals lean bearish."
         },
         "news": {
-          "available": true,
-          "tone": 0.3,
-          "volume": 15,
-          "countries": [
-            "United States",
-            "Canada",
-            "South Korea"
-          ],
-          "headlines": [
-            {
-              "title": " [ AI MY \ub274\uc2a4 ] \ub274\uc695 \ubc18\ub3c4\uccb4\uc8fc \ud504\ub9ac\ubdf0 ... AI \ud22c\uc790\ube44 \ubd80\ub2f4\uc5d0 \ub9c8\uc774\ud06c\ub860 \u00b7 AMD \u00b7 ARM\u2193",
-              "url": "https://www.newspim.com/news/view/20260626000973",
-              "domain": "newspim.com",
-              "country": "South Korea"
-            },
-            {
-              "title": "Wall Street follows global markets lower as traders sell to lock in profits after recent AI rallies",
-              "url": "http://www.idahostatejournal.com/news/world/wall-street-follows-global-markets-lower-as-traders-sell-to-lock-in-profits-after-recent/article_3be5885d-f917-5caf-a5b4-e79df44086b4.html",
-              "domain": "idahostatejournal.com",
-              "country": "United States"
-            },
-            {
-              "title": "Micron , SanDisk , and Western Digital Fall 7 % as Memory Rally Cools",
-              "url": "https://finance.yahoo.com/markets/stocks/articles/micron-sandisk-western-digital-fall-132932589.html",
-              "domain": "finance.yahoo.com",
-              "country": "United States"
-            },
-            {
-              "title": "The USD is mixed with some late week dollar selling seen in the major currency pairs",
-              "url": "https://investinglive.com:443/technical-analysis/the-usd-is-mixed-with-some-late-day-dollar-selling-in-the-major-currency-pair-20260626/",
-              "domain": "investinglive.com",
-              "country": ""
-            },
-            {
-              "title": "SpaceX : Russell rebalance could add volatility",
-              "url": "https://www.bnnbloomberg.ca/investing/2026/06/26/russell-rebalance-could-add-to-spacex-volatility/",
-              "domain": "bnnbloomberg.ca",
-              "country": "Canada"
-            },
-            {
-              "title": "Wall Street follows global markets lower as traders sell to lock in profits after recent AI rallies",
-              "url": "https://www.2news.com/news/national/wall-street-follows-global-markets-lower-as-traders-sell-to-lock-in-profits-after-recent/article_3c4c7156-a656-5dcb-933d-6e9717ddadb5.html",
-              "domain": "2news.com",
-              "country": ""
-            }
-          ]
+          "available": false,
+          "tone": 0.0,
+          "volume": 0,
+          "countries": [],
+          "headlines": []
         }
       },
       {
@@ -1052,10 +1003,6 @@
           {
             "title": "FRED (St. Louis Fed)",
             "url": "https://fred.stlouisfed.org/"
-          },
-          {
-            "title": "GDELT global news",
-            "url": "https://www.gdeltproject.org/"
           }
         ],
         "rank": 8,
@@ -1063,66 +1010,21 @@
         "signal": 62,
         "consensus": {
           "direction": "Bullish",
-          "conviction": 41,
+          "conviction": 66,
           "votes": [
             {
               "source": "Quant",
               "label": "Bullish"
-            },
-            {
-              "source": "Global news",
-              "label": "Neutral"
             }
           ],
-          "note": "1 of 2 signals lean bullish."
+          "note": "1 of 1 signals lean bullish."
         },
         "news": {
-          "available": true,
+          "available": false,
           "tone": 0.0,
-          "volume": 15,
-          "countries": [
-            "United States",
-            "India",
-            "United Kingdom"
-          ],
-          "headlines": [
-            {
-              "title": "Should You Buy UnitedHealth Group Incorporated ( UNH ) Shares ? ",
-              "url": "https://finance.yahoo.com/markets/stocks/articles/buy-unitedhealth-group-incorporated-unh-191249692.html",
-              "domain": "finance.yahoo.com",
-              "country": "United States"
-            },
-            {
-              "title": "US stock market closing : Dow Jones hits record high as Nasdaq falls ; bitcoin , gold and oil slide",
-              "url": "https://www.hindustantimes.com/world-news/us-news/us-stock-market-closing-dow-hits-record-high-as-nasdaq-falls-bitcoin-gold-and-oil-slide-101782418391950.html",
-              "domain": "hindustantimes.com",
-              "country": "India"
-            },
-            {
-              "title": "FTSE 100 Live : London stocks gain , mixed session on Wall Street",
-              "url": "https://www.proactiveinvestors.co.uk/companies/news/1094475/ftse-100-live-london-stocks-gain-mixed-session-on-wall-street-1094475.html",
-              "domain": "proactiveinvestors.co.uk",
-              "country": "United Kingdom"
-            },
-            {
-              "title": "How AI Could Be Turned Against Americans",
-              "url": "https://www.newsweek.com/how-ai-could-be-turned-against-americans-12120093",
-              "domain": "newsweek.com",
-              "country": "United States"
-            },
-            {
-              "title": "The AI Race In Fintech Comes Down To One Thing : Trust",
-              "url": "https://www.forbes.com/sites/nicolecasperson/2026/06/25/the-ai-race-in-fintech-comes-down-to-one-thing-trust/",
-              "domain": "forbes.com",
-              "country": "United States"
-            },
-            {
-              "title": "Gold , Silver , Bitcoin , or Dividend Stocks : What the Best Safe - Haven Option Right Now ? ",
-              "url": "https://finance.yahoo.com/markets/commodities/articles/gold-silver-bitcoin-dividend-stocks-182000171.html",
-              "domain": "finance.yahoo.com",
-              "country": "United States"
-            }
-          ]
+          "volume": 0,
+          "countries": [],
+          "headlines": []
         }
       }
     ],
@@ -1215,6 +1117,10 @@
           {
             "title": "FRED (St. Louis Fed)",
             "url": "https://fred.stlouisfed.org/"
+          },
+          {
+            "title": "GDELT global news",
+            "url": "https://www.gdeltproject.org/"
           }
         ],
         "rank": 1,
@@ -1222,21 +1128,68 @@
         "signal": 71,
         "consensus": {
           "direction": "Bullish",
-          "conviction": 66,
+          "conviction": 41,
           "votes": [
             {
               "source": "Quant",
               "label": "Bullish"
+            },
+            {
+              "source": "Global news",
+              "label": "Neutral"
             }
           ],
-          "note": "1 of 1 signals lean bullish."
+          "note": "1 of 2 signals lean bullish."
         },
         "news": {
-          "available": false,
+          "available": true,
           "tone": 0.0,
-          "volume": 0,
-          "countries": [],
-          "headlines": []
+          "volume": 15,
+          "countries": [
+            "Taiwan",
+            "United States",
+            "United Kingdom",
+            "Malaysia",
+            "Russia"
+          ],
+          "headlines": [
+            {
+              "title": "FTSE 100 Live : Blue - chips cut losses , Downing Street pushes defence plan",
+              "url": "https://www.proactiveinvestors.co.uk/companies/news/1094545/ftse-100-live-blue-chips-cut-losses-downing-street-pushes-defence-plan-1094545.html",
+              "domain": "proactiveinvestors.co.uk",
+              "country": "United Kingdom"
+            },
+            {
+              "title": "Triangle Securities Wealth Management Sells 7 , 247 Shares of Caterpillar Inc . $CAT",
+              "url": "https://www.dailypolitical.com/2026/06/26/triangle-securities-wealth-management-sells-7247-shares-of-caterpillar-inc-cat.html",
+              "domain": "dailypolitical.com",
+              "country": "United States"
+            },
+            {
+              "title": "Wells Fargo Sees Caterpillar ( CAT ) Benefiting From Data Center and Energy Demand",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/wells-fargo-sees-caterpillar-cat-033749800.html",
+              "domain": "finance.yahoo.com",
+              "country": "United States"
+            },
+            {
+              "title": "\u7f8e\u80a1\u590f\u5b63\u4e0d\u6de1 \uff1f AI\u7372\u5229\u6490\u76e4\u5347\u606f\u6210\u8003\u9a57",
+              "url": "https://n.yam.com/Article/20260626345310",
+              "domain": "n.yam.com",
+              "country": "Taiwan"
+            },
+            {
+              "title": "\u7f8e\u80a1\u590f\u5b63\u4e0d\u6de1 \uff1f AI\u7372\u5229\u6490\u76e4\u5347\u606f\u6210\u8003\u9a57",
+              "url": "https://n.yam.com/Article/20260626175561",
+              "domain": "n.yam.com",
+              "country": "Taiwan"
+            },
+            {
+              "title": "Congolese chefs put high - end spin on traditional cuisine",
+              "url": "https://www.thestar.com.my/lifestyle/living/2026/06/30/congolese-chefs-put-high-end-spin-on-traditional-cuisine",
+              "domain": "thestar.com.my",
+              "country": "Malaysia"
+            }
+          ]
         }
       },
       {
@@ -1327,10 +1280,6 @@
           {
             "title": "FRED (St. Louis Fed)",
             "url": "https://fred.stlouisfed.org/"
-          },
-          {
-            "title": "GDELT global news",
-            "url": "https://www.gdeltproject.org/"
           }
         ],
         "rank": 2,
@@ -1338,22 +1287,18 @@
         "signal": 70,
         "consensus": {
           "direction": "Bullish",
-          "conviction": 41,
+          "conviction": 66,
           "votes": [
             {
               "source": "Quant",
               "label": "Bullish"
-            },
-            {
-              "source": "Global news",
-              "label": "Neutral"
             }
           ],
-          "note": "1 of 2 signals lean bullish."
+          "note": "1 of 1 signals lean bullish."
         },
         "news": {
-          "available": true,
-          "tone": 0.33,
+          "available": false,
+          "tone": 0.0,
           "volume": 0,
           "countries": [],
           "headlines": []
@@ -1447,10 +1392,6 @@
           {
             "title": "FRED (St. Louis Fed)",
             "url": "https://fred.stlouisfed.org/"
-          },
-          {
-            "title": "GDELT global news",
-            "url": "https://www.gdeltproject.org/"
           }
         ],
         "rank": 3,
@@ -1458,67 +1399,21 @@
         "signal": 68,
         "consensus": {
           "direction": "Bullish",
-          "conviction": 41,
+          "conviction": 66,
           "votes": [
             {
               "source": "Quant",
               "label": "Bullish"
-            },
-            {
-              "source": "Global news",
-              "label": "Neutral"
             }
           ],
-          "note": "1 of 2 signals lean bullish."
+          "note": "1 of 1 signals lean bullish."
         },
         "news": {
-          "available": true,
-          "tone": 0.54,
-          "volume": 15,
-          "countries": [
-            "United States",
-            "Canada",
-            "Switzerland",
-            "Belgium"
-          ],
-          "headlines": [
-            {
-              "title": "AbbVie vs . Pfizer : Which Pharma Giant Stock Is a Better Buy in 2026 ? ",
-              "url": "https://www.fool.com/coverage/better-buy/2026/06/25/abbvie-vs-pfizer-which-pharma-giant-stock-is-a-better-buy-in-2026/?source=iedfolrf0000001",
-              "domain": "fool.com",
-              "country": "United States"
-            },
-            {
-              "title": "AbbVie Inc . $ABBV is Miller Howard Investments Inc . NY 6th Largest Position",
-              "url": "https://www.themarketsdaily.com/2026/06/25/abbvie-inc-abbv-is-miller-howard-investments-inc-nys-6th-largest-position.html",
-              "domain": "themarketsdaily.com",
-              "country": "United States"
-            },
-            {
-              "title": "OP Asset Management Ltd Purchases Shares of 310 , 902 AbbVie Inc . $ABBV",
-              "url": "https://www.themarketsdaily.com/2026/06/25/op-asset-management-ltd-purchases-shares-of-310902-abbvie-inc-abbv.html",
-              "domain": "themarketsdaily.com",
-              "country": "United States"
-            },
-            {
-              "title": "Baystreet . ca - TSX Hopes to Break Slump",
-              "url": "http://baystreet.ca/articles/marketupdates/121749/TSX-Hopes-to-Break-Slump",
-              "domain": "baystreet.ca",
-              "country": "Canada"
-            },
-            {
-              "title": "Here How Much Youd Need to Invest in HDV to Generate $500 per Month in Dividends",
-              "url": "https://finance.yahoo.com/markets/stocks/articles/heres-much-youd-invest-hdv-182200592.html",
-              "domain": "finance.yahoo.com",
-              "country": "United States"
-            },
-            {
-              "title": "Insider Selling : Apogee Therapeutics ( NASDAQ : APGE ) Insider Sells $3 , 500 , 640 . 00 in Stock",
-              "url": "https://www.dailypolitical.com/2026/06/24/insider-selling-apogee-therapeutics-nasdaqapge-insider-sells-3500640-00-in-stock.html",
-              "domain": "dailypolitical.com",
-              "country": "United States"
-            }
-          ]
+          "available": false,
+          "tone": 0.0,
+          "volume": 0,
+          "countries": [],
+          "headlines": []
         }
       },
       {
@@ -1609,10 +1504,6 @@
           {
             "title": "FRED (St. Louis Fed)",
             "url": "https://fred.stlouisfed.org/"
-          },
-          {
-            "title": "GDELT global news",
-            "url": "https://www.gdeltproject.org/"
           }
         ],
         "rank": 4,
@@ -1620,66 +1511,21 @@
         "signal": 63,
         "consensus": {
           "direction": "Bullish",
-          "conviction": 41,
+          "conviction": 66,
           "votes": [
             {
               "source": "Quant",
               "label": "Bullish"
-            },
-            {
-              "source": "Global news",
-              "label": "Neutral"
             }
           ],
-          "note": "1 of 2 signals lean bullish."
+          "note": "1 of 1 signals lean bullish."
         },
         "news": {
-          "available": true,
+          "available": false,
           "tone": 0.0,
-          "volume": 15,
-          "countries": [
-            "United States",
-            "India",
-            "United Kingdom"
-          ],
-          "headlines": [
-            {
-              "title": "Should You Buy UnitedHealth Group Incorporated ( UNH ) Shares ? ",
-              "url": "https://finance.yahoo.com/markets/stocks/articles/buy-unitedhealth-group-incorporated-unh-191249692.html",
-              "domain": "finance.yahoo.com",
-              "country": "United States"
-            },
-            {
-              "title": "US stock market closing : Dow Jones hits record high as Nasdaq falls ; bitcoin , gold and oil slide",
-              "url": "https://www.hindustantimes.com/world-news/us-news/us-stock-market-closing-dow-hits-record-high-as-nasdaq-falls-bitcoin-gold-and-oil-slide-101782418391950.html",
-              "domain": "hindustantimes.com",
-              "country": "India"
-            },
-            {
-              "title": "FTSE 100 Live : London stocks gain , mixed session on Wall Street",
-              "url": "https://www.proactiveinvestors.co.uk/companies/news/1094475/ftse-100-live-london-stocks-gain-mixed-session-on-wall-street-1094475.html",
-              "domain": "proactiveinvestors.co.uk",
-              "country": "United Kingdom"
-            },
-            {
-              "title": "How AI Could Be Turned Against Americans",
-              "url": "https://www.newsweek.com/how-ai-could-be-turned-against-americans-12120093",
-              "domain": "newsweek.com",
-              "country": "United States"
-            },
-            {
-              "title": "The AI Race In Fintech Comes Down To One Thing : Trust",
-              "url": "https://www.forbes.com/sites/nicolecasperson/2026/06/25/the-ai-race-in-fintech-comes-down-to-one-thing-trust/",
-              "domain": "forbes.com",
-              "country": "United States"
-            },
-            {
-              "title": "Gold , Silver , Bitcoin , or Dividend Stocks : What the Best Safe - Haven Option Right Now ? ",
-              "url": "https://finance.yahoo.com/markets/commodities/articles/gold-silver-bitcoin-dividend-stocks-182000171.html",
-              "domain": "finance.yahoo.com",
-              "country": "United States"
-            }
-          ]
+          "volume": 0,
+          "countries": [],
+          "headlines": []
         }
       },
       {
@@ -1796,7 +1642,7 @@
         },
         "news": {
           "available": true,
-          "tone": 0.58,
+          "tone": 0.52,
           "volume": 0,
           "countries": [],
           "headlines": []
@@ -1916,7 +1762,7 @@
         },
         "news": {
           "available": true,
-          "tone": 0.78,
+          "tone": 0.0,
           "volume": 15,
           "countries": [
             "United States",
@@ -1926,6 +1772,24 @@
             "Canada"
           ],
           "headlines": [
+            {
+              "title": "Boeing Communications : What Not to Do in a Crisis",
+              "url": "https://everything-pr.com/what-boeing-has-taught-us-about-communications-discipline-and-why-nothing-has-ch",
+              "domain": "everything-pr.com",
+              "country": "United States"
+            },
+            {
+              "title": "Blaize Holdings , Inc . Shareholders Are Encouraged to Contact Johnson Fistel for More Information About Potentially Recovering Their Losses",
+              "url": "https://www.prnewswire.com/news-releases/blaize-holdings-inc-shareholders-are-encouraged-to-contact-johnson-fistel-for-more-information-about-potentially-recovering-their-losses-302812025.html",
+              "domain": "prnewswire.com",
+              "country": "United States"
+            },
+            {
+              "title": "Johnson & Johnson ( JNJ ): Among the Best Stocks For Beginners to Buy Now",
+              "url": "https://www.insidermonkey.com/blog/johnson-johnson-jnj-among-the-best-stocks-for-beginners-to-buy-now-1789570/",
+              "domain": "insidermonkey.com",
+              "country": "United States"
+            },
             {
               "title": "Johnson & Johnson ( NYSE : JNJ ) Price Target Raised to $270 . 00 at Guggenheim",
               "url": "https://www.themarketsdaily.com/2026/06/26/johnson-johnson-nysejnj-price-target-raised-to-270-00-at-guggenheim.html",
@@ -1942,24 +1806,6 @@
               "title": "Blackberry Stock Just Scored a New  Buy  Rating . Here Why . ",
               "url": "https://finance.yahoo.com/markets/stocks/articles/blackberry-stock-just-scored-buy-184518743.html",
               "domain": "finance.yahoo.com",
-              "country": "United States"
-            },
-            {
-              "title": "US stock market closing : Dow Jones hits record high as Nasdaq falls ; bitcoin , gold and oil slide",
-              "url": "https://www.hindustantimes.com/world-news/us-news/us-stock-market-closing-dow-hits-record-high-as-nasdaq-falls-bitcoin-gold-and-oil-slide-101782418391950.html",
-              "domain": "hindustantimes.com",
-              "country": "India"
-            },
-            {
-              "title": "ETF Weighting Matters More Than You Think",
-              "url": "https://www.morningstar.com/funds/etf-weighting-matters-more-than-you-think",
-              "domain": "morningstar.com",
-              "country": "China"
-            },
-            {
-              "title": "Rep . Julie Johnson Sells Off Shares of Accenture PLC ( NYSE : ACN ) ",
-              "url": "https://www.tickerreport.com/banking-finance/13485949/rep-julie-johnson-sells-off-shares-of-accenture-plc-nyseacn.html",
-              "domain": "tickerreport.com",
               "country": "United States"
             }
           ]
@@ -2165,6 +2011,10 @@
           {
             "title": "FRED (St. Louis Fed)",
             "url": "https://fred.stlouisfed.org/"
+          },
+          {
+            "title": "GDELT global news",
+            "url": "https://www.gdeltproject.org/"
           }
         ],
         "rank": 8,
@@ -2172,21 +2022,68 @@
         "signal": 62,
         "consensus": {
           "direction": "Bullish",
-          "conviction": 66,
+          "conviction": 41,
           "votes": [
             {
               "source": "Quant",
               "label": "Bullish"
+            },
+            {
+              "source": "Global news",
+              "label": "Neutral"
             }
           ],
-          "note": "1 of 1 signals lean bullish."
+          "note": "1 of 2 signals lean bullish."
         },
         "news": {
-          "available": false,
-          "tone": 0.0,
-          "volume": 0,
-          "countries": [],
-          "headlines": []
+          "available": true,
+          "tone": 0.93,
+          "volume": 15,
+          "countries": [
+            "China",
+            "United States",
+            "India",
+            "New Zealand",
+            "Ireland"
+          ],
+          "headlines": [
+            {
+              "title": "WhatsApp still barely makes Meta any money . Can Kunal Shah change that ? ",
+              "url": "https://www.thehindu.com/sci-tech/technology/whatsapp-still-barely-makes-meta-any-money-can-kunal-shah-change-that/article71145155.ece",
+              "domain": "thehindu.com",
+              "country": "India"
+            },
+            {
+              "title": "Greenup Street Wealth Management LLC Purchases 5 , 538 Shares of Mastercard Incorporated $MA",
+              "url": "https://www.tickerreport.com/banking-finance/13485559/greenup-street-wealth-management-llc-purchases-5538-shares-of-mastercard-incorporated-ma.html",
+              "domain": "tickerreport.com",
+              "country": "United States"
+            },
+            {
+              "title": "AMEN Properties Just Announced a 25 % Dividend Increase . What This Means for the High - Yield Royalty Stock . ",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/amen-properties-just-announced-25-233002685.html",
+              "domain": "finance.yahoo.com",
+              "country": "United States"
+            },
+            {
+              "title": "Fortuneo ou Revolut : tarifs , cartes bancaires et diff\u00e9rences cl\u00e9s pour choisir sa banque en ligne",
+              "url": "https://www.moneyvox.fr/banque-en-ligne/actualites/109395/fortuneo-ou-revolut-tarifs-cartes-bancaires-et-differences-cles-pour-choisir-sa-banque-en-ligne",
+              "domain": "moneyvox.fr",
+              "country": ""
+            },
+            {
+              "title": "Why depositors could foot the bill for the Green Party proposed bank levy",
+              "url": "https://www.interest.co.nz/banking/139117/%E2%80%98rein-their-animal-spirits%E2%80%99-green-party%E2%80%99s-proposed-006-bank-levy-may-spark-industry",
+              "domain": "interest.co.nz",
+              "country": "New Zealand"
+            },
+            {
+              "title": "\u5b58\u50a8\u5de8\u5934 \uff0c \u76d8\u540e\u66b4\u6da8 \uff0c \u4e1a\u7ee9\u70b8\u88c2",
+              "url": "https://finance.ifeng.com/c/8uEl0W0fdgz",
+              "domain": "finance.ifeng.com",
+              "country": "China"
+            }
+          ]
         }
       }
     ]
@@ -2197,13 +2094,13 @@
         "name": "BNB",
         "ticker": "BNB",
         "sector": "Exchange / L1",
-        "price": 562.4,
+        "price": 566.08,
         "rsi": 60.3,
         "volatility": 8.58,
         "changes": {
-          "d1": 1.14,
-          "d7": -2.53,
-          "d30": -13.58
+          "d1": 2.35,
+          "d7": -1.91,
+          "d30": -13.61
         },
         "levels": {
           "pivot": 560.403872,
@@ -2299,16 +2196,22 @@
         },
         "news": {
           "available": true,
-          "tone": 0.04,
+          "tone": 0.05,
           "volume": 15,
           "countries": [
             "United States",
             "China",
+            "South Africa",
             "Ghana",
-            "Turkey",
-            "Canada"
+            "Turkey"
           ],
           "headlines": [
+            {
+              "title": "Cap ( CAP ) Exclusive Token Generation Event Is Live",
+              "url": "https://ventureburn.com/cap-cap-exclusive-token-generation-event-is-live-subscribe-via-binance-wallet-and-pancakeswap/",
+              "domain": "ventureburn.com",
+              "country": "South Africa"
+            },
             {
               "title": "Crypto market clings to support as bitcoin hits 21 - month low : Crypto Markets Today",
               "url": "https://www.coindesk.com/markets/2026/06/26/bitcoin-bounces-from-usd58-000-as-derivatives-signal-more-pain-in-the-pipeline",
@@ -2338,12 +2241,6 @@
               "url": "https://portal.sina.com.hk/finance/finance-mediaoutreachnewswire/media-outreach/2026/06/26/1835290/results-of-the-ix-digital-asset-industry-classification-system-daics-1h-2026-review/",
               "domain": "portal.sina.com.hk",
               "country": "Hong Kong"
-            },
-            {
-              "title": "IT News Online - Results of the IX Digital Asset Industry Classification System ( DAICS\u00ae ) 1H 2026 Review",
-              "url": "https://www.itnewsonline.com/news/Results-of-the-IX-Digital-Asset-Industry-Classification-System-DAICS-1H-2026-Review-/37404",
-              "domain": "itnewsonline.com",
-              "country": "United States"
             }
           ]
         }
@@ -2352,13 +2249,13 @@
         "name": "Solana",
         "ticker": "SOL",
         "sector": "Smart Contract L1",
-        "price": 71.55,
+        "price": 72.43,
         "rsi": 58.4,
         "volatility": 13.42,
         "changes": {
-          "d1": 8.37,
-          "d7": 3.31,
-          "d30": -14.19
+          "d1": 10.04,
+          "d7": 4.94,
+          "d30": -13.8
         },
         "levels": {
           "pivot": 67.739039,
@@ -2454,66 +2351,23 @@
         },
         "news": {
           "available": true,
-          "tone": 0.0,
-          "volume": 15,
-          "countries": [
-            "United States",
-            "China",
-            "Ghana",
-            "India",
-            "Hong Kong"
-          ],
-          "headlines": [
-            {
-              "title": "Bitcoin Price Hovers Around $60K : Peter Schiff Blames Saylor",
-              "url": "https://www.coinspeaker.com/bitcoin-price-below-60k-mstr-flywheel/",
-              "domain": "coinspeaker.com",
-              "country": "United States"
-            },
-            {
-              "title": "Crypto market clings to support as bitcoin hits 21 - month low : Crypto Markets Today",
-              "url": "https://www.coindesk.com/markets/2026/06/26/bitcoin-bounces-from-usd58-000-as-derivatives-signal-more-pain-in-the-pipeline",
-              "domain": "coindesk.com",
-              "country": "United States"
-            },
-            {
-              "title": "Tokenized Stocks Hit $1 . 5Bn as Exchange Adoption Accelerates",
-              "url": "https://www.tradersmagazine.com/featured_articles/tokenized-stocks-hit-1-5b-as-exchange-adoption-accelerates/",
-              "domain": "tradersmagazine.com",
-              "country": "United States"
-            },
-            {
-              "title": "Results of the IX Digital Asset Industry Classification System ( DAICS\u00ae ) 1H 2026 Review",
-              "url": "https://businessdayghana.com/results-of-the-ix-digital-asset-industry-classification-system-daics-1h-2026-review/",
-              "domain": "businessdayghana.com",
-              "country": "Ghana"
-            },
-            {
-              "title": "  Painful  Bitcoin Sell - Off Drags Ethereum , XRP and Dogecoin Lower as Crypto Stocks Dive",
-              "url": "https://finance.yahoo.com/markets/crypto/articles/painful-bitcoin-sell-off-drags-205014642.html",
-              "domain": "finance.yahoo.com",
-              "country": "United States"
-            },
-            {
-              "title": "Bitcoin , Solana or XRP ? The best performing crypto asset of 2026 so far",
-              "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/bitcoin-solana-or-xrp-the-best-performing-crypto-asset-of-2026-so-far/articleshow/132010524.cms",
-              "domain": "economictimes.indiatimes.com",
-              "country": "India"
-            }
-          ]
+          "tone": -0.27,
+          "volume": 0,
+          "countries": [],
+          "headlines": []
         }
       },
       {
         "name": "Bitcoin",
         "ticker": "BTC",
         "sector": "Store of Value",
-        "price": 59930,
+        "price": 59971,
         "rsi": 42.1,
         "volatility": 10.07,
         "changes": {
-          "d1": -0.1,
-          "d7": -5.14,
-          "d30": -19.99
+          "d1": 1.4,
+          "d7": -4.71,
+          "d30": -20.23
         },
         "levels": {
           "pivot": 59988.117567,
@@ -2583,10 +2437,6 @@
           {
             "title": "CoinGecko market data",
             "url": "https://www.coingecko.com/en/coins/bitcoin"
-          },
-          {
-            "title": "GDELT global news",
-            "url": "https://www.gdeltproject.org/"
           }
         ],
         "rank": 3,
@@ -2594,22 +2444,18 @@
         "signal": 74,
         "consensus": {
           "direction": "Bearish",
-          "conviction": 41,
+          "conviction": 66,
           "votes": [
             {
               "source": "Quant",
               "label": "Bearish"
-            },
-            {
-              "source": "Global news",
-              "label": "Neutral"
             }
           ],
-          "note": "1 of 2 signals lean bearish."
+          "note": "1 of 1 signals lean bearish."
         },
         "news": {
-          "available": true,
-          "tone": -0.75,
+          "available": false,
+          "tone": 0.0,
           "volume": 0,
           "countries": [],
           "headlines": []
@@ -2619,13 +2465,13 @@
         "name": "XRP",
         "ticker": "XRP",
         "sector": "Payments",
-        "price": 1.043,
+        "price": 1.044,
         "rsi": 47.7,
         "volatility": 9.58,
         "changes": {
-          "d1": 1.06,
-          "d7": -8.45,
-          "d30": -21.03
+          "d1": 1.43,
+          "d7": -7.82,
+          "d30": -21.49
         },
         "levels": {
           "pivot": 1.045615,
@@ -2695,6 +2541,10 @@
           {
             "title": "CoinGecko market data",
             "url": "https://www.coingecko.com/en/coins/ripple"
+          },
+          {
+            "title": "GDELT global news",
+            "url": "https://www.gdeltproject.org/"
           }
         ],
         "rank": 4,
@@ -2702,34 +2552,81 @@
         "signal": 74,
         "consensus": {
           "direction": "Bearish",
-          "conviction": 66,
+          "conviction": 41,
           "votes": [
             {
               "source": "Quant",
               "label": "Bearish"
+            },
+            {
+              "source": "Global news",
+              "label": "Neutral"
             }
           ],
-          "note": "1 of 1 signals lean bearish."
+          "note": "1 of 2 signals lean bearish."
         },
         "news": {
-          "available": false,
+          "available": true,
           "tone": 0.0,
-          "volume": 0,
-          "countries": [],
-          "headlines": []
+          "volume": 15,
+          "countries": [
+            "United States",
+            "China",
+            "Ghana",
+            "India",
+            "Canada"
+          ],
+          "headlines": [
+            {
+              "title": "Could the Cryptocurrency XRP Turn $1 , 000 Into $10 , 000 ? ",
+              "url": "https://finance.yahoo.com/markets/crypto/articles/could-cryptocurrency-xrp-turn-1-150500172.html",
+              "domain": "finance.yahoo.com",
+              "country": "United States"
+            },
+            {
+              "title": "Crypto market clings to support as bitcoin hits 21 - month low : Crypto Markets Today",
+              "url": "https://www.coindesk.com/markets/2026/06/26/bitcoin-bounces-from-usd58-000-as-derivatives-signal-more-pain-in-the-pipeline",
+              "domain": "coindesk.com",
+              "country": "United States"
+            },
+            {
+              "title": "Results of the IX Digital Asset Industry Classification System ( DAICS\u00ae ) 1H 2026 Review",
+              "url": "https://businessdayghana.com/results-of-the-ix-digital-asset-industry-classification-system-daics-1h-2026-review/",
+              "domain": "businessdayghana.com",
+              "country": "Ghana"
+            },
+            {
+              "title": "Is XRP Finally a Buy ? | The Motley Fool",
+              "url": "https://www.fool.com/investing/2026/06/26/is-xrp-finally-a-buy/?source=iedfolrf0000001",
+              "domain": "fool.com",
+              "country": "United States"
+            },
+            {
+              "title": "  Painful  Bitcoin Sell - Off Drags Ethereum , XRP and Dogecoin Lower as Crypto Stocks Dive",
+              "url": "https://finance.yahoo.com/markets/crypto/articles/painful-bitcoin-sell-off-drags-205014642.html",
+              "domain": "finance.yahoo.com",
+              "country": "United States"
+            },
+            {
+              "title": "Bitcoin , Solana or XRP ? The best performing crypto asset of 2026 so far",
+              "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/bitcoin-solana-or-xrp-the-best-performing-crypto-asset-of-2026-so-far/articleshow/132010524.cms",
+              "domain": "economictimes.indiatimes.com",
+              "country": "India"
+            }
+          ]
         }
       },
       {
         "name": "Dogecoin",
         "ticker": "DOGE",
         "sector": "Meme / Culture",
-        "price": 0.074504,
+        "price": 0.075216,
         "rsi": 51.3,
         "volatility": 10.51,
         "changes": {
-          "d1": 1.37,
-          "d7": -10.47,
-          "d30": -26.27
+          "d1": 2.69,
+          "d7": -9.56,
+          "d30": -26.45
         },
         "levels": {
           "pivot": 0.074658,
@@ -2877,13 +2774,13 @@
         "name": "Ethereum",
         "ticker": "ETH",
         "sector": "Smart Contract L1",
-        "price": 1566.39,
+        "price": 1575.64,
         "rsi": 39.0,
         "volatility": 12.02,
         "changes": {
-          "d1": -0.82,
-          "d7": -8.01,
-          "d30": -23.94
+          "d1": 1.13,
+          "d7": -7.1,
+          "d30": -23.78
         },
         "levels": {
           "pivot": 1578.10336,
@@ -2979,23 +2876,66 @@
         },
         "news": {
           "available": true,
-          "tone": -0.62,
-          "volume": 0,
-          "countries": [],
-          "headlines": []
+          "tone": -0.61,
+          "volume": 15,
+          "countries": [
+            "United States",
+            "Germany",
+            "Switzerland",
+            "China",
+            "Hong Kong"
+          ],
+          "headlines": [
+            {
+              "title": "Could the Cryptocurrency XRP Turn $1 , 000 Into $10 , 000 ? ",
+              "url": "https://finance.yahoo.com/markets/crypto/articles/could-cryptocurrency-xrp-turn-1-150500172.html",
+              "domain": "finance.yahoo.com",
+              "country": "United States"
+            },
+            {
+              "title": "EQS - News : Bitcoin Group SE ver\u00f6ffentlicht Gesch\u00e4ftsbericht 2025 : Strategische Neuausrichtung sichert Zukunftsf\u00e4higkeit im dynamischen Kryptomarkt",
+              "url": "https://www.4investors.de/nachrichten/dgap-meldung.php?sektion=dgap&ID=168711",
+              "domain": "4investors.de",
+              "country": "Germany"
+            },
+            {
+              "title": "Prediction Markets Become Crypto Onboarding Layer as 60 % of Users Are New to Onchain Trading , Bitget Wallet Finds",
+              "url": "https://portal.sina.com.hk/finance/finance-globenewswire/globenewswire/2026/06/26/1835818/prediction-markets-become-cryptos-onboarding-layer-as-60-of-users-are-new-to-onchain-trading-bitget-wallet-finds/",
+              "domain": "portal.sina.com.hk",
+              "country": "Hong Kong"
+            },
+            {
+              "title": "So entwickeln sich Bitcoin , Ripple & Co am Mittag am Kryptomarkt",
+              "url": "https://www.finanzen.ch/nachrichten/devisen/so-entwickeln-sich-bitcoin-ripple-&-co-am-mittag-am-kryptomarkt-1036278834",
+              "domain": "finanzen.ch",
+              "country": "Switzerland"
+            },
+            {
+              "title": "Quick Fire \ud83d\udd25 with Sarah Idahosa",
+              "url": "https://techcabal.com/2026/06/26/quick-fire-%F0%9F%94%A5-with-sarah-idahosa/",
+              "domain": "techcabal.com",
+              "country": "Nigeria"
+            },
+            {
+              "title": "  Painful  Bitcoin Sell - Off Drags Ethereum , XRP and Dogecoin Lower as Crypto Stocks Dive",
+              "url": "https://finance.yahoo.com/markets/crypto/articles/painful-bitcoin-sell-off-drags-205014642.html",
+              "domain": "finance.yahoo.com",
+              "country": "United States"
+            }
+          ]
         }
       },
       {
         "name": "Figure Heloc",
         "ticker": "FIGR_HELOC",
         "sector": "Other",
-        "price": 1.033,
+        "price": 1.032,
         "rsi": 71.1,
         "volatility": 4.71,
         "changes": {
-          "d1": 0.59,
-          "d7": 2.01,
-          "d30": 0.8
+          "d1": 0.33,
+          "d7": 1.99,
+          "d30": 0.33
         },
         "levels": {
           "pivot": 1.029604,
@@ -3092,37 +3032,22 @@
         "news": {
           "available": true,
           "tone": -0.34,
-          "volume": 2,
-          "countries": [
-            "United States"
-          ],
-          "headlines": [
-            {
-              "title": "Crypto Market Today , June 25 : Crypto Selloff Deepens as Bitcoin Hits Multi - Year Low",
-              "url": "https://www.fool.com/coverage/stock-market-today/2026/06/25/crypto-market-today-june-25-crypto-selloff-deepens-as-bitcoin-hits-multi-year-low/?source=iedfolrf0000001",
-              "domain": "fool.com",
-              "country": "United States"
-            },
-            {
-              "title": "Crypto Market Today , June 22 : Bitcoin Holds Above $64 , 000 on Easing Geopolitical Tensions",
-              "url": "https://www.fool.com/coverage/stock-market-today/2026/06/22/crypto-market-today-june-22-bitcoin-holds-above-usd64-000-on-easing-geopolitical-tensions/?source=iedfolrf0000001",
-              "domain": "fool.com",
-              "country": "United States"
-            }
-          ]
+          "volume": 0,
+          "countries": [],
+          "headlines": []
         }
       },
       {
         "name": "Hyperliquid",
         "ticker": "HYPE",
         "sector": "Other",
-        "price": 64.39,
+        "price": 64.9,
         "rsi": 46.0,
         "volatility": 16.76,
         "changes": {
-          "d1": 6.34,
-          "d7": -6.21,
-          "d30": 5.93
+          "d1": 5.89,
+          "d7": -6.97,
+          "d30": 7.66
         },
         "levels": {
           "pivot": 62.966237,
@@ -3218,7 +3143,7 @@
         },
         "news": {
           "available": true,
-          "tone": -0.69,
+          "tone": -0.67,
           "volume": 15,
           "countries": [
             "United States",
@@ -3226,6 +3151,12 @@
             "India"
           ],
           "headlines": [
+            {
+              "title": "Framework Ventures Expands Into AI , Raises $400M Fund",
+              "url": "https://cointelegraph.com/news/framework-ventures-raise-400-million-push-beyond-crypto-ai",
+              "domain": "cointelegraph.com",
+              "country": "China"
+            },
             {
               "title": "Crypto market clings to support as bitcoin hits 21 - month low : Crypto Markets Today",
               "url": "https://www.coindesk.com/markets/2026/06/26/bitcoin-bounces-from-usd58-000-as-derivatives-signal-more-pain-in-the-pipeline",
@@ -3255,12 +3186,6 @@
               "url": "https://www.fool.com/coverage/stock-market-today/2026/06/25/crypto-market-today-june-25-crypto-selloff-deepens-as-bitcoin-hits-multi-year-low/?source=iedfolrf0000001",
               "domain": "fool.com",
               "country": "United States"
-            },
-            {
-              "title": "Bitcoin slides toward $61 , 000 as profit booking and cautious sentiment weigh on crypto markets",
-              "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/bitcoin-slides-toward-61000-as-profit-booking-and-cautious-sentiment-weigh-on-crypto-markets/articleshow/131986598.cms",
-              "domain": "economictimes.indiatimes.com",
-              "country": "India"
             }
           ]
         }
@@ -3362,13 +3287,13 @@
         "name": "Tether Gold",
         "ticker": "XAUT",
         "sector": "Other",
-        "price": 4070.82,
+        "price": 4070.12,
         "rsi": 56.5,
         "volatility": 3.83,
         "changes": {
-          "d1": 1.47,
-          "d7": -1.93,
-          "d30": -8.25
+          "d1": 1.29,
+          "d7": -1.71,
+          "d30": -8.34
         },
         "levels": {
           "pivot": 4006.54165,
@@ -3380,11 +3305,11 @@
           "trend30d": 50,
           "low_volatility": 97,
           "rsi_balance": 97,
-          "market_depth": 34
+          "market_depth": 32
         },
         "signal_long": 63,
         "signal_short": 67,
-        "security": 70,
+        "security": 69,
         "risk": "low",
         "spark": [
           4150.738842,
@@ -3438,10 +3363,6 @@
           {
             "title": "CoinGecko market data",
             "url": "https://www.coingecko.com/en/coins/tether-gold"
-          },
-          {
-            "title": "GDELT global news",
-            "url": "https://www.gdeltproject.org/"
           }
         ],
         "rank": 2,
@@ -3449,80 +3370,34 @@
         "signal": 67,
         "consensus": {
           "direction": "Bearish",
-          "conviction": 41,
+          "conviction": 66,
           "votes": [
             {
               "source": "Quant",
               "label": "Bearish"
-            },
-            {
-              "source": "Global news",
-              "label": "Neutral"
             }
           ],
-          "note": "1 of 2 signals lean bearish."
+          "note": "1 of 1 signals lean bearish."
         },
         "news": {
-          "available": true,
+          "available": false,
           "tone": 0.0,
-          "volume": 6,
-          "countries": [
-            "United States",
-            "Ghana",
-            "Hong Kong",
-            "India"
-          ],
-          "headlines": [
-            {
-              "title": "Results of the IX Digital Asset Industry Classification System ( DAICS\u00ae ) 1H 2026 Review",
-              "url": "https://businessdayghana.com/results-of-the-ix-digital-asset-industry-classification-system-daics-1h-2026-review/",
-              "domain": "businessdayghana.com",
-              "country": "Ghana"
-            },
-            {
-              "title": "Results of the IX Digital Asset Industry Classification System ( DAICS\u00ae ) 1H 2026 Review",
-              "url": "https://portal.sina.com.hk/finance/finance-mediaoutreachnewswire/media-outreach/2026/06/26/1835290/results-of-the-ix-digital-asset-industry-classification-system-daics-1h-2026-review/",
-              "domain": "portal.sina.com.hk",
-              "country": "Hong Kong"
-            },
-            {
-              "title": "IT News Online - Results of the IX Digital Asset Industry Classification System ( DAICS\u00ae ) 1H 2026 Review",
-              "url": "https://www.itnewsonline.com/news/Results-of-the-IX-Digital-Asset-Industry-Classification-System-DAICS-1H-2026-Review-/37404",
-              "domain": "itnewsonline.com",
-              "country": "United States"
-            },
-            {
-              "title": "Real World Assets Explained : The Tokenization Deep Dive Guide",
-              "url": "https://techstory.in/the-tokenization-vanguard-real-world-assets-explained/",
-              "domain": "techstory.in",
-              "country": "India"
-            },
-            {
-              "title": "Current price of Ethereum for June 23 , 2026",
-              "url": "https://fortune.com/article/price-of-ethereum-06-23-2026/",
-              "domain": "fortune.com",
-              "country": "United States"
-            },
-            {
-              "title": "Crypto Market Recap : Tether Kills aUSDT ; MSTR Could Sink Below $100 ; CME Sues Over Crypto Futures Classification ; and More ( June 15 \u2013 20 , 2026 ) ",
-              "url": "https://www.banklesstimes.com/articles/2026/06/21/crypto-market-recap-tether-kills-ausdt-mstr-could-sink-below-100-cme-sues-over-crypto-futures-classification-and-more-june-15-20-2026/",
-              "domain": "banklesstimes.com",
-              "country": "United States"
-            }
-          ]
+          "volume": 0,
+          "countries": [],
+          "headlines": []
         }
       },
       {
         "name": "Ripple USD",
         "ticker": "RLUSD",
         "sector": "Other",
-        "price": 0.999496,
+        "price": 1.0,
         "rsi": 52.3,
         "volatility": 0.3,
         "changes": {
-          "d1": -0.02,
-          "d7": -0.07,
-          "d30": -0.08
+          "d1": 0.02,
+          "d7": 0.01,
+          "d30": -0.02
         },
         "levels": {
           "pivot": 0.999944,
@@ -3592,6 +3467,10 @@
           {
             "title": "CoinGecko market data",
             "url": "https://www.coingecko.com/en/coins/ripple-usd"
+          },
+          {
+            "title": "GDELT global news",
+            "url": "https://www.gdeltproject.org/"
           }
         ],
         "rank": 3,
@@ -3599,32 +3478,78 @@
         "signal": 67,
         "consensus": {
           "direction": "Bullish",
-          "conviction": 66,
+          "conviction": 41,
           "votes": [
             {
               "source": "Quant",
               "label": "Bullish"
+            },
+            {
+              "source": "Global news",
+              "label": "Neutral"
             }
           ],
-          "note": "1 of 1 signals lean bullish."
+          "note": "1 of 2 signals lean bullish."
         },
         "news": {
-          "available": false,
+          "available": true,
           "tone": 0.0,
-          "volume": 0,
-          "countries": [],
-          "headlines": []
+          "volume": 6,
+          "countries": [
+            "United States",
+            "Ghana",
+            "Hong Kong",
+            "Nigeria"
+          ],
+          "headlines": [
+            {
+              "title": "Results of the IX Digital Asset Industry Classification System ( DAICS\u00ae ) 1H 2026 Review",
+              "url": "https://businessdayghana.com/results-of-the-ix-digital-asset-industry-classification-system-daics-1h-2026-review/",
+              "domain": "businessdayghana.com",
+              "country": "Ghana"
+            },
+            {
+              "title": "Results of the IX Digital Asset Industry Classification System ( DAICS\u00ae ) 1H 2026 Review",
+              "url": "https://portal.sina.com.hk/finance/finance-mediaoutreachnewswire/media-outreach/2026/06/26/1835290/results-of-the-ix-digital-asset-industry-classification-system-daics-1h-2026-review/",
+              "domain": "portal.sina.com.hk",
+              "country": "Hong Kong"
+            },
+            {
+              "title": "IT News Online - Results of the IX Digital Asset Industry Classification System ( DAICS\u00ae ) 1H 2026 Review",
+              "url": "https://www.itnewsonline.com/news/Results-of-the-IX-Digital-Asset-Industry-Classification-System-DAICS-1H-2026-Review-/37404",
+              "domain": "itnewsonline.com",
+              "country": "United States"
+            },
+            {
+              "title": "Talvurieks Review 2026 : Legit or Not ? - Truth Explained ! ",
+              "url": "https://thenationonlineng.net/talvurieks-review-2026-legit-or-not-truth-explained/",
+              "domain": "thenationonlineng.net",
+              "country": "Nigeria"
+            },
+            {
+              "title": "Bitcoin : Volatility Before the Rally The Supply Shock Under the Derivatives Wave",
+              "url": "https://www.livetradingnews.com/bitcoin-volatility-before-the-rally-the-supply-shock-building-under-a-tidal-wave",
+              "domain": "livetradingnews.com",
+              "country": "United States"
+            },
+            {
+              "title": "XRP Has a $71 Billion Market Cap , but XRP Ledger Made Less Than $120 , 000 This Year XRP Has a $71 Billion",
+              "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/60004575/xrp-has-a-71-billion-market-cap-but-xrp-ledger-made-less-than-120000-this-year",
+              "domain": "benzinga.com",
+              "country": "United States"
+            }
+          ]
         }
       },
       {
         "name": "USD1",
         "ticker": "USD1",
         "sector": "Other",
-        "price": 0.999603,
+        "price": 0.999374,
         "rsi": 51.4,
         "volatility": 0.59,
         "changes": {
-          "d1": 0.08,
+          "d1": 0.05,
           "d7": -0.07,
           "d30": 0.15
         },
@@ -3722,39 +3647,23 @@
         },
         "news": {
           "available": true,
-          "tone": 0.0,
-          "volume": 2,
-          "countries": [
-            "China",
-            "India"
-          ],
-          "headlines": [
-            {
-              "title": "Democrats Urge Probe Into Trump Crypto Dealings With UAE",
-              "url": "https://cointelegraph.com/news/senate-dems-urge-probe-into-crypto-deal-between-trumps-uae",
-              "domain": "cointelegraph.com",
-              "country": "China"
-            },
-            {
-              "title": "Stock Market Highlights , June 22 : Sensex gains 291 pts , Nifty closes above 24 , 100 ; most sectors end higher",
-              "url": "https://www.thehindubusinessline.com/markets/sensex-nifty50-today-stock-market-highlights-22nd-june-2026/article71129135.ece",
-              "domain": "thehindubusinessline.com",
-              "country": "India"
-            }
-          ]
+          "tone": 0.29,
+          "volume": 0,
+          "countries": [],
+          "headlines": []
         }
       },
       {
         "name": "Litecoin",
         "ticker": "LTC",
         "sector": "Payments",
-        "price": 41.23,
+        "price": 41.57,
         "rsi": 55.9,
         "volatility": 10.17,
         "changes": {
-          "d1": 2.61,
-          "d7": -6.18,
-          "d30": -20.95
+          "d1": 3.08,
+          "d7": -6.21,
+          "d30": -20.93
         },
         "levels": {
           "pivot": 41.072569,
@@ -3903,13 +3812,13 @@
         "name": "BNB",
         "ticker": "BNB",
         "sector": "Exchange / L1",
-        "price": 562.4,
+        "price": 566.08,
         "rsi": 60.3,
         "volatility": 8.58,
         "changes": {
-          "d1": 1.14,
-          "d7": -2.53,
-          "d30": -13.58
+          "d1": 2.35,
+          "d7": -1.91,
+          "d30": -13.61
         },
         "levels": {
           "pivot": 560.403872,
@@ -4005,16 +3914,22 @@
         },
         "news": {
           "available": true,
-          "tone": 0.04,
+          "tone": 0.05,
           "volume": 15,
           "countries": [
             "United States",
             "China",
+            "South Africa",
             "Ghana",
-            "Turkey",
-            "Canada"
+            "Turkey"
           ],
           "headlines": [
+            {
+              "title": "Cap ( CAP ) Exclusive Token Generation Event Is Live",
+              "url": "https://ventureburn.com/cap-cap-exclusive-token-generation-event-is-live-subscribe-via-binance-wallet-and-pancakeswap/",
+              "domain": "ventureburn.com",
+              "country": "South Africa"
+            },
             {
               "title": "Crypto market clings to support as bitcoin hits 21 - month low : Crypto Markets Today",
               "url": "https://www.coindesk.com/markets/2026/06/26/bitcoin-bounces-from-usd58-000-as-derivatives-signal-more-pain-in-the-pipeline",
@@ -4044,12 +3959,6 @@
               "url": "https://portal.sina.com.hk/finance/finance-mediaoutreachnewswire/media-outreach/2026/06/26/1835290/results-of-the-ix-digital-asset-industry-classification-system-daics-1h-2026-review/",
               "domain": "portal.sina.com.hk",
               "country": "Hong Kong"
-            },
-            {
-              "title": "IT News Online - Results of the IX Digital Asset Industry Classification System ( DAICS\u00ae ) 1H 2026 Review",
-              "url": "https://www.itnewsonline.com/news/Results-of-the-IX-Digital-Asset-Industry-Classification-System-DAICS-1H-2026-Review-/37404",
-              "domain": "itnewsonline.com",
-              "country": "United States"
             }
           ]
         }
@@ -4058,13 +3967,13 @@
         "name": "Cardano",
         "ticker": "ADA",
         "sector": "Smart Contract L1",
-        "price": 0.145628,
+        "price": 0.147918,
         "rsi": 57.2,
         "volatility": 12.44,
         "changes": {
-          "d1": 2.03,
-          "d7": -10.23,
-          "d30": -38.88
+          "d1": 3.71,
+          "d7": -8.19,
+          "d30": -38.55
         },
         "levels": {
           "pivot": 0.144377,
@@ -4134,10 +4043,6 @@
           {
             "title": "CoinGecko market data",
             "url": "https://www.coingecko.com/en/coins/cardano"
-          },
-          {
-            "title": "GDELT global news",
-            "url": "https://www.gdeltproject.org/"
           }
         ],
         "rank": 7,
@@ -4145,81 +4050,34 @@
         "signal": 65,
         "consensus": {
           "direction": "Bearish",
-          "conviction": 41,
+          "conviction": 66,
           "votes": [
             {
               "source": "Quant",
               "label": "Bearish"
-            },
-            {
-              "source": "Global news",
-              "label": "Neutral"
             }
           ],
-          "note": "1 of 2 signals lean bearish."
+          "note": "1 of 1 signals lean bearish."
         },
         "news": {
-          "available": true,
+          "available": false,
           "tone": 0.0,
-          "volume": 15,
-          "countries": [
-            "United States",
-            "China",
-            "India",
-            "Philippines",
-            "South Africa"
-          ],
-          "headlines": [
-            {
-              "title": "New Crypto : Ethereum Based Crypto Pepeto Approaches Binance Debut While Cardano Price Target Is Bullish",
-              "url": "https://www.manilatimes.net/2026/06/26/tmt-newswire/globenewswire/new-crypto-ethereum-based-crypto-pepeto-approaches-binance-debut-while-cardano-price-target-is-bullish/2373356",
-              "domain": "manilatimes.net",
-              "country": "Philippines"
-            },
-            {
-              "title": "What Are Altcoins ? ",
-              "url": "https://electroiq.com/crypto/what-are-altcoins/",
-              "domain": "electroiq.com",
-              "country": "China"
-            },
-            {
-              "title": "Cardano Price Prediction : ADA Loses Major $0 . 15 Support as Bears Eye $0 . 136 and $0 . 127 Next",
-              "url": "https://bravenewcoin.com/insights/cardano-price-prediction-ada-loses-major-0-15-support-as-bears-eye-0-136-and-0-127-next",
-              "domain": "bravenewcoin.com",
-              "country": "United States"
-            },
-            {
-              "title": "AAA Launches Legal Layer for AI Agent Transactions",
-              "url": "https://cointelegraph.com/news/ai-is-getting-a-legal-layer-as-agentic-commerce-accelerates",
-              "domain": "cointelegraph.com",
-              "country": "China"
-            },
-            {
-              "title": "Bitcoin slides toward $61 , 000 as profit booking and cautious sentiment weigh on crypto markets",
-              "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/bitcoin-slides-toward-61000-as-profit-booking-and-cautious-sentiment-weigh-on-crypto-markets/articleshow/131986598.cms",
-              "domain": "economictimes.indiatimes.com",
-              "country": "India"
-            },
-            {
-              "title": "Cardano wallet SecondFi hit by $2 . 4 million exploit , up to $20 million in user funds at risk",
-              "url": "https://www.coindesk.com/business/2026/06/24/secondfi-loses-usd2-4-million-in-cardano-wallet-exploit-with-up-to-usd20-million-at-risk",
-              "domain": "coindesk.com",
-              "country": "United States"
-            }
-          ]
+          "volume": 0,
+          "countries": [],
+          "headlines": []
         }
       },
       {
         "name": "PAX Gold",
         "ticker": "PAXG",
         "sector": "Other",
-        "price": 4076.86,
+        "price": 4074.91,
         "rsi": 62.9,
         "volatility": 3.9,
         "changes": {
-          "d1": 1.53,
-          "d7": -1.91,
-          "d30": -8.22
+          "d1": 1.3,
+          "d7": -1.75,
+          "d30": -8.07
         },
         "levels": {
           "pivot": 4008.105617,
@@ -4231,11 +4089,11 @@
           "trend30d": 51,
           "low_volatility": 96,
           "rsi_balance": 83,
-          "market_depth": 18
+          "market_depth": 20
         },
-        "signal_long": 57,
+        "signal_long": 58,
         "signal_short": 65,
-        "security": 60,
+        "security": 61,
         "risk": "med",
         "spark": [
           4146.251793,
@@ -4316,32 +4174,9 @@
         "news": {
           "available": true,
           "tone": 0.6,
-          "volume": 3,
-          "countries": [
-            "Ghana",
-            "Hong Kong",
-            "United States"
-          ],
-          "headlines": [
-            {
-              "title": "Results of the IX Digital Asset Industry Classification System ( DAICS\u00ae ) 1H 2026 Review",
-              "url": "https://businessdayghana.com/results-of-the-ix-digital-asset-industry-classification-system-daics-1h-2026-review/",
-              "domain": "businessdayghana.com",
-              "country": "Ghana"
-            },
-            {
-              "title": "Results of the IX Digital Asset Industry Classification System ( DAICS\u00ae ) 1H 2026 Review",
-              "url": "https://portal.sina.com.hk/finance/finance-mediaoutreachnewswire/media-outreach/2026/06/26/1835290/results-of-the-ix-digital-asset-industry-classification-system-daics-1h-2026-review/",
-              "domain": "portal.sina.com.hk",
-              "country": "Hong Kong"
-            },
-            {
-              "title": "IT News Online - Results of the IX Digital Asset Industry Classification System ( DAICS\u00ae ) 1H 2026 Review",
-              "url": "https://www.itnewsonline.com/news/Results-of-the-IX-Digital-Asset-Industry-Classification-System-DAICS-1H-2026-Review-/37404",
-              "domain": "itnewsonline.com",
-              "country": "United States"
-            }
-          ]
+          "volume": 0,
+          "countries": [],
+          "headlines": []
         }
       }
     ]
