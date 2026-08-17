@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T13:09:38.433457+00:00",
+  "generated_at": "2026-08-17T15:49:20.411274+00:00",
   "macro": {
     "available": true,
     "regime": "expansion-leaning",
@@ -44,8 +44,8 @@
       {
         "id": "VIXCLS",
         "label": "VIX",
-        "value": 14.63,
-        "delta": 0.08
+        "value": 14.25,
+        "delta": -0.38
       },
       {
         "id": "DTWEXBGS",
@@ -160,6 +160,10 @@
           {
             "title": "FRED (St. Louis Fed)",
             "url": "https://fred.stlouisfed.org/"
+          },
+          {
+            "title": "GDELT global news",
+            "url": "https://www.gdeltproject.org/"
           }
         ],
         "rank": 1,
@@ -167,18 +171,22 @@
         "signal": 70,
         "consensus": {
           "direction": "Bearish",
-          "conviction": 66,
+          "conviction": 41,
           "votes": [
             {
               "source": "Quant",
               "label": "Bearish"
+            },
+            {
+              "source": "Global news",
+              "label": "Neutral"
             }
           ],
-          "note": "1 of 1 signals lean bearish."
+          "note": "1 of 2 signals lean bearish."
         },
         "news": {
-          "available": false,
-          "tone": 0.0,
+          "available": true,
+          "tone": 0.14,
           "volume": 0,
           "countries": [],
           "headlines": []
@@ -298,52 +306,10 @@
         },
         "news": {
           "available": true,
-          "tone": 0.0,
-          "volume": 15,
-          "countries": [
-            "United States",
-            "India",
-            "Philippines",
-            "United Kingdom"
-          ],
-          "headlines": [
-            {
-              "title": "Palantir Technologies Inc . $PLTR Shares Sold by Oppenheimer Asset Management Inc . ",
-              "url": "https://www.themarketsdaily.com/2026/08/17/palantir-technologies-inc-pltr-shares-sold-by-oppenheimer-asset-management-inc.html",
-              "domain": "themarketsdaily.com",
-              "country": "United States"
-            },
-            {
-              "title": "US Stock Futures Mixed as Fed Rate Hike Bets Fade , AI Deals in Focus",
-              "url": "http://www.econotimes.com/US-Stock-Futures-Mixed-as-Fed-Rate-Hike-Bets-Fade-AI-Deals-in-Focus-1749638",
-              "domain": "econotimes.com",
-              "country": "United States"
-            },
-            {
-              "title": "Big investors hunt for tomorrow AI winners as capex angst fades",
-              "url": "https://bworldonline.com/technology/2026/08/17/770587/big-investors-hunt-for-tomorrows-ai-winners-as-capex-angst-fades/",
-              "domain": "bworldonline.com",
-              "country": "Philippines"
-            },
-            {
-              "title": "AI market correction is coming , ECB blog predicts",
-              "url": "https://www.933thedrive.com/2026/08/17/ai-market-correction-is-coming-ecb-blog-predicts/",
-              "domain": "933thedrive.com",
-              "country": "United States"
-            },
-            {
-              "title": "Taiwan Semiconductor Manufacturing Company Ltd . $TSM Stake Reduced by Union Bancaire Privee UBP SA",
-              "url": "https://www.themarketsdaily.com/2026/08/17/taiwan-semiconductor-manufacturing-company-ltd-tsm-stake-reduced-by-union-bancaire-privee-ubp-sa.html",
-              "domain": "themarketsdaily.com",
-              "country": "United States"
-            },
-            {
-              "title": "Targeted Financial Services LLC Takes Position in Taiwan Semiconductor Manufacturing Company Ltd . $TSM",
-              "url": "https://www.themarketsdaily.com/2026/08/17/targeted-financial-services-llc-takes-position-in-taiwan-semiconductor-manufacturing-company-ltd-tsm.html",
-              "domain": "themarketsdaily.com",
-              "country": "United States"
-            }
-          ]
+          "tone": 0.55,
+          "volume": 0,
+          "countries": [],
+          "headlines": []
         }
       },
       {
@@ -434,10 +400,6 @@
           {
             "title": "FRED (St. Louis Fed)",
             "url": "https://fred.stlouisfed.org/"
-          },
-          {
-            "title": "GDELT global news",
-            "url": "https://www.gdeltproject.org/"
           }
         ],
         "rank": 3,
@@ -445,68 +407,21 @@
         "signal": 67,
         "consensus": {
           "direction": "Bullish",
-          "conviction": 41,
+          "conviction": 66,
           "votes": [
             {
               "source": "Quant",
               "label": "Bullish"
-            },
-            {
-              "source": "Global news",
-              "label": "Neutral"
             }
           ],
-          "note": "1 of 2 signals lean bullish."
+          "note": "1 of 1 signals lean bullish."
         },
         "news": {
-          "available": true,
-          "tone": 0.12,
-          "volume": 15,
-          "countries": [
-            "United States",
-            "China",
-            "Ireland",
-            "Bangladesh",
-            "India"
-          ],
-          "headlines": [
-            {
-              "title": "Berkshire boosts Alphabet stake by 83 % to nearly 106 million shares",
-              "url": "http://www.mainemirror.com/news/279244575/berkshire-boosts-alphabet-stake-by-83-to-nearly-106-million-shares",
-              "domain": "mainemirror.com",
-              "country": "United States"
-            },
-            {
-              "title": "Berkshire boosts Alphabet stake by 83 % to nearly 106 million shares",
-              "url": "http://www.taiwansun.com/news/279244575/berkshire-boosts-alphabet-stake-by-83-to-nearly-106-million-shares",
-              "domain": "taiwansun.com",
-              "country": "China"
-            },
-            {
-              "title": "AI market correction is coming , ECB blog predicts",
-              "url": "https://www.933thedrive.com/2026/08/17/ai-market-correction-is-coming-ecb-blog-predicts/",
-              "domain": "933thedrive.com",
-              "country": "United States"
-            },
-            {
-              "title": "Berkshire boosts Alphabet stake by 83 % to nearly 106 million shares",
-              "url": "http://www.irishsun.com/news/279244575/berkshire-boosts-alphabet-stake-by-83-to-nearly-106-million-shares",
-              "domain": "irishsun.com",
-              "country": "Ireland"
-            },
-            {
-              "title": "Berkshire boosts Alphabet stake by 83 % to nearly 106 million shares",
-              "url": "http://www.asiabulletin.com/news/279244575/berkshire-boosts-alphabet-stake-by-83-to-nearly-106-million-shares",
-              "domain": "asiabulletin.com",
-              "country": "China"
-            },
-            {
-              "title": "Berkshire boosts Alphabet stake by 83 % to nearly 106 million shares",
-              "url": "http://www.bangladeshsun.com/news/279244575/berkshire-boosts-alphabet-stake-by-83-to-nearly-106-million-shares",
-              "domain": "bangladeshsun.com",
-              "country": "Bangladesh"
-            }
-          ]
+          "available": false,
+          "tone": 0.0,
+          "volume": 0,
+          "countries": [],
+          "headlines": []
         }
       },
       {
@@ -597,6 +512,10 @@
           {
             "title": "FRED (St. Louis Fed)",
             "url": "https://fred.stlouisfed.org/"
+          },
+          {
+            "title": "GDELT global news",
+            "url": "https://www.gdeltproject.org/"
           }
         ],
         "rank": 4,
@@ -604,21 +523,68 @@
         "signal": 67,
         "consensus": {
           "direction": "Bullish",
-          "conviction": 66,
+          "conviction": 41,
           "votes": [
             {
               "source": "Quant",
               "label": "Bullish"
+            },
+            {
+              "source": "Global news",
+              "label": "Neutral"
             }
           ],
-          "note": "1 of 1 signals lean bullish."
+          "note": "1 of 2 signals lean bullish."
         },
         "news": {
-          "available": false,
-          "tone": 0.0,
-          "volume": 0,
-          "countries": [],
-          "headlines": []
+          "available": true,
+          "tone": 0.42,
+          "volume": 15,
+          "countries": [
+            "United States",
+            "India",
+            "Taiwan",
+            "Sri Lanka",
+            "China"
+          ],
+          "headlines": [
+            {
+              "title": "Visionara Global Crowns Shelly Ghosh as VG Mrs India East Zone and VG West Bengal Queen 2026",
+              "url": "http://www.srilankasource.com/news/279246928/visionara-global-crowns-shelly-ghosh-as-vg-mrs-india-east-zone-and-vg-west-bengal-queen-2026",
+              "domain": "srilankasource.com",
+              "country": "Sri Lanka"
+            },
+            {
+              "title": "Bill Ackman Pershing Square Made Amazon Its Fourth - Largest Holding by Dumping Alphabet . Here the Thesis Behind the Switch . ",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/bill-ackmans-pershing-square-made-140700025.html",
+              "domain": "finance.yahoo.com",
+              "country": "United States"
+            },
+            {
+              "title": "Ukraine takes aim at Russia economy and morale by attacking online retailer",
+              "url": "https://economictimes.indiatimes.com/news/defence/ukraine-takes-aim-at-russias-economy-and-morale-by-attacking-online-retailer/articleshow/133298728.cms",
+              "domain": "economictimes.indiatimes.com",
+              "country": "India"
+            },
+            {
+              "title": "\u665a\u62a5\u4e28\u4f0a\u6717\u88ab\u66dd\u79d8\u5bc6\u6269\u519b\u5907\u6218 \uff0c \u970d\u5c14\u6728\u5179\u901a\u884c\u91cf\u5927\u5e45\u653e\u7f13 \uff1b \u7f8e\u503a\u903c\u8fd140\u4e07\u4ebf \uff0c \u7f8e\u94f6 \uff1a \u505a\u591a\u9ec4\u91d1\u662f\u5f53\u4e0b\u6700\u4f18\u89e3 \uff1b \u6295\u8d44\u5927\u4f6c\u5fb7\u9c81\u80af\u7c73\u52d2\u4e70\u5165\u4e2d\u6982\u80a1 \uff0c \u6e05\u4ed3\u535a\u901a \u3001 \u82f1\u7279\u5c14 \u3001 \u7f8e\u5149 \uff1b Anthropic\u636e\u79f02028\u5e74\u8425\u6536\u5c06\u8fbe2000\u4ebf\u7f8e\u5143 _ \u4e1c\u65b9\u8d22\u5bcc\u7f51",
+              "url": "https://finance.eastmoney.com/a/202608173843313758.html",
+              "domain": "finance.eastmoney.com",
+              "country": "China"
+            },
+            {
+              "title": "Ukraine delivers blows to Russia economy and morale by attacking online retailer",
+              "url": "https://www.wsbradio.com/news/business/ukraine-takes-aim/7HC7LTLPVY4AJJ4TYYRD3ITTOM/",
+              "domain": "wsbradio.com",
+              "country": "United States"
+            },
+            {
+              "title": "Sedam dionica o kojima ovisi financijska stabilnost Europe",
+              "url": "https://www.poslovni.hr/europska-unija/sedam-dionica-o-kojima-ovisi-financijska-stabilnost-europe-4551268",
+              "domain": "poslovni.hr",
+              "country": "Croatia"
+            }
+          ]
         }
       },
       {
@@ -731,52 +697,10 @@
         },
         "news": {
           "available": true,
-          "tone": 0.42,
-          "volume": 15,
-          "countries": [
-            "China",
-            "United States",
-            "Israel",
-            "Taiwan"
-          ],
-          "headlines": [
-            {
-              "title": "\u66b4\u98ce\u96e8\u524d\u7684\u5e95\u724c \uff1a AI\u80a1\u795e  \u7206\u4ed3\u524d\u591c \uff0c SA\u8c6a\u8d4c\u5b58\u50a8\u82af\u7247 \u3001 \u57ce\u5821\u5168\u9762\u5bf9\u51b2 \u3001 \u7b80\u8857\u7a7a\u6709\u5343\u4ebf\u5bf9\u51b2\u4ecd\u96be\u9003\u767e\u4ebf\u5de8\u4e8f _ \u65b0\u6d6a\u8d22\u7ecf _ \u65b0\u6d6a\u7f51",
-              "url": "https://finance.sina.com.cn/stock/hkstock/ggscyd/2026-08-17/doc-ininrkkr7796559.shtml",
-              "domain": "finance.sina.com.cn",
-              "country": "China"
-            },
-            {
-              "title": "\u65b0\u589e8\u5bb6 \uff01 \u6570\u5b57\u4eba\u6c11\u5e01\u4e1a\u52a1\u8fd0\u8425\u673a\u6784\u6269\u5bb9\u81f330\u5bb6",
-              "url": "https://finance.sina.com.cn/tech/roll/2026-08-17/doc-ininrkkn9043998.shtml",
-              "domain": "finance.sina.com.cn",
-              "country": "China"
-            },
-            {
-              "title": "TSMC Doubles Advanced Packaging Capacity Over Three Years , Samsung Goes All - In on 2nm Mass Production",
-              "url": "https://www.design-reuse.com/news/202530979-tsmc-doubles-advanced-packaging-capacity-over-three-years-samsung-goes-all-in-on-2nm-mass-production/",
-              "domain": "design-reuse.com",
-              "country": "China"
-            },
-            {
-              "title": "FinancialContent - 5 Revealing Analyst Questions From Rumble Q2 Earnings Call",
-              "url": "https://markets.financialcontent.com/stocks/article/stockstory-2026-8-17-5-revealing-analyst-questions-from-rumbles-q2-earnings-call",
-              "domain": "markets.financialcontent.com",
-              "country": "United States"
-            },
-            {
-              "title": "\u4e24\u5e74\u6765\u9996\u6b21 \uff01 \u534e\u5c14\u8857\u4f20\u5947\u6295\u8d44\u4eba\u518d\u5ea6\u4e70\u5165\u4e2d\u6982\u80a1",
-              "url": "https://www.stcn.com/article/detail/4079885.html",
-              "domain": "stcn.com",
-              "country": "China"
-            },
-            {
-              "title": "\u05e1\u05d9\u05d0\u05d5\u05dc \u05de\u05d5\u05d1\u05d9\u05dc\u05d4 \u05d1\u05d0\u05e1\u05d9\u05d4 , \u05d5\u05d4\u05d1\u05d5\u05e8\u05e1\u05d4 \u05d1\u05d0\u05e8\u05d4 \u05f4 \u05d1 \u05de\u05e7\u05d1\u05dc\u05ea \u05d0\u05d5\u05ea \u05d0\u05d6\u05d4\u05e8\u05d4",
-              "url": "https://www.globes.co.il/news/article.aspx?did=1001552453",
-              "domain": "globes.co.il",
-              "country": "Israel"
-            }
-          ]
+          "tone": 0.39,
+          "volume": 0,
+          "countries": [],
+          "headlines": []
         }
       },
       {
@@ -867,6 +791,10 @@
           {
             "title": "FRED (St. Louis Fed)",
             "url": "https://fred.stlouisfed.org/"
+          },
+          {
+            "title": "GDELT global news",
+            "url": "https://www.gdeltproject.org/"
           }
         ],
         "rank": 6,
@@ -874,21 +802,65 @@
         "signal": 66,
         "consensus": {
           "direction": "Bullish",
-          "conviction": 66,
+          "conviction": 78,
           "votes": [
             {
               "source": "Quant",
               "label": "Bullish"
+            },
+            {
+              "source": "Global news",
+              "label": "Bullish"
             }
           ],
-          "note": "1 of 1 signals lean bullish."
+          "note": "2 of 2 signals lean bullish."
         },
         "news": {
-          "available": false,
-          "tone": 0.0,
-          "volume": 0,
-          "countries": [],
-          "headlines": []
+          "available": true,
+          "tone": 1.26,
+          "volume": 15,
+          "countries": [
+            "United States",
+            "China"
+          ],
+          "headlines": [
+            {
+              "title": "SCS Capital Management LLC Makes New $11 . 58 Million Investment in Target Corporation $TGT",
+              "url": "https://www.tickerreport.com/banking-finance/13547095/scs-capital-management-llc-makes-new-11-58-million-investment-in-target-corporation-tgt.html",
+              "domain": "tickerreport.com",
+              "country": "United States"
+            },
+            {
+              "title": "\u7f8e\u80a1  \u725b\u5e02\u65d7\u624b  \u5c0f\u6469\u6da8\u4e862 . 5\u500d \uff0c \u53f2\u4e0a\u7b2c\u4e00\u5bb6\u4e07\u4ebf\u7f8e\u5143\u6295\u884c\u547c\u4e4b\u6b32\u51fa \uff0c \u5e02\u503c\u7ea6\u4e3aA\u80a150\u5bb6\u4e0a\u5e02\u5238\u55462\u500d \uff0c \u76f8\u5f53\u4e8e16\u4e2a\u4e2d\u4fe1\u8bc1\u5238 - \u80a1\u7968 - \u91d1\u878d\u754c",
+              "url": "https://stock.jrj.com.cn/2026/08/17201258143779.shtml",
+              "domain": "stock.jrj.com.cn",
+              "country": "China"
+            },
+            {
+              "title": "8 , 729 Shares in American Electric Power Company , Inc . $AEP Acquired by HBK Sorce Advisory LLC",
+              "url": "https://www.themarketsdaily.com/2026/08/17/8729-shares-in-american-electric-power-company-inc-aep-acquired-by-hbk-sorce-advisory-llc.html",
+              "domain": "themarketsdaily.com",
+              "country": "United States"
+            },
+            {
+              "title": "OneDigital Investment Advisors LLC Buys New Stake in Cummins Inc . $CMI",
+              "url": "https://www.themarketsdaily.com/2026/08/17/onedigital-investment-advisors-llc-buys-new-stake-in-cummins-inc-cmi.html",
+              "domain": "themarketsdaily.com",
+              "country": "United States"
+            },
+            {
+              "title": "Medtronic PLC $MDT Shares Acquired by Zions Bancorporation National Association UT",
+              "url": "https://www.themarketsdaily.com/2026/08/17/medtronic-plc-mdt-shares-acquired-by-zions-bancorporation-national-association-ut.html",
+              "domain": "themarketsdaily.com",
+              "country": "United States"
+            },
+            {
+              "title": "Recent Analyst Ratings Changes for Akamai Technologies ( AKAM ) ",
+              "url": "https://www.themarketsdaily.com/2026/08/17/recent-analysts-ratings-changes-for-akamai-technologies-akam.html",
+              "domain": "themarketsdaily.com",
+              "country": "United States"
+            }
+          ]
         }
       },
       {
@@ -1128,9 +1100,21 @@
           ],
           "headlines": [
             {
-              "title": "Berkshire boosts Alphabet stake by 83 % to nearly 106 million shares",
-              "url": "http://www.mainemirror.com/news/279244575/berkshire-boosts-alphabet-stake-by-83-to-nearly-106-million-shares",
-              "domain": "mainemirror.com",
+              "title": "Wall Street hangs near its records",
+              "url": "https://www.sandiegouniontribune.com/2026/08/17/financial-markets-retailers/",
+              "domain": "sandiegouniontribune.com",
+              "country": "United States"
+            },
+            {
+              "title": "  Never bet against America : Scott Bessent endorses Warren Buffett forgotten rule for getting rich use it now",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/never-bet-against-america-scott-130000391.html",
+              "domain": "finance.yahoo.com",
+              "country": "United States"
+            },
+            {
+              "title": "Futures Rise On Fresh Push Higher In Tech",
+              "url": "https://www.zerohedge.com/markets/futures-rise-fresh-push-higher-tech",
+              "domain": "zerohedge.com",
               "country": "United States"
             },
             {
@@ -1141,27 +1125,15 @@
             },
             {
               "title": "Berkshire boosts Alphabet stake by 83 % to nearly 106 million shares",
+              "url": "http://www.mainemirror.com/news/279244575/berkshire-boosts-alphabet-stake-by-83-to-nearly-106-million-shares",
+              "domain": "mainemirror.com",
+              "country": "United States"
+            },
+            {
+              "title": "Berkshire boosts Alphabet stake by 83 % to nearly 106 million shares",
               "url": "http://www.taiwansun.com/news/279244575/berkshire-boosts-alphabet-stake-by-83-to-nearly-106-million-shares",
               "domain": "taiwansun.com",
               "country": "China"
-            },
-            {
-              "title": "Berkshire boosts Alphabet stake by 83 % to nearly 106 million shares",
-              "url": "http://www.irishsun.com/news/279244575/berkshire-boosts-alphabet-stake-by-83-to-nearly-106-million-shares",
-              "domain": "irishsun.com",
-              "country": "Ireland"
-            },
-            {
-              "title": "Berkshire boosts Alphabet stake by 83 % to nearly 106 million shares",
-              "url": "http://www.asiabulletin.com/news/279244575/berkshire-boosts-alphabet-stake-by-83-to-nearly-106-million-shares",
-              "domain": "asiabulletin.com",
-              "country": "China"
-            },
-            {
-              "title": "Berkshire boosts Alphabet stake by 83 % to nearly 106 million shares",
-              "url": "http://www.bangladeshsun.com/news/279244575/berkshire-boosts-alphabet-stake-by-83-to-nearly-106-million-shares",
-              "domain": "bangladeshsun.com",
-              "country": "Bangladesh"
             }
           ]
         }
@@ -1394,14 +1366,27 @@
         },
         "news": {
           "available": true,
-          "tone": 0.03,
+          "tone": 0.0,
           "volume": 15,
           "countries": [
             "United States",
+            "Australia",
             "Russia",
             "China"
           ],
           "headlines": [
+            {
+              "title": "Nasdaq Ticks Higher as Wall Street Awaits Retail Earnings and Weighs Fed Next Move at Jackson Hole Meeting",
+              "url": "https://www.ibtimes.com.au/nasdaq-edges-higher-retail-earnings-fed-policy-1874197",
+              "domain": "ibtimes.com.au",
+              "country": "Australia"
+            },
+            {
+              "title": "Selecting the Best Shielding Solution",
+              "url": "https://www.azom.com/article.aspx?ArticleID=25473",
+              "domain": "azom.com",
+              "country": "United States"
+            },
             {
               "title": "Investing $500 a Month Into These 3 ETFs Could Retire You a Millionaire",
               "url": "https://finance.yahoo.com/markets/stocks/articles/investing-500-month-3-etfs-163720672.html",
@@ -1424,18 +1409,6 @@
               "title": "TFR Capital LLC . Buys Shares of 4 , 584 Chevron Corporation $CVX",
               "url": "https://www.themarketsdaily.com/2026/08/16/tfr-capital-llc-buys-shares-of-4584-chevron-corporation-cvx.html",
               "domain": "themarketsdaily.com",
-              "country": "United States"
-            },
-            {
-              "title": "USA Financial Formulas Invests $538 , 000 in Chevron Corporation $CVX",
-              "url": "https://www.themarketsdaily.com/2026/08/16/usa-financial-formulas-invests-538000-in-chevron-corporation-cvx.html",
-              "domain": "themarketsdaily.com",
-              "country": "United States"
-            },
-            {
-              "title": "SFE Investment Counsel Makes New $2 . 58 Million Investment in Chevron Corporation $CVX",
-              "url": "https://www.dailypolitical.com/2026/08/16/sfe-investment-counsel-makes-new-2-58-million-investment-in-chevron-corporation-cvx.html",
-              "domain": "dailypolitical.com",
               "country": "United States"
             }
           ]
@@ -1525,10 +1498,6 @@
           {
             "title": "FRED (St. Louis Fed)",
             "url": "https://fred.stlouisfed.org/"
-          },
-          {
-            "title": "GDELT global news",
-            "url": "https://www.gdeltproject.org/"
           }
         ],
         "rank": 3,
@@ -1536,67 +1505,21 @@
         "signal": 66,
         "consensus": {
           "direction": "Bullish",
-          "conviction": 41,
+          "conviction": 66,
           "votes": [
             {
               "source": "Quant",
               "label": "Bullish"
-            },
-            {
-              "source": "Global news",
-              "label": "Neutral"
             }
           ],
-          "note": "1 of 2 signals lean bullish."
+          "note": "1 of 1 signals lean bullish."
         },
         "news": {
-          "available": true,
+          "available": false,
           "tone": 0.0,
-          "volume": 15,
-          "countries": [
-            "United States",
-            "Canada",
-            "Taiwan",
-            "India"
-          ],
-          "headlines": [
-            {
-              "title": "Fed\u6703\u8b70\u8a18\u9304\u672c\u9031\u63ed\u66c9 \u96f6\u552e\u8ca1\u5831\u8207\u7d93\u6fdf\u6578\u64da\u6210\u5e02\u5834\u7126\u9ede",
-              "url": "https://n.yam.com/Article/20260817613051",
-              "domain": "n.yam.com",
-              "country": "Taiwan"
-            },
-            {
-              "title": "Wall Street Week Ahead : Fed minutes , retail earnings and key economic data to drive markets",
-              "url": "https://www.livemint.com/market/stock-market-news/wall-street-week-ahead-fed-minutes-retail-earnings-and-key-economic-data-to-drive-markets-11786894907847.html",
-              "domain": "livemint.com",
-              "country": "India"
-            },
-            {
-              "title": "Sciencast Management LP Cuts Holdings in Costco Wholesale Corporation $COST",
-              "url": "https://www.themarketsdaily.com/2026/08/16/sciencast-management-lp-cuts-holdings-in-costco-wholesale-corporation-cost.html",
-              "domain": "themarketsdaily.com",
-              "country": "United States"
-            },
-            {
-              "title": "Garrison Bradford & Associates Inc . Sells 698 Shares of Costco Wholesale Corporation $COST",
-              "url": "https://www.tickerreport.com/banking-finance/13545334/garrison-bradford-associates-inc-sells-698-shares-of-costco-wholesale-corporation-cost.html",
-              "domain": "tickerreport.com",
-              "country": "United States"
-            },
-            {
-              "title": "Hurricane Lala closes in on Hawaii as Big Island braces for first hit in 155 years",
-              "url": "https://nypost.com/2026/08/15/us-news/hurricane-lala-closes-in-on-hawaii-as-big-island-braces-for-first-hit-in-155-years/",
-              "domain": "nypost.com",
-              "country": "United States"
-            },
-            {
-              "title": "Prediction : Costco Will Beat the S & P 500 Again",
-              "url": "https://www.fool.com/investing/2026/08/15/prediction-costco-will-beat-the-sp-500-again/?source=iedfolrf0000001",
-              "domain": "fool.com",
-              "country": "United States"
-            }
-          ]
+          "volume": 0,
+          "countries": [],
+          "headlines": []
         }
       },
       {
@@ -1714,9 +1637,51 @@
         "news": {
           "available": true,
           "tone": 0.24,
-          "volume": 0,
-          "countries": [],
-          "headlines": []
+          "volume": 15,
+          "countries": [
+            "United States",
+            "India",
+            "Canada",
+            "Israel"
+          ],
+          "headlines": [
+            {
+              "title": "Defense Stocks To Follow Today \u2013 August 15th",
+              "url": "https://www.themarketsdaily.com/2026/08/16/defense-stocks-to-follow-today-august-15th.html",
+              "domain": "themarketsdaily.com",
+              "country": "United States"
+            },
+            {
+              "title": "Can GE Stock Compound Its Way Higher ? ",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/ge-stock-compound-way-higher-153513130.html",
+              "domain": "finance.yahoo.com",
+              "country": "United States"
+            },
+            {
+              "title": "Should Investors Take Profits in GE Vernova After Its Big Run ? ",
+              "url": "https://www.fool.com/investing/2026/08/14/should-investors-take-profits-in-ge-vernova-after/",
+              "domain": "fool.com",
+              "country": "United States"
+            },
+            {
+              "title": "Market This Week",
+              "url": "https://www.moneylife.in/article/market-this-week/81357.html",
+              "domain": "moneylife.in",
+              "country": "India"
+            },
+            {
+              "title": "BETA Technologies ( NYSE : BETA ) Releases Earnings Results , Misses Estimates By $0 . 08 EPS",
+              "url": "https://www.tickerreport.com/banking-finance/13543263/beta-technologies-nysebeta-releases-earnings-results-misses-estimates-by-0-08-eps.html",
+              "domain": "tickerreport.com",
+              "country": "United States"
+            },
+            {
+              "title": "Zoetis ( ZTS ) Remains a Leader , So Why Was It Sold ? ",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/zoetis-zts-remains-leader-why-142600966.html",
+              "domain": "finance.yahoo.com",
+              "country": "United States"
+            }
+          ]
         }
       },
       {
@@ -1834,49 +1799,9 @@
         "news": {
           "available": true,
           "tone": -0.25,
-          "volume": 15,
-          "countries": [
-            "United States",
-            "China"
-          ],
-          "headlines": [
-            {
-              "title": "High Dividend ETFs Are Beating the S & P 500 by 9 Points in 2026 and These 3 Pay Up to 4 Percent While Doing It",
-              "url": "https://finance.yahoo.com/markets/stocks/articles/high-dividend-etfs-beating-p-144647742.html",
-              "domain": "finance.yahoo.com",
-              "country": "United States"
-            },
-            {
-              "title": "USA Financial Formulas Purchases 4 , 478 Shares of ExxonMobil Corporation $XOM",
-              "url": "https://www.themarketsdaily.com/2026/08/16/usa-financial-formulas-purchases-4478-shares-of-exxonmobil-corporation-xom.html",
-              "domain": "themarketsdaily.com",
-              "country": "United States"
-            },
-            {
-              "title": "Exxon Stock Rises While Iran Threat Lifts Oil \u00a0| Peak Oil News and Message Boards",
-              "url": "https://peakoil.com/business/exxon-stock-rises-while-iran-threat-lifts-oil",
-              "domain": "peakoil.com",
-              "country": "United States"
-            },
-            {
-              "title": "Fortis Group Advisors LLC Sells 8 , 287 Shares of ExxonMobil Corporation $XOM",
-              "url": "https://www.themarketsdaily.com/2026/08/15/fortis-group-advisors-llc-sells-8287-shares-of-exxonmobil-corporation-xom.html",
-              "domain": "themarketsdaily.com",
-              "country": "United States"
-            },
-            {
-              "title": "ExxonMobil Corporation $XOM is Clarus Group Inc . 7th Largest Position",
-              "url": "https://www.tickerreport.com/banking-finance/13543949/exxonmobil-corporation-xom-is-clarus-group-inc-s-7th-largest-position.html",
-              "domain": "tickerreport.com",
-              "country": "United States"
-            },
-            {
-              "title": "Bogart Wealth LLC Cuts Holdings in ExxonMobil Corporation $XOM",
-              "url": "https://www.themarketsdaily.com/2026/08/15/bogart-wealth-llc-cuts-holdings-in-exxonmobil-corporation-xom.html",
-              "domain": "themarketsdaily.com",
-              "country": "United States"
-            }
-          ]
+          "volume": 0,
+          "countries": [],
+          "headlines": []
         }
       },
       {
@@ -1967,6 +1892,10 @@
           {
             "title": "FRED (St. Louis Fed)",
             "url": "https://fred.stlouisfed.org/"
+          },
+          {
+            "title": "GDELT global news",
+            "url": "https://www.gdeltproject.org/"
           }
         ],
         "rank": 6,
@@ -1974,21 +1903,65 @@
         "signal": 64,
         "consensus": {
           "direction": "Bullish",
-          "conviction": 66,
+          "conviction": 78,
           "votes": [
             {
               "source": "Quant",
               "label": "Bullish"
+            },
+            {
+              "source": "Global news",
+              "label": "Bullish"
             }
           ],
-          "note": "1 of 1 signals lean bullish."
+          "note": "2 of 2 signals lean bullish."
         },
         "news": {
-          "available": false,
-          "tone": 0.0,
-          "volume": 0,
-          "countries": [],
-          "headlines": []
+          "available": true,
+          "tone": 1.26,
+          "volume": 15,
+          "countries": [
+            "United States",
+            "China"
+          ],
+          "headlines": [
+            {
+              "title": "SCS Capital Management LLC Makes New $11 . 58 Million Investment in Target Corporation $TGT",
+              "url": "https://www.tickerreport.com/banking-finance/13547095/scs-capital-management-llc-makes-new-11-58-million-investment-in-target-corporation-tgt.html",
+              "domain": "tickerreport.com",
+              "country": "United States"
+            },
+            {
+              "title": "\u7f8e\u80a1  \u725b\u5e02\u65d7\u624b  \u5c0f\u6469\u6da8\u4e862 . 5\u500d \uff0c \u53f2\u4e0a\u7b2c\u4e00\u5bb6\u4e07\u4ebf\u7f8e\u5143\u6295\u884c\u547c\u4e4b\u6b32\u51fa \uff0c \u5e02\u503c\u7ea6\u4e3aA\u80a150\u5bb6\u4e0a\u5e02\u5238\u55462\u500d \uff0c \u76f8\u5f53\u4e8e16\u4e2a\u4e2d\u4fe1\u8bc1\u5238 - \u80a1\u7968 - \u91d1\u878d\u754c",
+              "url": "https://stock.jrj.com.cn/2026/08/17201258143779.shtml",
+              "domain": "stock.jrj.com.cn",
+              "country": "China"
+            },
+            {
+              "title": "8 , 729 Shares in American Electric Power Company , Inc . $AEP Acquired by HBK Sorce Advisory LLC",
+              "url": "https://www.themarketsdaily.com/2026/08/17/8729-shares-in-american-electric-power-company-inc-aep-acquired-by-hbk-sorce-advisory-llc.html",
+              "domain": "themarketsdaily.com",
+              "country": "United States"
+            },
+            {
+              "title": "OneDigital Investment Advisors LLC Buys New Stake in Cummins Inc . $CMI",
+              "url": "https://www.themarketsdaily.com/2026/08/17/onedigital-investment-advisors-llc-buys-new-stake-in-cummins-inc-cmi.html",
+              "domain": "themarketsdaily.com",
+              "country": "United States"
+            },
+            {
+              "title": "Medtronic PLC $MDT Shares Acquired by Zions Bancorporation National Association UT",
+              "url": "https://www.themarketsdaily.com/2026/08/17/medtronic-plc-mdt-shares-acquired-by-zions-bancorporation-national-association-ut.html",
+              "domain": "themarketsdaily.com",
+              "country": "United States"
+            },
+            {
+              "title": "Recent Analyst Ratings Changes for Akamai Technologies ( AKAM ) ",
+              "url": "https://www.themarketsdaily.com/2026/08/17/recent-analysts-ratings-changes-for-akamai-technologies-akam.html",
+              "domain": "themarketsdaily.com",
+              "country": "United States"
+            }
+          ]
         }
       },
       {
@@ -2228,484 +2201,19 @@
   "crypto": {
     "long": [
       {
-        "name": "XRP",
-        "ticker": "XRP",
-        "sector": "Payments",
-        "price": 0.998149,
-        "rsi": 52.6,
-        "volatility": 4.5,
-        "changes": {
-          "d1": 0,
-          "d7": -3.1,
-          "d30": -8.0
-        },
-        "levels": {
-          "pivot": 0.999443,
-          "support": 0.992809
-        },
-        "components": {
-          "momentum": 52,
-          "trend7d": 50,
-          "trend30d": 50,
-          "low_volatility": 96,
-          "rsi_balance": 95,
-          "market_depth": 93
-        },
-        "signal_long": 77,
-        "signal_short": 67,
-        "security": 94,
-        "risk": "low",
-        "spark": [
-          1.03391,
-          1.02286,
-          1.019533,
-          1.010269,
-          1.014083,
-          1.0047,
-          1.005354,
-          1.009693,
-          1.016688,
-          1.021179,
-          1.020632,
-          1.023106,
-          1.013979,
-          1.009277,
-          1.003859,
-          1.006445,
-          1.01375,
-          1.007232,
-          1.009834,
-          1.008284,
-          1.00857,
-          1.009445,
-          1.003926,
-          1.001787,
-          1.00591,
-          0.998268,
-          0.999934,
-          1.004741,
-          1.000244,
-          1.001246,
-          1.001565,
-          1.003715,
-          1.000059,
-          0.999921,
-          0.999453,
-          1.000454,
-          0.999037,
-          0.99401,
-          1.001292,
-          1.004775
-        ],
-        "thesis": "XRP: range-bound (30d +0.1%), RSI 53 (neutral), low volatility.",
-        "buy": "Add on pullbacks toward the 30-day pivot $1.00; stronger entry near support $0.99.",
-        "hold": "Hold while price stays above the pivot $1.00 and RSI holds the 40-68 band (now 53).",
-        "sell": "Trim if RSI runs above 72 or price closes below support $0.99 on rising volume.",
-        "flow_note": "",
-        "image": "https://coin-images.coingecko.com/coins/images/44/large/xrp-symbol-white-128.png?1696501442",
-        "sources": [
-          {
-            "title": "CoinGecko market data",
-            "url": "https://www.coingecko.com/en/coins/ripple"
-          },
-          {
-            "title": "GDELT global news",
-            "url": "https://www.gdeltproject.org/"
-          }
-        ],
-        "rank": 1,
-        "tier": "crown",
-        "signal": 77,
-        "consensus": {
-          "direction": "Mixed",
-          "conviction": 0,
-          "votes": [
-            {
-              "source": "Quant",
-              "label": "Neutral"
-            },
-            {
-              "source": "Global news",
-              "label": "Neutral"
-            }
-          ],
-          "note": "Sources point in different directions \u2014 no clear edge."
-        },
-        "news": {
-          "available": true,
-          "tone": -0.29,
-          "volume": 15,
-          "countries": [
-            "United States",
-            "Brazil",
-            "China",
-            "Hong Kong",
-            "Germany"
-          ],
-          "headlines": [
-            {
-              "title": "Bitcoin Holds $62 , 819 as Stablecoins Dominate LatAm",
-              "url": "https://www.riotimesonline.com/crypto-markets-bitcoin-majors-monday-august-17-2026/",
-              "domain": "riotimesonline.com",
-              "country": "Brazil"
-            },
-            {
-              "title": "BTC , ETH price news : Bitcoin tops $64 , 000 on Monday as traders await FOMC minutes",
-              "url": "https://www.coindesk.com/markets/2026/08/17/bitcoin-tops-usd64-000-in-asia-morning-hours-as-hype-jumps-8-on-the-week",
-              "domain": "coindesk.com",
-              "country": "United States"
-            },
-            {
-              "title": "Data of 54K Wallet Users Leaked , Clarity Odds Just 10 %: Hodler Digest , Aug . 16",
-              "url": "https://cointelegraph.com/magazine/data-of-54000-wallet-users-leaked-clarity-odds-just-10-hodlers-digest",
-              "domain": "cointelegraph.com",
-              "country": "China"
-            },
-            {
-              "title": "4 Reasons This Could Be the Most Important Week of August for Bitcoin and XRP",
-              "url": "https://finance.yahoo.com/markets/crypto/articles/4-reasons-could-most-important-210327553.html",
-              "domain": "finance.yahoo.com",
-              "country": "United States"
-            },
-            {
-              "title": "XRP ETF Buying Has Dropped 96 % Since Launch : Can Inflows Reach Standard Chartered $8 Billion Forecast ? ",
-              "url": "https://finance.yahoo.com/markets/crypto/articles/xrp-etf-buying-dropped-96-180201578.html",
-              "domain": "finance.yahoo.com",
-              "country": "United States"
-            },
-            {
-              "title": "Bitcoin Slides Below US$63 , 000 ; Crypto Friday Wrap",
-              "url": "https://www.riotimesonline.com/crypto-markets-bitcoin-majors-saturday-august-15-2026/",
-              "domain": "riotimesonline.com",
-              "country": "Brazil"
-            }
-          ]
-        }
-      },
-      {
-        "name": "Bitcoin",
-        "ticker": "BTC",
-        "sector": "Store of Value",
-        "price": 63562,
-        "rsi": 66.5,
-        "volatility": 3.4,
-        "changes": {
-          "d1": 0.9,
-          "d7": -2.2,
-          "d30": -0.7
-        },
-        "levels": {
-          "pivot": 63133.255459,
-          "support": 62780.238242
-        },
-        "components": {
-          "momentum": 52,
-          "trend7d": 50,
-          "trend30d": 51,
-          "low_volatility": 97,
-          "rsi_balance": 75,
-          "market_depth": 100
-        },
-        "signal_long": 76,
-        "signal_short": 63,
-        "security": 93,
-        "risk": "low",
-        "spark": [
-          65108.016269,
-          64240.285498,
-          64004.517635,
-          63878.879563,
-          64098.217562,
-          64078.197381,
-          64295.854179,
-          63462.62678,
-          63677.408458,
-          63689.061368,
-          63782.066823,
-          64048.613669,
-          63784.210644,
-          63410.305327,
-          63415.527064,
-          63487.727618,
-          63833.717778,
-          63592.514466,
-          63864.26811,
-          63278.596876,
-          63417.3945,
-          63305.228103,
-          62856.046655,
-          62800.401568,
-          62944.308227,
-          62852.404889,
-          62950.230002,
-          63066.926015,
-          62868.552418,
-          62968.396762,
-          63008.727916,
-          63098.262786,
-          63012.109582,
-          63015.105336,
-          62928.08919,
-          63056.245694,
-          63088.260156,
-          62914.43626,
-          63359.509751,
-          63553.103997
-        ],
-        "thesis": "Bitcoin: range-bound (30d +1.0%), RSI 66 (neutral), low volatility.",
-        "buy": "Add on pullbacks toward the 30-day pivot $63,133.26; stronger entry near support $62,780.24.",
-        "hold": "Hold while price stays above the pivot $63,133.26 and RSI holds the 40-68 band (now 66).",
-        "sell": "Trim if RSI runs above 72 or price closes below support $62,780.24 on rising volume.",
-        "flow_note": "",
-        "image": "https://coin-images.coingecko.com/coins/images/1/large/bitcoin.png?1696501400",
-        "sources": [
-          {
-            "title": "CoinGecko market data",
-            "url": "https://www.coingecko.com/en/coins/bitcoin"
-          },
-          {
-            "title": "GDELT global news",
-            "url": "https://www.gdeltproject.org/"
-          }
-        ],
-        "rank": 2,
-        "tier": "crown",
-        "signal": 76,
-        "consensus": {
-          "direction": "Bullish",
-          "conviction": 41,
-          "votes": [
-            {
-              "source": "Quant",
-              "label": "Bullish"
-            },
-            {
-              "source": "Global news",
-              "label": "Neutral"
-            }
-          ],
-          "note": "1 of 2 signals lean bullish."
-        },
-        "news": {
-          "available": true,
-          "tone": -0.82,
-          "volume": 15,
-          "countries": [
-            "United States",
-            "Turkey",
-            "Germany",
-            "Brazil",
-            "Switzerland"
-          ],
-          "headlines": [
-            {
-              "title": "Tagesanalyse : So entwickeln sich Bitcoin & Co . am Montagmittag",
-              "url": "https://www.finanzen.net/nachricht/devisen/digitalwaehrungen-im-fokus-so-bewegen-sich-bitcoin-co-am-montagmittag-15882150",
-              "domain": "finanzen.net",
-              "country": "Germany"
-            },
-            {
-              "title": "Bitcoin Holds $62 , 819 as Stablecoins Dominate LatAm",
-              "url": "https://www.riotimesonline.com/crypto-markets-bitcoin-majors-monday-august-17-2026/",
-              "domain": "riotimesonline.com",
-              "country": "Brazil"
-            },
-            {
-              "title": "So entwickeln sich Bitcoin & Co . am Montagvormittag",
-              "url": "https://www.finanzen.ch/nachrichten/devisen/so-entwickeln-sich-bitcoin-&-co-am-montagvormittag-1036464621",
-              "domain": "finanzen.ch",
-              "country": "Switzerland"
-            },
-            {
-              "title": "Europe set to build on gains after a quiet weekend and similar APAC lead - Newsquawk EU Market Open",
-              "url": "https://www.zerohedge.com/markets/europe-set-build-gains-after-quiet-weekend-and-similar-apac-lead-newsquawk-eu-market-open",
-              "domain": "zerohedge.com",
-              "country": "United States"
-            },
-            {
-              "title": "Bitcoin y\u00f6n ar\u0131yor : G\u00f6zler bu seviyelerde olacak",
-              "url": "https://www.haberler.com/kripto-para/bitcoin-yon-ariyor-gozler-bu-seviyelerde-olacak-20151115-haberi/",
-              "domain": "haberler.com",
-              "country": "Turkey"
-            },
-            {
-              "title": "BTC , ETH price news : Bitcoin tops $64 , 000 on Monday as traders await FOMC minutes",
-              "url": "https://www.coindesk.com/markets/2026/08/17/bitcoin-tops-usd64-000-in-asia-morning-hours-as-hype-jumps-8-on-the-week",
-              "domain": "coindesk.com",
-              "country": "United States"
-            }
-          ]
-        }
-      },
-      {
-        "name": "Ethereum",
-        "ticker": "ETH",
-        "sector": "Smart Contract L1",
-        "price": 1897.35,
-        "rsi": 65.4,
-        "volatility": 4.34,
-        "changes": {
-          "d1": 1.2,
-          "d7": -0.7,
-          "d30": 3.1
-        },
-        "levels": {
-          "pivot": 1886.136592,
-          "support": 1870.340744
-        },
-        "components": {
-          "momentum": 53,
-          "trend7d": 51,
-          "trend30d": 51,
-          "low_volatility": 96,
-          "rsi_balance": 77,
-          "market_depth": 98
-        },
-        "signal_long": 76,
-        "signal_short": 64,
-        "security": 92,
-        "risk": "low",
-        "spark": [
-          1919.925788,
-          1875.358123,
-          1876.792233,
-          1870.317264,
-          1879.777482,
-          1877.088035,
-          1888.338255,
-          1863.619035,
-          1880.194924,
-          1880.72107,
-          1889.818375,
-          1903.986523,
-          1899.220288,
-          1886.233979,
-          1876.722171,
-          1880.612329,
-          1895.415439,
-          1881.731392,
-          1893.195617,
-          1884.313994,
-          1884.712594,
-          1882.529308,
-          1872.353901,
-          1875.390998,
-          1880.07366,
-          1878.304923,
-          1880.240479,
-          1882.507255,
-          1875.241889,
-          1880.736596,
-          1882.531886,
-          1883.387786,
-          1878.633151,
-          1878.665315,
-          1878.503321,
-          1881.760065,
-          1884.476171,
-          1875.310947,
-          1901.636063,
-          1903.640762
-        ],
-        "thesis": "Ethereum: range-bound (30d +1.3%), RSI 65 (neutral), low volatility.",
-        "buy": "Add on pullbacks toward the 30-day pivot $1,886.14; stronger entry near support $1,870.34.",
-        "hold": "Hold while price stays above the pivot $1,886.14 and RSI holds the 40-68 band (now 65).",
-        "sell": "Trim if RSI runs above 72 or price closes below support $1,870.34 on rising volume.",
-        "flow_note": "",
-        "image": "https://coin-images.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
-        "sources": [
-          {
-            "title": "CoinGecko market data",
-            "url": "https://www.coingecko.com/en/coins/ethereum"
-          },
-          {
-            "title": "GDELT global news",
-            "url": "https://www.gdeltproject.org/"
-          }
-        ],
-        "rank": 3,
-        "tier": "core",
-        "signal": 76,
-        "consensus": {
-          "direction": "Bullish",
-          "conviction": 41,
-          "votes": [
-            {
-              "source": "Quant",
-              "label": "Bullish"
-            },
-            {
-              "source": "Global news",
-              "label": "Neutral"
-            }
-          ],
-          "note": "1 of 2 signals lean bullish."
-        },
-        "news": {
-          "available": true,
-          "tone": -0.42,
-          "volume": 15,
-          "countries": [
-            "United States",
-            "Germany",
-            "Taiwan",
-            "Brazil",
-            "Switzerland"
-          ],
-          "headlines": [
-            {
-              "title": "Tagesanalyse : So entwickeln sich Bitcoin & Co . am Montagmittag",
-              "url": "https://www.finanzen.net/nachricht/devisen/digitalwaehrungen-im-fokus-so-bewegen-sich-bitcoin-co-am-montagmittag-15882150",
-              "domain": "finanzen.net",
-              "country": "Germany"
-            },
-            {
-              "title": "Bitcoin Holds $62 , 819 as Stablecoins Dominate LatAm",
-              "url": "https://www.riotimesonline.com/crypto-markets-bitcoin-majors-monday-august-17-2026/",
-              "domain": "riotimesonline.com",
-              "country": "Brazil"
-            },
-            {
-              "title": "So entwickeln sich Bitcoin & Co . am Montagvormittag",
-              "url": "https://www.finanzen.ch/nachrichten/devisen/so-entwickeln-sich-bitcoin-&-co-am-montagvormittag-1036464621",
-              "domain": "finanzen.ch",
-              "country": "Switzerland"
-            },
-            {
-              "title": "Kryptomarkt 17 . August 2026 : Bitcoin 63 . 000 Dollar , Hashdex ETF Liquidation , Trump - Krypto - Gipfel , Jackson Hole 27 . August",
-              "url": "https://www.finanzen.net/nachricht/devisen/kryptomarkt-bitcoin-klebt-bei-63-000-dollar-erster-us-bitcoin-etf-schliesst-zehn-tage-bis-jackson-hole-00-15881863",
-              "domain": "finanzen.net",
-              "country": "Germany"
-            },
-            {
-              "title": "Data of 54K Wallet Users Leaked , Clarity Odds Just 10 %: Hodler Digest , Aug . 16",
-              "url": "https://cointelegraph.com/magazine/data-of-54000-wallet-users-leaked-clarity-odds-just-10-hodlers-digest",
-              "domain": "cointelegraph.com",
-              "country": "China"
-            },
-            {
-              "title": "Ondo Stocks Volume Hits $27B , Tokenized Equity Platform Holds Above $1B",
-              "url": "https://finance.yahoo.com/markets/crypto/articles/ondo-stocks-volume-hits-27b-173900103.html",
-              "domain": "finance.yahoo.com",
-              "country": "United States"
-            }
-          ]
-        }
-      },
-      {
         "name": "BNB",
         "ticker": "BNB",
         "sector": "Exchange / L1",
-        "price": 603.82,
-        "rsi": 49.1,
-        "volatility": 3.21,
+        "price": 605.61,
+        "rsi": 62.8,
+        "volatility": 3.18,
         "changes": {
-          "d1": -0.3,
-          "d7": -0.2,
-          "d30": 6.2
+          "d1": -0.1,
+          "d7": 1.0,
+          "d30": 6.5
         },
         "levels": {
-          "pivot": 605.087599,
+          "pivot": 605.022312,
           "support": 601.868438
         },
         "components": {
@@ -2713,58 +2221,58 @@
           "trend7d": 50,
           "trend30d": 50,
           "low_volatility": 97,
-          "rsi_balance": 87,
+          "rsi_balance": 83,
           "market_depth": 95
         },
         "signal_long": 76,
         "signal_short": 65,
-        "security": 94,
+        "security": 93,
         "risk": "low",
         "spark": [
-          604.905418,
-          600.888043,
-          600.001331,
-          598.687466,
-          599.828308,
-          604.834061,
-          611.973269,
-          609.17424,
-          611.954418,
-          617.109449,
-          612.648861,
-          613.076767,
-          611.816863,
-          610.124051,
-          609.33039,
-          610.270851,
-          612.275751,
-          610.183928,
-          609.540188,
-          608.903618,
-          610.408456,
-          611.513362,
-          606.876545,
-          604.532534,
-          605.934493,
-          606.019909,
-          607.612999,
-          610.841081,
-          609.7007,
-          609.931152,
-          610.261091,
-          609.569575,
-          606.138676,
-          605.529729,
-          606.632313,
-          607.223206,
-          604.992707,
-          601.868438,
-          604.171236,
-          605.760613
+          600.878073,
+          599.68764,
+          598.684624,
+          599.805533,
+          598.20726,
+          608.128116,
+          608.22792,
+          611.022621,
+          616.279209,
+          612.761825,
+          609.902655,
+          612.316112,
+          609.846116,
+          611.116101,
+          610.297351,
+          612.491117,
+          610.591122,
+          609.877923,
+          607.635367,
+          610.75377,
+          611.678144,
+          607.790863,
+          605.031013,
+          603.387573,
+          605.360732,
+          607.057139,
+          610.224076,
+          611.104714,
+          610.992492,
+          611.026566,
+          610.014502,
+          606.87771,
+          605.547843,
+          606.961559,
+          606.853881,
+          605.699667,
+          603.381944,
+          602.54276,
+          605.104373,
+          603.555971
         ],
-        "thesis": "BNB: range-bound (30d -0.4%), RSI 49 (neutral), low volatility.",
-        "buy": "Add on pullbacks toward the 30-day pivot $605.09; stronger entry near support $601.87.",
-        "hold": "Hold while price stays above the pivot $605.09 and RSI holds the 40-68 band (now 49).",
+        "thesis": "BNB: range-bound (30d -0.2%), RSI 63 (neutral), low volatility.",
+        "buy": "Add on pullbacks toward the 30-day pivot $605.02; stronger entry near support $601.87.",
+        "hold": "Hold while price stays above the pivot $605.02 and RSI holds the 40-68 band (now 63).",
         "sell": "Trim if RSI runs above 72 or price closes below support $601.87 on rising volume.",
         "flow_note": "",
         "image": "https://coin-images.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1696501970",
@@ -2778,7 +2286,7 @@
             "url": "https://www.gdeltproject.org/"
           }
         ],
-        "rank": 4,
+        "rank": 1,
         "tier": "crown",
         "signal": 76,
         "consensus": {
@@ -2848,896 +2356,78 @@
         }
       },
       {
-        "name": "Solana",
-        "ticker": "SOL",
-        "sector": "Smart Contract L1",
-        "price": 75.37,
-        "rsi": 60.3,
-        "volatility": 4.95,
-        "changes": {
-          "d1": 0.6,
-          "d7": -1.4,
-          "d30": 1.0
-        },
-        "levels": {
-          "pivot": 75.232027,
-          "support": 74.208666
-        },
-        "components": {
-          "momentum": 52,
-          "trend7d": 51,
-          "trend30d": 51,
-          "low_volatility": 96,
-          "rsi_balance": 88,
-          "market_depth": 90
-        },
-        "signal_long": 75,
-        "signal_short": 66,
-        "security": 92,
-        "risk": "low",
-        "spark": [
-          76.997809,
-          75.940488,
-          76.163358,
-          75.878505,
-          76.056802,
-          75.839421,
-          75.8577,
-          74.892853,
-          76.006138,
-          76.305948,
-          76.257327,
-          76.70055,
-          76.166083,
-          75.853656,
-          75.447123,
-          75.905247,
-          76.405945,
-          75.678802,
-          76.45332,
-          75.987924,
-          76.218649,
-          75.786824,
-          75.533443,
-          75.46244,
-          75.581905,
-          75.08429,
-          75.290321,
-          75.470611,
-          75.015591,
-          75.353186,
-          75.578339,
-          75.573023,
-          75.361331,
-          75.310043,
-          75.244714,
-          75.357734,
-          75.163555,
-          74.52221,
-          75.432274,
-          75.781942
-        ],
-        "thesis": "Solana: range-bound (30d +0.6%), RSI 60 (neutral), low volatility.",
-        "buy": "Add on pullbacks toward the 30-day pivot $75.23; stronger entry near support $74.21.",
-        "hold": "Hold while price stays above the pivot $75.23 and RSI holds the 40-68 band (now 60).",
-        "sell": "Trim if RSI runs above 72 or price closes below support $74.21 on rising volume.",
-        "flow_note": "",
-        "image": "https://coin-images.coingecko.com/coins/images/4128/large/solana.png?1718769756",
-        "sources": [
-          {
-            "title": "CoinGecko market data",
-            "url": "https://www.coingecko.com/en/coins/solana"
-          },
-          {
-            "title": "GDELT global news",
-            "url": "https://www.gdeltproject.org/"
-          }
-        ],
-        "rank": 5,
-        "tier": "core",
-        "signal": 75,
-        "consensus": {
-          "direction": "Bullish",
-          "conviction": 41,
-          "votes": [
-            {
-              "source": "Quant",
-              "label": "Bullish"
-            },
-            {
-              "source": "Global news",
-              "label": "Neutral"
-            }
-          ],
-          "note": "1 of 2 signals lean bullish."
-        },
-        "news": {
-          "available": true,
-          "tone": -0.32,
-          "volume": 15,
-          "countries": [
-            "United States",
-            "Brazil",
-            "Philippines",
-            "China",
-            "United Kingdom"
-          ],
-          "headlines": [
-            {
-              "title": "Bitcoin Holds $62 , 819 as Stablecoins Dominate LatAm",
-              "url": "https://www.riotimesonline.com/crypto-markets-bitcoin-majors-monday-august-17-2026/",
-              "domain": "riotimesonline.com",
-              "country": "Brazil"
-            },
-            {
-              "title": "BTC , ETH price news : Bitcoin tops $64 , 000 on Monday as traders await FOMC minutes",
-              "url": "https://www.coindesk.com/markets/2026/08/17/bitcoin-tops-usd64-000-in-asia-morning-hours-as-hype-jumps-8-on-the-week",
-              "domain": "coindesk.com",
-              "country": "United States"
-            },
-            {
-              "title": "Data of 54K Wallet Users Leaked , Clarity Odds Just 10 %: Hodler Digest , Aug . 16",
-              "url": "https://cointelegraph.com/magazine/data-of-54000-wallet-users-leaked-clarity-odds-just-10-hodlers-digest",
-              "domain": "cointelegraph.com",
-              "country": "China"
-            },
-            {
-              "title": "Ondo Stocks Volume Hits $27B , Tokenized Equity Platform Holds Above $1B",
-              "url": "https://finance.yahoo.com/markets/crypto/articles/ondo-stocks-volume-hits-27b-173900103.html",
-              "domain": "finance.yahoo.com",
-              "country": "United States"
-            },
-            {
-              "title": "Why Chainlink Rose as Bitcoin and Uniswap Weakened",
-              "url": "https://www.dailyforex.com/forex-technical-analysis/2026/08/crypto-forecast-16-august-2026/248721",
-              "domain": "dailyforex.com",
-              "country": "United Kingdom"
-            },
-            {
-              "title": "Securitize Q2 Earnings Call Highlights",
-              "url": "https://www.themarketsdaily.com/2026/08/16/securitize-q2-earnings-call-highlights.html",
-              "domain": "themarketsdaily.com",
-              "country": "United States"
-            }
-          ]
-        }
-      },
-      {
-        "name": "TRON",
-        "ticker": "TRX",
-        "sector": "Smart Contract L1",
-        "price": 0.331733,
-        "rsi": 67.8,
-        "volatility": 2.25,
+        "name": "XRP",
+        "ticker": "XRP",
+        "sector": "Payments",
+        "price": 1.002,
+        "rsi": 59.8,
+        "volatility": 4.47,
         "changes": {
           "d1": 0.3,
-          "d7": 0.2,
-          "d30": 2.8
+          "d7": -2.3,
+          "d30": -7.6
         },
         "levels": {
-          "pivot": 0.331686,
-          "support": 0.330805
-        },
-        "components": {
-          "momentum": 50,
-          "trend7d": 50,
-          "trend30d": 50,
-          "low_volatility": 98,
-          "rsi_balance": 72,
-          "market_depth": 88
-        },
-        "signal_long": 73,
-        "signal_short": 62,
-        "security": 88,
-        "risk": "low",
-        "spark": [
-          0.33145,
-          0.330773,
-          0.330552,
-          0.330546,
-          0.33119,
-          0.331768,
-          0.336166,
-          0.334533,
-          0.33496,
-          0.334736,
-          0.335075,
-          0.335992,
-          0.335978,
-          0.33573,
-          0.335429,
-          0.335681,
-          0.337274,
-          0.333405,
-          0.334464,
-          0.333249,
-          0.334107,
-          0.333889,
-          0.33393,
-          0.333124,
-          0.331722,
-          0.332609,
-          0.332091,
-          0.33254,
-          0.332113,
-          0.330764,
-          0.331513,
-          0.331179,
-          0.331045,
-          0.330821,
-          0.331056,
-          0.331613,
-          0.331602,
-          0.331093,
-          0.332195,
-          0.332506
-        ],
-        "thesis": "TRON: range-bound (30d +0.3%), RSI 68 (neutral), low volatility.",
-        "buy": "Add on pullbacks toward the 30-day pivot $0.33; stronger entry near support $0.33.",
-        "hold": "Hold while price stays above the pivot $0.33 and RSI holds the 40-68 band (now 68).",
-        "sell": "Trim if RSI runs above 72 or price closes below support $0.33 on rising volume.",
-        "flow_note": "",
-        "image": "https://coin-images.coingecko.com/coins/images/1094/large/photo_2026-04-13_09-59-16.png?1776048311",
-        "sources": [
-          {
-            "title": "CoinGecko market data",
-            "url": "https://www.coingecko.com/en/coins/tron"
-          },
-          {
-            "title": "GDELT global news",
-            "url": "https://www.gdeltproject.org/"
-          }
-        ],
-        "rank": 6,
-        "tier": "core",
-        "signal": 73,
-        "consensus": {
-          "direction": "Bullish",
-          "conviction": 41,
-          "votes": [
-            {
-              "source": "Quant",
-              "label": "Bullish"
-            },
-            {
-              "source": "Global news",
-              "label": "Neutral"
-            }
-          ],
-          "note": "1 of 2 signals lean bullish."
-        },
-        "news": {
-          "available": true,
-          "tone": -0.46,
-          "volume": 0,
-          "countries": [],
-          "headlines": []
-        }
-      },
-      {
-        "name": "Dogecoin",
-        "ticker": "DOGE",
-        "sector": "Meme / Culture",
-        "price": 0.070015,
-        "rsi": 61.3,
-        "volatility": 5.81,
-        "changes": {
-          "d1": 0.6,
-          "d7": 0.4,
-          "d30": -2.8
-        },
-        "levels": {
-          "pivot": 0.06992,
-          "support": 0.069302
+          "pivot": 0.999266,
+          "support": 0.992809
         },
         "components": {
           "momentum": 51,
           "trend7d": 50,
-          "trend30d": 51,
-          "low_volatility": 95,
-          "rsi_balance": 86,
-          "market_depth": 81
-        },
-        "signal_long": 73,
-        "signal_short": 65,
-        "security": 87,
-        "risk": "low",
-        "spark": [
-          0.070008,
-          0.069636,
-          0.069808,
-          0.06962,
-          0.070042,
-          0.07032,
-          0.070594,
-          0.070493,
-          0.071728,
-          0.072256,
-          0.072032,
-          0.071963,
-          0.070542,
-          0.070744,
-          0.069303,
-          0.070213,
-          0.070618,
-          0.070131,
-          0.070151,
-          0.070008,
-          0.070092,
-          0.069953,
-          0.069626,
-          0.069409,
-          0.069866,
-          0.069723,
-          0.070023,
-          0.070277,
-          0.069867,
-          0.069987,
-          0.069871,
-          0.069924,
-          0.069596,
-          0.069643,
-          0.069722,
-          0.069993,
-          0.069967,
-          0.069585,
-          0.070103,
-          0.070381
-        ],
-        "thesis": "Dogecoin: range-bound (30d +0.7%), RSI 61 (neutral), low volatility.",
-        "buy": "Add on pullbacks toward the 30-day pivot $0.07; stronger entry near support $0.07.",
-        "hold": "Hold while price stays above the pivot $0.07 and RSI holds the 40-68 band (now 61).",
-        "sell": "Trim if RSI runs above 72 or price closes below support $0.07 on rising volume.",
-        "flow_note": "",
-        "image": "https://coin-images.coingecko.com/coins/images/5/large/dogecoin.png?1696501409",
-        "sources": [
-          {
-            "title": "CoinGecko market data",
-            "url": "https://www.coingecko.com/en/coins/dogecoin"
-          },
-          {
-            "title": "GDELT global news",
-            "url": "https://www.gdeltproject.org/"
-          }
-        ],
-        "rank": 7,
-        "tier": "core",
-        "signal": 73,
-        "consensus": {
-          "direction": "Bullish",
-          "conviction": 41,
-          "votes": [
-            {
-              "source": "Quant",
-              "label": "Bullish"
-            },
-            {
-              "source": "Global news",
-              "label": "Neutral"
-            }
-          ],
-          "note": "1 of 2 signals lean bullish."
-        },
-        "news": {
-          "available": true,
-          "tone": 0.0,
-          "volume": 12,
-          "countries": [
-            "United States",
-            "Germany",
-            "India"
-          ],
-          "headlines": [
-            {
-              "title": "BTC , ETH price news : Bitcoin tops $64 , 000 on Monday as traders await FOMC minutes",
-              "url": "https://www.coindesk.com/markets/2026/08/17/bitcoin-tops-usd64-000-in-asia-morning-hours-as-hype-jumps-8-on-the-week",
-              "domain": "coindesk.com",
-              "country": "United States"
-            },
-            {
-              "title": "UNUS SED LEO Price Tops $9 . 35 on Major Exchanges ( LEO ) ",
-              "url": "https://www.themarketsdaily.com/2026/08/16/unus-sed-leo-price-tops-9-35-on-major-exchanges-leo.html",
-              "domain": "themarketsdaily.com",
-              "country": "United States"
-            },
-            {
-              "title": "Otoh Collection returns with part VIII in Heritage ANA Physical Cryptocurrency auction",
-              "url": "https://artdaily.com/news/199123/Otoh-Collection-returns-with-part-VIII-in-Heritage-s-ANA-Physical-Cryptocurrency-auction",
-              "domain": "artdaily.com",
-              "country": "United States"
-            },
-            {
-              "title": "Cryptos Drop Amidst Volatile Crude Oil Prices , Spike In Bond Yields",
-              "url": "https://www.rttnews.com/3680759/cryptos-drop-amidst-volatile-crude-oil-prices-spike-in-bond-yields.aspx",
-              "domain": "rttnews.com",
-              "country": "United States"
-            },
-            {
-              "title": "Cryptos Drop Amidst Volatile Crude Oil Prices , Spike In Bond Yields",
-              "url": "https://www.finanznachrichten.de/nachrichten-2026-08/69317519-cryptos-drop-amidst-volatile-crude-oil-prices-spike-in-bond-yields-020.htm",
-              "domain": "finanznachrichten.de",
-              "country": "Germany"
-            },
-            {
-              "title": "Bitcoin near $63K , Ethereum below $1 , 900 as softer US inflation fails to ease crypto market pressure",
-              "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/bitcoin-near-63k-ethereum-below-1900-as-softer-us-inflation-fails-to-ease-crypto-market-pressure/articleshow/133206294.cms",
-              "domain": "economictimes.indiatimes.com",
-              "country": "India"
-            }
-          ]
-        }
-      },
-      {
-        "name": "Chainlink",
-        "ticker": "LINK",
-        "sector": "Oracles / DeFi",
-        "price": 9.54,
-        "rsi": 54.5,
-        "volatility": 10.05,
-        "changes": {
-          "d1": 1.1,
-          "d7": 15.1,
-          "d30": 15.2
-        },
-        "levels": {
-          "pivot": 9.408397,
-          "support": 9.311243
-        },
-        "components": {
-          "momentum": 53,
-          "trend7d": 51,
-          "trend30d": 52,
-          "low_volatility": 91,
-          "rsi_balance": 99,
-          "market_depth": 69
-        },
-        "signal_long": 71,
-        "signal_short": 68,
-        "security": 84,
-        "risk": "low",
-        "spark": [
-          8.311779,
-          8.288054,
-          8.268684,
-          8.29194,
-          8.39357,
-          8.508667,
-          8.653546,
-          8.559735,
-          8.697586,
-          8.751055,
-          8.706425,
-          8.790976,
-          8.81712,
-          8.763146,
-          8.644045,
-          8.686874,
-          8.762536,
-          8.739958,
-          8.850954,
-          8.810841,
-          8.872407,
-          8.819164,
-          8.759378,
-          8.824416,
-          8.850792,
-          8.970196,
-          9.077424,
-          9.490118,
-          9.278267,
-          9.444001,
-          9.554133,
-          9.574868,
-          9.479461,
-          9.368013,
-          9.400738,
-          9.346173,
-          9.407793,
-          9.377051,
-          9.52792,
-          9.467962
-        ],
-        "thesis": "Chainlink: range-bound (30d +2.0%), RSI 54 (neutral), low volatility.",
-        "buy": "Add on pullbacks toward the 30-day pivot $9.41; stronger entry near support $9.31.",
-        "hold": "Hold while price stays above the pivot $9.41 and RSI holds the 40-68 band (now 54).",
-        "sell": "Trim if RSI runs above 72 or price closes below support $9.31 on rising volume.",
-        "flow_note": "",
-        "image": "https://coin-images.coingecko.com/coins/images/877/large/Chainlink_Logo_500.png?1760023405",
-        "sources": [
-          {
-            "title": "CoinGecko market data",
-            "url": "https://www.coingecko.com/en/coins/chainlink"
-          },
-          {
-            "title": "GDELT global news",
-            "url": "https://www.gdeltproject.org/"
-          }
-        ],
-        "rank": 8,
-        "tier": "core",
-        "signal": 71,
-        "consensus": {
-          "direction": "Bullish",
-          "conviction": 41,
-          "votes": [
-            {
-              "source": "Quant",
-              "label": "Bullish"
-            },
-            {
-              "source": "Global news",
-              "label": "Neutral"
-            }
-          ],
-          "note": "1 of 2 signals lean bullish."
-        },
-        "news": {
-          "available": true,
-          "tone": -0.61,
-          "volume": 4,
-          "countries": [
-            "China",
-            "United Kingdom",
-            "United States",
-            "India"
-          ],
-          "headlines": [
-            {
-              "title": "Data of 54K Wallet Users Leaked , Clarity Odds Just 10 %: Hodler Digest , Aug . 16",
-              "url": "https://cointelegraph.com/magazine/data-of-54000-wallet-users-leaked-clarity-odds-just-10-hodlers-digest",
-              "domain": "cointelegraph.com",
-              "country": "China"
-            },
-            {
-              "title": "Why Chainlink Rose as Bitcoin and Uniswap Weakened",
-              "url": "https://www.dailyforex.com/forex-technical-analysis/2026/08/crypto-forecast-16-august-2026/248721",
-              "domain": "dailyforex.com",
-              "country": "United Kingdom"
-            },
-            {
-              "title": "Chainlink Whales Accumulate Aggressively as Standard Chartered Sets Explosive $200 LINK Target by 2030 on Tokenization Surge",
-              "url": "http://www.econotimes.com/Chainlink-Whales-Accumulate-Aggressively-as-Standard-Chartered-Sets-Explosive-200-LINK-Target-by-2030-on-Tokenization-Surge-1749310",
-              "domain": "econotimes.com",
-              "country": "United States"
-            },
-            {
-              "title": "Bitcoin under pressure below $64 , 300 ; why crypto markets remain cautious",
-              "url": "https://www.moneycontrol.com/news/business/personal-finance/bitcoin-under-pressure-below-64-300-why-crypto-markets-remain-cautious-14002634.html",
-              "domain": "moneycontrol.com",
-              "country": "India"
-            }
-          ]
-        }
-      }
-    ],
-    "short": [
-      {
-        "name": "Chainlink",
-        "ticker": "LINK",
-        "sector": "Oracles / DeFi",
-        "price": 9.54,
-        "rsi": 54.5,
-        "volatility": 10.05,
-        "changes": {
-          "d1": 1.1,
-          "d7": 15.1,
-          "d30": 15.2
-        },
-        "levels": {
-          "pivot": 9.408397,
-          "support": 9.311243
-        },
-        "components": {
-          "momentum": 53,
-          "trend7d": 51,
-          "trend30d": 52,
-          "low_volatility": 91,
-          "rsi_balance": 99,
-          "market_depth": 69
-        },
-        "signal_long": 71,
-        "signal_short": 68,
-        "security": 84,
-        "risk": "low",
-        "spark": [
-          8.311779,
-          8.288054,
-          8.268684,
-          8.29194,
-          8.39357,
-          8.508667,
-          8.653546,
-          8.559735,
-          8.697586,
-          8.751055,
-          8.706425,
-          8.790976,
-          8.81712,
-          8.763146,
-          8.644045,
-          8.686874,
-          8.762536,
-          8.739958,
-          8.850954,
-          8.810841,
-          8.872407,
-          8.819164,
-          8.759378,
-          8.824416,
-          8.850792,
-          8.970196,
-          9.077424,
-          9.490118,
-          9.278267,
-          9.444001,
-          9.554133,
-          9.574868,
-          9.479461,
-          9.368013,
-          9.400738,
-          9.346173,
-          9.407793,
-          9.377051,
-          9.52792,
-          9.467962
-        ],
-        "thesis": "Chainlink: range-bound (30d +2.0%), RSI 54 (neutral), low volatility.",
-        "buy": "Add on pullbacks toward the 30-day pivot $9.41; stronger entry near support $9.31.",
-        "hold": "Hold while price stays above the pivot $9.41 and RSI holds the 40-68 band (now 54).",
-        "sell": "Trim if RSI runs above 72 or price closes below support $9.31 on rising volume.",
-        "flow_note": "",
-        "image": "https://coin-images.coingecko.com/coins/images/877/large/Chainlink_Logo_500.png?1760023405",
-        "sources": [
-          {
-            "title": "CoinGecko market data",
-            "url": "https://www.coingecko.com/en/coins/chainlink"
-          },
-          {
-            "title": "GDELT global news",
-            "url": "https://www.gdeltproject.org/"
-          }
-        ],
-        "rank": 1,
-        "tier": "crown",
-        "signal": 68,
-        "consensus": {
-          "direction": "Bullish",
-          "conviction": 41,
-          "votes": [
-            {
-              "source": "Quant",
-              "label": "Bullish"
-            },
-            {
-              "source": "Global news",
-              "label": "Neutral"
-            }
-          ],
-          "note": "1 of 2 signals lean bullish."
-        },
-        "news": {
-          "available": true,
-          "tone": -0.61,
-          "volume": 4,
-          "countries": [
-            "China",
-            "United Kingdom",
-            "United States",
-            "India"
-          ],
-          "headlines": [
-            {
-              "title": "Data of 54K Wallet Users Leaked , Clarity Odds Just 10 %: Hodler Digest , Aug . 16",
-              "url": "https://cointelegraph.com/magazine/data-of-54000-wallet-users-leaked-clarity-odds-just-10-hodlers-digest",
-              "domain": "cointelegraph.com",
-              "country": "China"
-            },
-            {
-              "title": "Why Chainlink Rose as Bitcoin and Uniswap Weakened",
-              "url": "https://www.dailyforex.com/forex-technical-analysis/2026/08/crypto-forecast-16-august-2026/248721",
-              "domain": "dailyforex.com",
-              "country": "United Kingdom"
-            },
-            {
-              "title": "Chainlink Whales Accumulate Aggressively as Standard Chartered Sets Explosive $200 LINK Target by 2030 on Tokenization Surge",
-              "url": "http://www.econotimes.com/Chainlink-Whales-Accumulate-Aggressively-as-Standard-Chartered-Sets-Explosive-200-LINK-Target-by-2030-on-Tokenization-Surge-1749310",
-              "domain": "econotimes.com",
-              "country": "United States"
-            },
-            {
-              "title": "Bitcoin under pressure below $64 , 300 ; why crypto markets remain cautious",
-              "url": "https://www.moneycontrol.com/news/business/personal-finance/bitcoin-under-pressure-below-64-300-why-crypto-markets-remain-cautious-14002634.html",
-              "domain": "moneycontrol.com",
-              "country": "India"
-            }
-          ]
-        }
-      },
-      {
-        "name": "Sui",
-        "ticker": "SUI",
-        "sector": "Smart Contract L1",
-        "price": 0.675265,
-        "rsi": 55.7,
-        "volatility": 6.16,
-        "changes": {
-          "d1": 0,
-          "d7": -2.2,
-          "d30": -7.9
-        },
-        "levels": {
-          "pivot": 0.675861,
-          "support": 0.667837
-        },
-        "components": {
-          "momentum": 52,
-          "trend7d": 51,
-          "trend30d": 50,
-          "low_volatility": 94,
-          "rsi_balance": 98,
-          "market_depth": 40
-        },
-        "signal_long": 64,
-        "signal_short": 68,
-        "security": 73,
-        "risk": "low",
-        "spark": [
-          0.696099,
-          0.690965,
-          0.692476,
-          0.683304,
-          0.68705,
-          0.68946,
-          0.68914,
-          0.678699,
-          0.686584,
-          0.692495,
-          0.691232,
-          0.690668,
-          0.690008,
-          0.684592,
-          0.67829,
-          0.687036,
-          0.690817,
-          0.68758,
-          0.693604,
-          0.686207,
-          0.689175,
-          0.68341,
-          0.678692,
-          0.674273,
-          0.676546,
-          0.677637,
-          0.681648,
-          0.685673,
-          0.680662,
-          0.682912,
-          0.681004,
-          0.68017,
-          0.675238,
-          0.674586,
-          0.676139,
-          0.678209,
-          0.675603,
-          0.671355,
-          0.677837,
-          0.678655
-        ],
-        "thesis": "Sui: range-bound (30d +0.1%), RSI 56 (neutral), low volatility.",
-        "buy": "Add on pullbacks toward the 30-day pivot $0.68; stronger entry near support $0.67.",
-        "hold": "Hold while price stays above the pivot $0.68 and RSI holds the 40-68 band (now 56).",
-        "sell": "Trim if RSI runs above 72 or price closes below support $0.67 on rising volume.",
-        "flow_note": "",
-        "image": "https://coin-images.coingecko.com/coins/images/26375/large/sui-ocean-square.png?1727791290",
-        "sources": [
-          {
-            "title": "CoinGecko market data",
-            "url": "https://www.coingecko.com/en/coins/sui"
-          },
-          {
-            "title": "GDELT global news",
-            "url": "https://www.gdeltproject.org/"
-          }
-        ],
-        "rank": 2,
-        "tier": "core",
-        "signal": 68,
-        "consensus": {
-          "direction": "Mixed",
-          "conviction": 0,
-          "votes": [
-            {
-              "source": "Quant",
-              "label": "Neutral"
-            },
-            {
-              "source": "Global news",
-              "label": "Neutral"
-            }
-          ],
-          "note": "Sources point in different directions \u2014 no clear edge."
-        },
-        "news": {
-          "available": true,
-          "tone": 0.76,
-          "volume": 0,
-          "countries": [],
-          "headlines": []
-        }
-      },
-      {
-        "name": "XRP",
-        "ticker": "XRP",
-        "sector": "Payments",
-        "price": 0.998149,
-        "rsi": 52.6,
-        "volatility": 4.5,
-        "changes": {
-          "d1": 0,
-          "d7": -3.1,
-          "d30": -8.0
-        },
-        "levels": {
-          "pivot": 0.999443,
-          "support": 0.992809
-        },
-        "components": {
-          "momentum": 52,
-          "trend7d": 50,
           "trend30d": 50,
           "low_volatility": 96,
-          "rsi_balance": 95,
+          "rsi_balance": 89,
           "market_depth": 93
         },
-        "signal_long": 77,
-        "signal_short": 67,
-        "security": 94,
+        "signal_long": 76,
+        "signal_short": 66,
+        "security": 93,
         "risk": "low",
         "spark": [
-          1.03391,
-          1.02286,
-          1.019533,
-          1.010269,
-          1.014083,
-          1.0047,
-          1.005354,
-          1.009693,
-          1.016688,
-          1.021179,
-          1.020632,
-          1.023106,
-          1.013979,
-          1.009277,
-          1.003859,
-          1.006445,
-          1.01375,
-          1.007232,
-          1.009834,
-          1.008284,
-          1.00857,
-          1.009445,
-          1.003926,
-          1.001787,
-          1.00591,
-          0.998268,
-          0.999934,
-          1.004741,
-          1.000244,
-          1.001246,
-          1.001565,
-          1.003715,
-          1.000059,
-          0.999921,
-          0.999453,
-          1.000454,
-          0.999037,
-          0.99401,
-          1.001292,
-          1.004775
+          1.025607,
+          1.016818,
+          1.010253,
+          1.013045,
+          1.005605,
+          1.007377,
+          1.002751,
+          1.01503,
+          1.021798,
+          1.019084,
+          1.016267,
+          1.016445,
+          1.007885,
+          1.008279,
+          1.003707,
+          1.012393,
+          1.009347,
+          1.005303,
+          1.00618,
+          1.007849,
+          1.010362,
+          1.003932,
+          1.002282,
+          1.000455,
+          0.998562,
+          0.998803,
+          1.004288,
+          1.000889,
+          1.00152,
+          1.001247,
+          1.00302,
+          1.000745,
+          1.000151,
+          1.000836,
+          0.999656,
+          0.999523,
+          0.993344,
+          0.998123,
+          1.000506,
+          0.99611
         ],
-        "thesis": "XRP: range-bound (30d +0.1%), RSI 53 (neutral), low volatility.",
+        "thesis": "XRP: range-bound (30d -0.2%), RSI 60 (neutral), low volatility.",
         "buy": "Add on pullbacks toward the 30-day pivot $1.00; stronger entry near support $0.99.",
-        "hold": "Hold while price stays above the pivot $1.00 and RSI holds the 40-68 band (now 53).",
+        "hold": "Hold while price stays above the pivot $1.00 and RSI holds the 40-68 band (now 60).",
         "sell": "Trim if RSI runs above 72 or price closes below support $0.99 on rising volume.",
         "flow_note": "",
         "image": "https://coin-images.coingecko.com/coins/images/44/large/xrp-symbol-white-128.png?1696501442",
@@ -3751,9 +2441,9 @@
             "url": "https://www.gdeltproject.org/"
           }
         ],
-        "rank": 3,
+        "rank": 2,
         "tier": "crown",
-        "signal": 67,
+        "signal": 76,
         "consensus": {
           "direction": "Mixed",
           "conviction": 0,
@@ -3771,7 +2461,7 @@
         },
         "news": {
           "available": true,
-          "tone": -0.29,
+          "tone": 0.0,
           "volume": 15,
           "countries": [
             "United States",
@@ -3821,85 +2511,240 @@
         }
       },
       {
-        "name": "Avalanche",
-        "ticker": "AVAX",
+        "name": "Ethereum",
+        "ticker": "ETH",
         "sector": "Smart Contract L1",
-        "price": 6.31,
-        "rsi": 54.6,
-        "volatility": 11.42,
+        "price": 1903.68,
+        "rsi": 68.5,
+        "volatility": 4.22,
         "changes": {
-          "d1": -0.7,
-          "d7": -2.9,
-          "d30": -3.3
+          "d1": 1.4,
+          "d7": 0.4,
+          "d30": 3.6
         },
         "levels": {
-          "pivot": 6.349164,
-          "support": 6.29016
+          "pivot": 1888.274454,
+          "support": 1870.340744
         },
         "components": {
           "momentum": 51,
-          "trend7d": 50,
-          "trend30d": 50,
-          "low_volatility": 90,
-          "rsi_balance": 99,
-          "market_depth": 38
+          "trend7d": 51,
+          "trend30d": 51,
+          "low_volatility": 96,
+          "rsi_balance": 70,
+          "market_depth": 98
         },
-        "signal_long": 63,
-        "signal_short": 67,
-        "security": 70,
+        "signal_long": 75,
+        "signal_short": 62,
+        "security": 91,
         "risk": "low",
         "spark": [
-          6.560369,
-          6.466766,
-          6.465745,
-          6.429037,
-          6.538137,
-          6.477932,
-          6.475857,
-          6.225552,
-          6.306991,
-          6.282542,
-          6.287662,
-          6.244733,
-          6.348202,
-          6.357305,
-          6.33765,
-          6.431207,
-          6.528626,
-          6.504765,
-          6.487159,
-          6.426561,
-          6.460154,
-          6.40994,
-          6.376377,
-          6.352899,
-          6.43158,
-          6.416975,
-          6.484553,
-          6.710997,
-          6.59422,
-          6.578485,
-          6.492401,
-          6.490847,
-          6.332205,
-          6.32872,
-          6.338627,
-          6.410952,
-          6.338768,
-          6.325742,
-          6.36416,
-          6.368149
+          1889.984586,
+          1871.44839,
+          1873.406666,
+          1877.825679,
+          1873.314503,
+          1893.227794,
+          1861.573496,
+          1880.179158,
+          1880.486201,
+          1884.787744,
+          1889.178522,
+          1909.451608,
+          1888.953048,
+          1884.568191,
+          1878.966151,
+          1892.820426,
+          1883.770541,
+          1888.82951,
+          1876.68503,
+          1887.992498,
+          1884.180788,
+          1871.33798,
+          1875.035237,
+          1865.199664,
+          1873.23199,
+          1880.561524,
+          1881.260032,
+          1878.083144,
+          1877.381715,
+          1883.25159,
+          1881.542242,
+          1879.913798,
+          1880.074006,
+          1879.143105,
+          1878.195675,
+          1883.479947,
+          1870.340744,
+          1889.948119,
+          1897.165489,
+          1891.823707
         ],
-        "thesis": "Avalanche: range-bound (30d -0.5%), RSI 55 (neutral), low volatility.",
-        "buy": "Add on pullbacks toward the 30-day pivot $6.35; stronger entry near support $6.29.",
-        "hold": "Hold while price stays above the pivot $6.35 and RSI holds the 40-68 band (now 55).",
-        "sell": "Trim if RSI runs above 72 or price closes below support $6.29 on rising volume.",
+        "thesis": "Ethereum: range-bound (30d +0.8%), RSI 68 (neutral), low volatility.",
+        "buy": "Add on pullbacks toward the 30-day pivot $1,888.27; stronger entry near support $1,870.34.",
+        "hold": "Hold while price stays above the pivot $1,888.27 and RSI holds the 40-68 band (now 68).",
+        "sell": "Trim if RSI runs above 72 or price closes below support $1,870.34 on rising volume.",
         "flow_note": "",
-        "image": "https://coin-images.coingecko.com/coins/images/12559/large/Avalanche_Circle_RedWhite_Trans.png?1696512369",
+        "image": "https://coin-images.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
         "sources": [
           {
             "title": "CoinGecko market data",
-            "url": "https://www.coingecko.com/en/coins/avalanche-2"
+            "url": "https://www.coingecko.com/en/coins/ethereum"
+          },
+          {
+            "title": "GDELT global news",
+            "url": "https://www.gdeltproject.org/"
+          }
+        ],
+        "rank": 3,
+        "tier": "crown",
+        "signal": 75,
+        "consensus": {
+          "direction": "Bullish",
+          "conviction": 41,
+          "votes": [
+            {
+              "source": "Quant",
+              "label": "Bullish"
+            },
+            {
+              "source": "Global news",
+              "label": "Neutral"
+            }
+          ],
+          "note": "1 of 2 signals lean bullish."
+        },
+        "news": {
+          "available": true,
+          "tone": 0.0,
+          "volume": 15,
+          "countries": [
+            "United States",
+            "Switzerland",
+            "Germany",
+            "Taiwan",
+            "Philippines"
+          ],
+          "headlines": [
+            {
+              "title": "Digitalw\u00e4hrungen im Fokus : So bewegen sich Bitcoin & Co . am Montagmittag",
+              "url": "https://www.finanzen.ch/nachrichten/devisen/digitalwahrungen-im-fokus-so-bewegen-sich-bitcoin-&-co-am-montagmittag-1036465064",
+              "domain": "finanzen.ch",
+              "country": "Switzerland"
+            },
+            {
+              "title": "Bitmine Immersion Technologies ( BMNR ) Announces ETH Holdings Reach 5 . 82 Million Tokens , and Total Crypto and Total Cash Holdings of $11 . 4 Billion",
+              "url": "https://www.manilatimes.net/2026/08/17/tmt-newswire/pr-newswire/bitmine-immersion-technologies-bmnr-announces-eth-holdings-reach-582-million-tokens-and-total-crypto-and-total-cash-holdings-of-114-billion/2406844",
+              "domain": "manilatimes.net",
+              "country": "Philippines"
+            },
+            {
+              "title": "Tagesanalyse : So entwickeln sich Bitcoin & Co . am Montagmittag",
+              "url": "https://www.finanzen.net/nachricht/devisen/digitalwaehrungen-im-fokus-so-bewegen-sich-bitcoin-co-am-montagmittag-15882150",
+              "domain": "finanzen.net",
+              "country": "Germany"
+            },
+            {
+              "title": "Bitcoin Holds $62 , 819 as Stablecoins Dominate LatAm",
+              "url": "https://www.riotimesonline.com/crypto-markets-bitcoin-majors-monday-august-17-2026/",
+              "domain": "riotimesonline.com",
+              "country": "Brazil"
+            },
+            {
+              "title": "So entwickeln sich Bitcoin & Co . am Montagvormittag",
+              "url": "https://www.finanzen.ch/nachrichten/devisen/so-entwickeln-sich-bitcoin-&-co-am-montagvormittag-1036464621",
+              "domain": "finanzen.ch",
+              "country": "Switzerland"
+            },
+            {
+              "title": "Kryptomarkt 17 . August 2026 : Bitcoin 63 . 000 Dollar , Hashdex ETF Liquidation , Trump - Krypto - Gipfel , Jackson Hole 27 . August",
+              "url": "https://www.finanzen.net/nachricht/devisen/kryptomarkt-bitcoin-klebt-bei-63-000-dollar-erster-us-bitcoin-etf-schliesst-zehn-tage-bis-jackson-hole-00-15881863",
+              "domain": "finanzen.net",
+              "country": "Germany"
+            }
+          ]
+        }
+      },
+      {
+        "name": "TRON",
+        "ticker": "TRX",
+        "sector": "Smart Contract L1",
+        "price": 0.331291,
+        "rsi": 60.3,
+        "volatility": 2.25,
+        "changes": {
+          "d1": 0.1,
+          "d7": 0.2,
+          "d30": 2.5
+        },
+        "levels": {
+          "pivot": 0.331788,
+          "support": 0.330953
+        },
+        "components": {
+          "momentum": 50,
+          "trend7d": 50,
+          "trend30d": 50,
+          "low_volatility": 98,
+          "rsi_balance": 88,
+          "market_depth": 88
+        },
+        "signal_long": 75,
+        "signal_short": 65,
+        "security": 91,
+        "risk": "low",
+        "spark": [
+          0.331017,
+          0.33074,
+          0.33041,
+          0.330997,
+          0.331427,
+          0.336784,
+          0.334773,
+          0.334854,
+          0.334887,
+          0.333983,
+          0.336011,
+          0.336134,
+          0.335547,
+          0.33547,
+          0.335502,
+          0.337757,
+          0.333456,
+          0.334227,
+          0.333675,
+          0.334061,
+          0.33413,
+          0.333665,
+          0.333169,
+          0.332555,
+          0.332392,
+          0.33237,
+          0.332952,
+          0.332368,
+          0.330767,
+          0.331194,
+          0.331248,
+          0.33083,
+          0.33084,
+          0.330953,
+          0.331634,
+          0.33196,
+          0.331186,
+          0.332151,
+          0.332253,
+          0.332952
+        ],
+        "thesis": "TRON: range-bound (30d -0.0%), RSI 60 (neutral), low volatility.",
+        "buy": "Add on pullbacks toward the 30-day pivot $0.33; stronger entry near support $0.33.",
+        "hold": "Hold while price stays above the pivot $0.33 and RSI holds the 40-68 band (now 60).",
+        "sell": "Trim if RSI runs above 72 or price closes below support $0.33 on rising volume.",
+        "flow_note": "",
+        "image": "https://coin-images.coingecko.com/coins/images/1094/large/photo_2026-04-13_09-59-16.png?1776048311",
+        "sources": [
+          {
+            "title": "CoinGecko market data",
+            "url": "https://www.coingecko.com/en/coins/tron"
           },
           {
             "title": "GDELT global news",
@@ -3908,7 +2753,119 @@
         ],
         "rank": 4,
         "tier": "core",
-        "signal": 67,
+        "signal": 75,
+        "consensus": {
+          "direction": "Bullish",
+          "conviction": 41,
+          "votes": [
+            {
+              "source": "Quant",
+              "label": "Bullish"
+            },
+            {
+              "source": "Global news",
+              "label": "Neutral"
+            }
+          ],
+          "note": "1 of 2 signals lean bullish."
+        },
+        "news": {
+          "available": true,
+          "tone": -0.46,
+          "volume": 0,
+          "countries": [],
+          "headlines": []
+        }
+      },
+      {
+        "name": "Bitcoin",
+        "ticker": "BTC",
+        "sector": "Store of Value",
+        "price": 63800,
+        "rsi": 73.1,
+        "volatility": 3.35,
+        "changes": {
+          "d1": 1.2,
+          "d7": -1.3,
+          "d30": -0.5
+        },
+        "levels": {
+          "pivot": 63186.924437,
+          "support": 62780.238242
+        },
+        "components": {
+          "momentum": 51,
+          "trend7d": 51,
+          "trend30d": 51,
+          "low_volatility": 97,
+          "rsi_balance": 60,
+          "market_depth": 100
+        },
+        "signal_long": 74,
+        "signal_short": 60,
+        "security": 89,
+        "risk": "low",
+        "spark": [
+          64612.784438,
+          63847.680471,
+          63951.457899,
+          64005.578707,
+          63932.621758,
+          64374.915693,
+          63542.102452,
+          63564.73578,
+          63537.55989,
+          63773.808809,
+          63733.953531,
+          64070.606281,
+          63434.341357,
+          63525.247344,
+          63496.882021,
+          63795.956491,
+          63652.989913,
+          63673.330546,
+          63155.550592,
+          63470.056379,
+          63387.095783,
+          62940.844588,
+          62781.079208,
+          62600.484572,
+          62836.543349,
+          62996.397633,
+          63017.314067,
+          63011.178672,
+          62949.861012,
+          63037.331733,
+          63041.539235,
+          63016.33002,
+          63035.755727,
+          63016.6462,
+          62966.612828,
+          63101.043391,
+          62780.238242,
+          63035.312668,
+          63449.152773,
+          63264.498152
+        ],
+        "thesis": "Bitcoin: range-bound (30d +0.6%), RSI 73 (overbought), low volatility.",
+        "buy": "Add on pullbacks toward the 30-day pivot $63,186.92; stronger entry near support $62,780.24.",
+        "hold": "Hold while price stays above the pivot $63,186.92 and RSI holds the 40-68 band (now 73).",
+        "sell": "Trim if RSI runs above 72 or price closes below support $62,780.24 on rising volume.",
+        "flow_note": "",
+        "image": "https://coin-images.coingecko.com/coins/images/1/large/bitcoin.png?1696501400",
+        "sources": [
+          {
+            "title": "CoinGecko market data",
+            "url": "https://www.coingecko.com/en/coins/bitcoin"
+          },
+          {
+            "title": "GDELT global news",
+            "url": "https://www.gdeltproject.org/"
+          }
+        ],
+        "rank": 5,
+        "tier": "core",
+        "signal": 74,
         "consensus": {
           "direction": "Mixed",
           "conviction": 0,
@@ -3926,159 +2883,7 @@
         },
         "news": {
           "available": true,
-          "tone": 0.0,
-          "volume": 15,
-          "countries": [
-            "United States",
-            "Taiwan"
-          ],
-          "headlines": [
-            {
-              "title": "OMG Network Trading Down 0 . 2 % Over Last Week ( OMG ) ",
-              "url": "https://www.dailypolitical.com/2026/08/16/omg-network-trading-down-0-2-over-last-week-omg.html",
-              "domain": "dailypolitical.com",
-              "country": "United States"
-            },
-            {
-              "title": "OMG Network ( OMG ) Achieves Market Cap of $6 . 25 Million",
-              "url": "https://www.tickerreport.com/banking-finance/13545909/omg-network-omg-achieves-market-cap-of-6-25-million.html",
-              "domain": "tickerreport.com",
-              "country": "United States"
-            },
-            {
-              "title": "Ardor ( ARDR ) Price Hits $0 . 0194 on Major Exchanges",
-              "url": "https://www.themarketsdaily.com/2026/08/16/ardor-ardr-price-hits-0-0194-on-major-exchanges.html",
-              "domain": "themarketsdaily.com",
-              "country": "United States"
-            },
-            {
-              "title": "Securitize Q2 Earnings Call Highlights",
-              "url": "https://www.themarketsdaily.com/2026/08/16/securitize-q2-earnings-call-highlights.html",
-              "domain": "themarketsdaily.com",
-              "country": "United States"
-            },
-            {
-              "title": "2026 OKX Registration Complete Guide _ How Beginners Can Verify if They Filled in the 20 % Rebate Referral Code _ BTC699 _ - \u661f\u9645\u6f2b\u6e38\u8005 \u7684\u90e8\u843d\u683c",
-              "url": "https://blog.udn.com:443/5615df35/192086396",
-              "domain": "blog.udn.com",
-              "country": "Taiwan"
-            },
-            {
-              "title": "Avalanche ( AVAX ) Price Prediction : AVAX Holds $6 Support as Network Activity Grows and Analysts Eye Breakout Towards $15",
-              "url": "https://bravenewcoin.com/insights/avalanche-avax-price-prediction-avax-holds-6-support-as-network-activity-grows-and-analysts-eye-breakout-towards-15",
-              "domain": "bravenewcoin.com",
-              "country": "United States"
-            }
-          ]
-        }
-      },
-      {
-        "name": "Uniswap",
-        "ticker": "UNI",
-        "sector": "DeFi",
-        "price": 3.29,
-        "rsi": 52.3,
-        "volatility": 12.88,
-        "changes": {
-          "d1": 0.9,
-          "d7": -17.9,
-          "d30": -6.4
-        },
-        "levels": {
-          "pivot": 3.280431,
-          "support": 3.238155
-        },
-        "components": {
-          "momentum": 53,
-          "trend7d": 53,
-          "trend30d": 51,
-          "low_volatility": 88,
-          "rsi_balance": 94,
-          "market_depth": 21
-        },
-        "signal_long": 58,
-        "signal_short": 67,
-        "security": 62,
-        "risk": "med",
-        "spark": [
-          4.025873,
-          3.93818,
-          3.949746,
-          3.935975,
-          4.009942,
-          3.940274,
-          3.855486,
-          3.722029,
-          3.745601,
-          3.749775,
-          3.775292,
-          3.544532,
-          3.53638,
-          3.523412,
-          3.526823,
-          3.543182,
-          3.590392,
-          3.586898,
-          3.493642,
-          3.48277,
-          3.473096,
-          3.443849,
-          3.463903,
-          3.235495,
-          3.235018,
-          3.200331,
-          3.233241,
-          3.295326,
-          3.236209,
-          3.2508,
-          3.227948,
-          3.245266,
-          3.225831,
-          3.244488,
-          3.279294,
-          3.296515,
-          3.294323,
-          3.291766,
-          3.286991,
-          3.26697
-        ],
-        "thesis": "Uniswap: range-bound (30d +0.9%), RSI 52 (neutral), low volatility.",
-        "buy": "Add on pullbacks toward the 30-day pivot $3.28; stronger entry near support $3.24.",
-        "hold": "Hold while price stays above the pivot $3.28 and RSI holds the 40-68 band (now 52).",
-        "sell": "Trim if RSI runs above 72 or price closes below support $3.24 on rising volume.",
-        "flow_note": "",
-        "image": "https://coin-images.coingecko.com/coins/images/12504/large/uniswap-logo.png?1720676669",
-        "sources": [
-          {
-            "title": "CoinGecko market data",
-            "url": "https://www.coingecko.com/en/coins/uniswap"
-          },
-          {
-            "title": "GDELT global news",
-            "url": "https://www.gdeltproject.org/"
-          }
-        ],
-        "rank": 5,
-        "tier": "core",
-        "signal": 67,
-        "consensus": {
-          "direction": "Bearish",
-          "conviction": 37,
-          "votes": [
-            {
-              "source": "Quant",
-              "label": "Neutral"
-            },
-            {
-              "source": "Global news",
-              "label": "Bearish"
-            }
-          ],
-          "note": "1 of 2 signals lean bearish."
-        },
-        "news": {
-          "available": true,
-          "tone": -1.12,
+          "tone": -0.79,
           "volume": 0,
           "countries": [],
           "headlines": []
@@ -4088,75 +2893,75 @@
         "name": "Solana",
         "ticker": "SOL",
         "sector": "Smart Contract L1",
-        "price": 75.37,
-        "rsi": 60.3,
-        "volatility": 4.95,
+        "price": 75.75,
+        "rsi": 65.9,
+        "volatility": 4.92,
         "changes": {
-          "d1": 0.6,
-          "d7": -1.4,
-          "d30": 1.0
+          "d1": 0.9,
+          "d7": -0.7,
+          "d30": 1.6
         },
         "levels": {
-          "pivot": 75.232027,
+          "pivot": 75.24753,
           "support": 74.208666
         },
         "components": {
-          "momentum": 52,
+          "momentum": 51,
           "trend7d": 51,
-          "trend30d": 51,
+          "trend30d": 50,
           "low_volatility": 96,
-          "rsi_balance": 88,
+          "rsi_balance": 76,
           "market_depth": 90
         },
-        "signal_long": 75,
-        "signal_short": 66,
-        "security": 92,
+        "signal_long": 73,
+        "signal_short": 63,
+        "security": 89,
         "risk": "low",
         "spark": [
-          76.997809,
-          75.940488,
-          76.163358,
-          75.878505,
-          76.056802,
-          75.839421,
-          75.8577,
-          74.892853,
-          76.006138,
-          76.305948,
-          76.257327,
-          76.70055,
-          76.166083,
-          75.853656,
-          75.447123,
-          75.905247,
-          76.405945,
-          75.678802,
-          76.45332,
-          75.987924,
-          76.218649,
-          75.786824,
-          75.533443,
-          75.46244,
-          75.581905,
-          75.08429,
-          75.290321,
-          75.470611,
-          75.015591,
-          75.353186,
-          75.578339,
-          75.573023,
-          75.361331,
-          75.310043,
-          75.244714,
-          75.357734,
-          75.163555,
-          74.52221,
-          75.432274,
-          75.781942
+          76.245886,
+          75.770278,
+          76.08937,
+          76.039888,
+          75.78583,
+          76.141688,
+          74.833625,
+          75.71107,
+          76.216205,
+          76.34932,
+          76.111718,
+          76.585501,
+          75.628166,
+          75.86295,
+          75.538101,
+          76.421846,
+          75.972756,
+          76.120419,
+          75.762128,
+          76.222526,
+          75.900446,
+          75.472368,
+          75.408551,
+          75.20326,
+          74.805587,
+          75.338825,
+          75.391692,
+          75.13168,
+          75.173931,
+          75.439385,
+          75.466456,
+          75.396799,
+          75.397628,
+          75.410533,
+          75.198523,
+          75.217531,
+          74.208666,
+          75.078832,
+          75.372854,
+          75.276664
         ],
-        "thesis": "Solana: range-bound (30d +0.6%), RSI 60 (neutral), low volatility.",
-        "buy": "Add on pullbacks toward the 30-day pivot $75.23; stronger entry near support $74.21.",
-        "hold": "Hold while price stays above the pivot $75.23 and RSI holds the 40-68 band (now 60).",
+        "thesis": "Solana: range-bound (30d +0.1%), RSI 66 (neutral), low volatility.",
+        "buy": "Add on pullbacks toward the 30-day pivot $75.25; stronger entry near support $74.21.",
+        "hold": "Hold while price stays above the pivot $75.25 and RSI holds the 40-68 band (now 66).",
         "sell": "Trim if RSI runs above 72 or price closes below support $74.21 on rising volume.",
         "flow_note": "",
         "image": "https://coin-images.coingecko.com/coins/images/4128/large/solana.png?1718769756",
@@ -4171,8 +2976,8 @@
           }
         ],
         "rank": 6,
-        "tier": "crown",
-        "signal": 66,
+        "tier": "core",
+        "signal": 73,
         "consensus": {
           "direction": "Bullish",
           "conviction": 41,
@@ -4240,198 +3045,94 @@
         }
       },
       {
-        "name": "Stellar",
-        "ticker": "XLM",
-        "sector": "Payments",
-        "price": 0.157361,
-        "rsi": 58.9,
-        "volatility": 6.25,
+        "name": "Dogecoin",
+        "ticker": "DOGE",
+        "sector": "Meme / Culture",
+        "price": 0.070225,
+        "rsi": 63.9,
+        "volatility": 5.82,
         "changes": {
-          "d1": 0.7,
-          "d7": -3.3,
-          "d30": -13.8
+          "d1": 0.6,
+          "d7": 0.6,
+          "d30": -2.5
         },
         "levels": {
-          "pivot": 0.157379,
-          "support": 0.156181
+          "pivot": 0.069957,
+          "support": 0.069302
         },
         "components": {
-          "momentum": 52,
-          "trend7d": 50,
-          "trend30d": 51,
-          "low_volatility": 94,
-          "rsi_balance": 91,
-          "market_depth": 62
-        },
-        "signal_long": 69,
-        "signal_short": 66,
-        "security": 80,
-        "risk": "low",
-        "spark": [
-          0.163823,
-          0.162122,
-          0.162725,
-          0.161259,
-          0.161678,
-          0.161594,
-          0.160556,
-          0.16038,
-          0.161858,
-          0.161532,
-          0.161062,
-          0.161375,
-          0.161525,
-          0.159292,
-          0.158524,
-          0.161035,
-          0.161557,
-          0.16103,
-          0.161062,
-          0.159823,
-          0.15936,
-          0.158924,
-          0.158595,
-          0.15876,
-          0.160275,
-          0.158712,
-          0.157843,
-          0.159209,
-          0.157981,
-          0.157845,
-          0.159091,
-          0.158548,
-          0.157014,
-          0.156748,
-          0.156974,
-          0.157429,
-          0.157384,
-          0.156609,
-          0.158328,
-          0.158499
-        ],
-        "thesis": "Stellar: range-bound (30d +0.7%), RSI 59 (neutral), low volatility.",
-        "buy": "Add on pullbacks toward the 30-day pivot $0.16; stronger entry near support $0.16.",
-        "hold": "Hold while price stays above the pivot $0.16 and RSI holds the 40-68 band (now 59).",
-        "sell": "Trim if RSI runs above 72 or price closes below support $0.16 on rising volume.",
-        "flow_note": "",
-        "image": "https://coin-images.coingecko.com/coins/images/100/large/fmpFRHHQ_400x400.jpg?1735231350",
-        "sources": [
-          {
-            "title": "CoinGecko market data",
-            "url": "https://www.coingecko.com/en/coins/stellar"
-          }
-        ],
-        "rank": 7,
-        "tier": "core",
-        "signal": 66,
-        "consensus": {
-          "direction": "Bearish",
-          "conviction": 66,
-          "votes": [
-            {
-              "source": "Quant",
-              "label": "Bearish"
-            }
-          ],
-          "note": "1 of 1 signals lean bearish."
-        },
-        "news": {
-          "available": false,
-          "tone": 0.0,
-          "volume": 0,
-          "countries": [],
-          "headlines": []
-        }
-      },
-      {
-        "name": "BlackRock USD Institutional Digital Liquidity Fund",
-        "ticker": "BUIDL",
-        "sector": "Other",
-        "price": 1.0,
-        "rsi": 60.0,
-        "volatility": 0.0,
-        "changes": {
-          "d1": 0,
-          "d7": 0,
-          "d30": 0
-        },
-        "levels": {
-          "pivot": 1.0,
-          "support": 1.0
-        },
-        "components": {
-          "momentum": 50,
+          "momentum": 51,
           "trend7d": 50,
           "trend30d": 50,
-          "low_volatility": 100,
-          "rsi_balance": 89,
-          "market_depth": 43
+          "low_volatility": 95,
+          "rsi_balance": 80,
+          "market_depth": 81
         },
-        "signal_long": 65,
-        "signal_short": 66,
-        "security": 73,
+        "signal_long": 72,
+        "signal_short": 64,
+        "security": 86,
         "risk": "low",
         "spark": [
-          1,
-          1.0,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1.0,
-          1.0,
-          1.0,
-          1,
-          1,
-          1.0,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1.0,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1.0,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1.0,
-          1,
-          1,
-          1.0,
-          1,
-          1,
-          1
+          0.069749,
+          0.06966,
+          0.069742,
+          0.070125,
+          0.070132,
+          0.070557,
+          0.070581,
+          0.071037,
+          0.071837,
+          0.072167,
+          0.071451,
+          0.07161,
+          0.070798,
+          0.070554,
+          0.069816,
+          0.07053,
+          0.07036,
+          0.070144,
+          0.069845,
+          0.070167,
+          0.070026,
+          0.069574,
+          0.069348,
+          0.069417,
+          0.069625,
+          0.070002,
+          0.070306,
+          0.069986,
+          0.069967,
+          0.070005,
+          0.06985,
+          0.069545,
+          0.069756,
+          0.069809,
+          0.069895,
+          0.069947,
+          0.069302,
+          0.069938,
+          0.070126,
+          0.070204
         ],
-        "thesis": "BlackRock USD Institutional Digital Liquidity Fund: range-bound (30d +0.0%), RSI 60 (neutral), low volatility.",
-        "buy": "Add on pullbacks toward the 30-day pivot $1.00; stronger entry near support $1.00.",
-        "hold": "Hold while price stays above the pivot $1.00 and RSI holds the 40-68 band (now 60).",
-        "sell": "Trim if RSI runs above 72 or price closes below support $1.00 on rising volume.",
+        "thesis": "Dogecoin: range-bound (30d +0.3%), RSI 64 (neutral), low volatility.",
+        "buy": "Add on pullbacks toward the 30-day pivot $0.07; stronger entry near support $0.07.",
+        "hold": "Hold while price stays above the pivot $0.07 and RSI holds the 40-68 band (now 64).",
+        "sell": "Trim if RSI runs above 72 or price closes below support $0.07 on rising volume.",
         "flow_note": "",
-        "image": "https://coin-images.coingecko.com/coins/images/36291/large/blackrock.png?1711013223",
+        "image": "https://coin-images.coingecko.com/coins/images/5/large/dogecoin.png?1696501409",
         "sources": [
           {
             "title": "CoinGecko market data",
-            "url": "https://www.coingecko.com/en/coins/blackrock-usd-institutional-digital-liquidity-fund"
+            "url": "https://www.coingecko.com/en/coins/dogecoin"
           },
           {
             "title": "GDELT global news",
             "url": "https://www.gdeltproject.org/"
           }
         ],
-        "rank": 8,
+        "rank": 7,
         "tier": "core",
-        "signal": 66,
+        "signal": 72,
         "consensus": {
           "direction": "Bullish",
           "conviction": 41,
@@ -4449,7 +3150,1230 @@
         },
         "news": {
           "available": true,
-          "tone": 0.06,
+          "tone": -0.63,
+          "volume": 11,
+          "countries": [
+            "United States",
+            "Germany",
+            "India"
+          ],
+          "headlines": [
+            {
+              "title": "BTC , ETH price news : Bitcoin tops $64 , 000 on Monday as traders await FOMC minutes",
+              "url": "https://www.coindesk.com/markets/2026/08/17/bitcoin-tops-usd64-000-in-asia-morning-hours-as-hype-jumps-8-on-the-week",
+              "domain": "coindesk.com",
+              "country": "United States"
+            },
+            {
+              "title": "UNUS SED LEO Price Tops $9 . 35 on Major Exchanges ( LEO ) ",
+              "url": "https://www.themarketsdaily.com/2026/08/16/unus-sed-leo-price-tops-9-35-on-major-exchanges-leo.html",
+              "domain": "themarketsdaily.com",
+              "country": "United States"
+            },
+            {
+              "title": "Otoh Collection returns with part VIII in Heritage ANA Physical Cryptocurrency auction",
+              "url": "https://artdaily.com/news/199123/Otoh-Collection-returns-with-part-VIII-in-Heritage-s-ANA-Physical-Cryptocurrency-auction",
+              "domain": "artdaily.com",
+              "country": "United States"
+            },
+            {
+              "title": "Cryptos Drop Amidst Volatile Crude Oil Prices , Spike In Bond Yields",
+              "url": "https://www.rttnews.com/3680759/cryptos-drop-amidst-volatile-crude-oil-prices-spike-in-bond-yields.aspx",
+              "domain": "rttnews.com",
+              "country": "United States"
+            },
+            {
+              "title": "Cryptos Drop Amidst Volatile Crude Oil Prices , Spike In Bond Yields",
+              "url": "https://www.finanznachrichten.de/nachrichten-2026-08/69317519-cryptos-drop-amidst-volatile-crude-oil-prices-spike-in-bond-yields-020.htm",
+              "domain": "finanznachrichten.de",
+              "country": "Germany"
+            },
+            {
+              "title": "Bitcoin near $63K , Ethereum below $1 , 900 as softer US inflation fails to ease crypto market pressure",
+              "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/bitcoin-near-63k-ethereum-below-1900-as-softer-us-inflation-fails-to-ease-crypto-market-pressure/articleshow/133206294.cms",
+              "domain": "economictimes.indiatimes.com",
+              "country": "India"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Rain",
+        "ticker": "RAIN",
+        "sector": "Other",
+        "price": 0.01312187,
+        "rsi": 63.8,
+        "volatility": 8.65,
+        "changes": {
+          "d1": 3.7,
+          "d7": 4.6,
+          "d30": -4.9
+        },
+        "levels": {
+          "pivot": 0.012936,
+          "support": 0.01264
+        },
+        "components": {
+          "momentum": 49,
+          "trend7d": 51,
+          "trend30d": 54,
+          "low_volatility": 92,
+          "rsi_balance": 81,
+          "market_depth": 79
+        },
+        "signal_long": 72,
+        "signal_short": 63,
+        "security": 84,
+        "risk": "low",
+        "spark": [
+          0.012534,
+          0.012861,
+          0.012862,
+          0.012831,
+          0.012854,
+          0.012815,
+          0.012796,
+          0.012936,
+          0.012927,
+          0.012921,
+          0.012915,
+          0.012905,
+          0.012952,
+          0.012822,
+          0.012778,
+          0.012495,
+          0.012333,
+          0.01213,
+          0.01262,
+          0.012312,
+          0.012817,
+          0.012526,
+          0.012902,
+          0.012808,
+          0.012765,
+          0.012738,
+          0.012756,
+          0.012759,
+          0.012757,
+          0.012709,
+          0.012667,
+          0.012674,
+          0.012689,
+          0.012654,
+          0.012658,
+          0.01264,
+          0.013012,
+          0.012998,
+          0.012999,
+          0.013226
+        ],
+        "thesis": "Rain: uptrend (30d +4.4%), RSI 64 (neutral), low volatility.",
+        "buy": "Add on pullbacks toward the 30-day pivot $0.01; stronger entry near support $0.01.",
+        "hold": "Hold while price stays above the pivot $0.01 and RSI holds the 40-68 band (now 64).",
+        "sell": "Trim if RSI runs above 72 or price closes below support $0.01 on rising volume.",
+        "flow_note": "",
+        "image": "https://coin-images.coingecko.com/coins/images/69134/large/Rain_logo_1_.png?1762952191",
+        "sources": [
+          {
+            "title": "CoinGecko market data",
+            "url": "https://www.coingecko.com/en/coins/rain"
+          },
+          {
+            "title": "GDELT global news",
+            "url": "https://www.gdeltproject.org/"
+          }
+        ],
+        "rank": 8,
+        "tier": "core",
+        "signal": 72,
+        "consensus": {
+          "direction": "Bearish",
+          "conviction": 37,
+          "votes": [
+            {
+              "source": "Quant",
+              "label": "Neutral"
+            },
+            {
+              "source": "Global news",
+              "label": "Bearish"
+            }
+          ],
+          "note": "1 of 2 signals lean bearish."
+        },
+        "news": {
+          "available": true,
+          "tone": -1.06,
+          "volume": 5,
+          "countries": [
+            "India",
+            "Turkey",
+            "China",
+            "United Kingdom"
+          ],
+          "headlines": [
+            {
+              "title": "Faiz indirimi kap\u0131da m\u0131 ? ",
+              "url": "https://www.haber7.com/yazarlar/doc-dr-yuksel-oksak/3651873-faiz-indirimi-kapida-mi",
+              "domain": "haber7.com",
+              "country": "Turkey"
+            },
+            {
+              "title": "Investigation into Farage \u00a35m gift from crypto - billionaire can now reopen",
+              "url": "https://www.chinatechnews.com/2026/08/14/127338-investigation-into-farages-5m-gift-from-crypto-billionaire-can-now-reopen",
+              "domain": "chinatechnews.com",
+              "country": "China"
+            },
+            {
+              "title": "  King of Sleaze Nigel Farage by - election stunt spectacularly backfires by beating nobodies  ",
+              "url": "https://www.aol.co.uk/articles/king-sleaze-nigel-farages-election-063030000.html",
+              "domain": "aol.co.uk",
+              "country": "United Kingdom"
+            },
+            {
+              "title": "Park at your own risk : How India parking crunch could dent your car insurance claims and coverage",
+              "url": "https://www.livemint.com/money/personal-finance/park-at-your-own-risk-how-india-s-parking-crunch-could-dent-your-car-insurance-claims-and-coverage-11786446265362.html",
+              "domain": "livemint.com",
+              "country": "India"
+            },
+            {
+              "title": "charu sinha : \u0c1b\u0c3e\u0c30\u0c4d\u0c1c\u0c4d\u200c \u0c24\u0c40\u0c38\u0c41\u0c15\u0c41\u0c28\u0c4d\u0c28 20\u0c30\u0c4b\u0c1c\u0c41\u0c32\u0c15\u0c47 \u0c15\u0c3f\u0c21\u0c4d\u0c28\u0c3e\u0c2a\u0c4d\u200c",
+              "url": "https://www.eenadu.net/telugu-news/women/inspiration-story-of-woman-police-officer-charu-sinha/6207/126142539",
+              "domain": "eenadu.net",
+              "country": "India"
+            }
+          ]
+        }
+      }
+    ],
+    "short": [
+      {
+        "name": "Litecoin",
+        "ticker": "LTC",
+        "sector": "Payments",
+        "price": 44.32,
+        "rsi": 53.8,
+        "volatility": 4.01,
+        "changes": {
+          "d1": 0.4,
+          "d7": -2.0,
+          "d30": -2.9
+        },
+        "levels": {
+          "pivot": 44.255179,
+          "support": 43.830831
+        },
+        "components": {
+          "momentum": 51,
+          "trend7d": 51,
+          "trend30d": 50,
+          "low_volatility": 96,
+          "rsi_balance": 97,
+          "market_depth": 48
+        },
+        "signal_long": 66,
+        "signal_short": 68,
+        "security": 76,
+        "risk": "low",
+        "spark": [
+          45.389343,
+          45.023515,
+          45.128089,
+          45.173968,
+          45.059542,
+          45.409222,
+          44.987202,
+          45.4546,
+          45.455923,
+          45.332938,
+          45.244619,
+          45.465729,
+          45.095787,
+          44.789102,
+          44.799532,
+          44.998812,
+          44.880514,
+          44.690895,
+          44.701248,
+          44.703666,
+          44.797578,
+          44.653527,
+          44.514885,
+          43.943743,
+          43.674751,
+          43.828755,
+          44.010062,
+          43.969542,
+          44.021182,
+          44.227259,
+          44.143303,
+          44.147001,
+          44.233619,
+          44.339,
+          44.272114,
+          44.464517,
+          44.045954,
+          44.277753,
+          44.187126,
+          43.960931
+        ],
+        "thesis": "Litecoin: range-bound (30d -0.6%), RSI 54 (neutral), low volatility.",
+        "buy": "Add on pullbacks toward the 30-day pivot $44.26; stronger entry near support $43.83.",
+        "hold": "Hold while price stays above the pivot $44.26 and RSI holds the 40-68 band (now 54).",
+        "sell": "Trim if RSI runs above 72 or price closes below support $43.83 on rising volume.",
+        "flow_note": "",
+        "image": "https://coin-images.coingecko.com/coins/images/2/large/litecoin.png?1696501400",
+        "sources": [
+          {
+            "title": "CoinGecko market data",
+            "url": "https://www.coingecko.com/en/coins/litecoin"
+          },
+          {
+            "title": "GDELT global news",
+            "url": "https://www.gdeltproject.org/"
+          }
+        ],
+        "rank": 1,
+        "tier": "core",
+        "signal": 68,
+        "consensus": {
+          "direction": "Bullish",
+          "conviction": 41,
+          "votes": [
+            {
+              "source": "Quant",
+              "label": "Bullish"
+            },
+            {
+              "source": "Global news",
+              "label": "Neutral"
+            }
+          ],
+          "note": "1 of 2 signals lean bullish."
+        },
+        "news": {
+          "available": true,
+          "tone": 0.0,
+          "volume": 4,
+          "countries": [
+            "United States",
+            "Canada",
+            "China",
+            "Nigeria"
+          ],
+          "headlines": [
+            {
+              "title": "UNUS SED LEO Price Tops $9 . 35 on Major Exchanges ( LEO ) ",
+              "url": "https://www.themarketsdaily.com/2026/08/16/unus-sed-leo-price-tops-9-35-on-major-exchanges-leo.html",
+              "domain": "themarketsdaily.com",
+              "country": "United States"
+            },
+            {
+              "title": "Roobet Promo Code Canada :  CSGOBETTINGS  \u2013 100 % deposit match up to $1 , 000 for Canadians \u2013 haligonia . ca",
+              "url": "https://haligonia.ca/roobet-promo-code-canada-csgobettings-100-deposit-match-up-to-1000-for-canadians-321864/",
+              "domain": "haligonia.ca",
+              "country": "Canada"
+            },
+            {
+              "title": "Best Online Casinos Slovenia | Top 10 for August 2026",
+              "url": "https://electroiq.com/crypto/online-casino-slovenia/",
+              "domain": "electroiq.com",
+              "country": "China"
+            },
+            {
+              "title": "How to Bypass Gamstop : Guide for united kingdom Players",
+              "url": "https://punchng.com/how-to-get-around-gamstop-guide-for-uk-players/",
+              "domain": "punchng.com",
+              "country": "Nigeria"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Aster",
+        "ticker": "ASTER",
+        "sector": "Other",
+        "price": 0.600987,
+        "rsi": 57.9,
+        "volatility": 2.92,
+        "changes": {
+          "d1": 0,
+          "d7": -0.7,
+          "d30": -3.2
+        },
+        "levels": {
+          "pivot": 0.599949,
+          "support": 0.597618
+        },
+        "components": {
+          "momentum": 50,
+          "trend7d": 51,
+          "trend30d": 50,
+          "low_volatility": 97,
+          "rsi_balance": 94,
+          "market_depth": 7
+        },
+        "signal_long": 56,
+        "signal_short": 67,
+        "security": 59,
+        "risk": "med",
+        "spark": [
+          0.605886,
+          0.602023,
+          0.600377,
+          0.601238,
+          0.602047,
+          0.60557,
+          0.600292,
+          0.606133,
+          0.604865,
+          0.60523,
+          0.603651,
+          0.604157,
+          0.602658,
+          0.6043,
+          0.601799,
+          0.604086,
+          0.603511,
+          0.603988,
+          0.600821,
+          0.601895,
+          0.602257,
+          0.600776,
+          0.60024,
+          0.600089,
+          0.600231,
+          0.603538,
+          0.600414,
+          0.602604,
+          0.600615,
+          0.600245,
+          0.599967,
+          0.599671,
+          0.598971,
+          0.601023,
+          0.601624,
+          0.601318,
+          0.597618,
+          0.597853,
+          0.599076,
+          0.598645
+        ],
+        "thesis": "Aster: range-bound (30d -0.0%), RSI 58 (neutral), low volatility.",
+        "buy": "Add on pullbacks toward the 30-day pivot $0.60; stronger entry near support $0.60.",
+        "hold": "Hold while price stays above the pivot $0.60 and RSI holds the 40-68 band (now 58).",
+        "sell": "Trim if RSI runs above 72 or price closes below support $0.60 on rising volume.",
+        "flow_note": "",
+        "image": "https://coin-images.coingecko.com/coins/images/69040/large/_ASTER.png?1757326782",
+        "sources": [
+          {
+            "title": "CoinGecko market data",
+            "url": "https://www.coingecko.com/en/coins/aster-2"
+          }
+        ],
+        "rank": 2,
+        "tier": "core",
+        "signal": 67,
+        "consensus": {
+          "direction": "Mixed",
+          "conviction": 0,
+          "votes": [
+            {
+              "source": "Quant",
+              "label": "Neutral"
+            }
+          ],
+          "note": "Sources point in different directions \u2014 no clear edge."
+        },
+        "news": {
+          "available": false,
+          "tone": 0.0,
+          "volume": 0,
+          "countries": [],
+          "headlines": []
+        }
+      },
+      {
+        "name": "XRP",
+        "ticker": "XRP",
+        "sector": "Payments",
+        "price": 1.002,
+        "rsi": 59.8,
+        "volatility": 4.47,
+        "changes": {
+          "d1": 0.3,
+          "d7": -2.3,
+          "d30": -7.6
+        },
+        "levels": {
+          "pivot": 0.999266,
+          "support": 0.992809
+        },
+        "components": {
+          "momentum": 51,
+          "trend7d": 50,
+          "trend30d": 50,
+          "low_volatility": 96,
+          "rsi_balance": 89,
+          "market_depth": 93
+        },
+        "signal_long": 76,
+        "signal_short": 66,
+        "security": 93,
+        "risk": "low",
+        "spark": [
+          1.025607,
+          1.016818,
+          1.010253,
+          1.013045,
+          1.005605,
+          1.007377,
+          1.002751,
+          1.01503,
+          1.021798,
+          1.019084,
+          1.016267,
+          1.016445,
+          1.007885,
+          1.008279,
+          1.003707,
+          1.012393,
+          1.009347,
+          1.005303,
+          1.00618,
+          1.007849,
+          1.010362,
+          1.003932,
+          1.002282,
+          1.000455,
+          0.998562,
+          0.998803,
+          1.004288,
+          1.000889,
+          1.00152,
+          1.001247,
+          1.00302,
+          1.000745,
+          1.000151,
+          1.000836,
+          0.999656,
+          0.999523,
+          0.993344,
+          0.998123,
+          1.000506,
+          0.99611
+        ],
+        "thesis": "XRP: range-bound (30d -0.2%), RSI 60 (neutral), low volatility.",
+        "buy": "Add on pullbacks toward the 30-day pivot $1.00; stronger entry near support $0.99.",
+        "hold": "Hold while price stays above the pivot $1.00 and RSI holds the 40-68 band (now 60).",
+        "sell": "Trim if RSI runs above 72 or price closes below support $0.99 on rising volume.",
+        "flow_note": "",
+        "image": "https://coin-images.coingecko.com/coins/images/44/large/xrp-symbol-white-128.png?1696501442",
+        "sources": [
+          {
+            "title": "CoinGecko market data",
+            "url": "https://www.coingecko.com/en/coins/ripple"
+          },
+          {
+            "title": "GDELT global news",
+            "url": "https://www.gdeltproject.org/"
+          }
+        ],
+        "rank": 3,
+        "tier": "crown",
+        "signal": 66,
+        "consensus": {
+          "direction": "Mixed",
+          "conviction": 0,
+          "votes": [
+            {
+              "source": "Quant",
+              "label": "Neutral"
+            },
+            {
+              "source": "Global news",
+              "label": "Neutral"
+            }
+          ],
+          "note": "Sources point in different directions \u2014 no clear edge."
+        },
+        "news": {
+          "available": true,
+          "tone": 0.0,
+          "volume": 15,
+          "countries": [
+            "United States",
+            "Brazil",
+            "China",
+            "Hong Kong",
+            "Germany"
+          ],
+          "headlines": [
+            {
+              "title": "Bitcoin Holds $62 , 819 as Stablecoins Dominate LatAm",
+              "url": "https://www.riotimesonline.com/crypto-markets-bitcoin-majors-monday-august-17-2026/",
+              "domain": "riotimesonline.com",
+              "country": "Brazil"
+            },
+            {
+              "title": "BTC , ETH price news : Bitcoin tops $64 , 000 on Monday as traders await FOMC minutes",
+              "url": "https://www.coindesk.com/markets/2026/08/17/bitcoin-tops-usd64-000-in-asia-morning-hours-as-hype-jumps-8-on-the-week",
+              "domain": "coindesk.com",
+              "country": "United States"
+            },
+            {
+              "title": "Data of 54K Wallet Users Leaked , Clarity Odds Just 10 %: Hodler Digest , Aug . 16",
+              "url": "https://cointelegraph.com/magazine/data-of-54000-wallet-users-leaked-clarity-odds-just-10-hodlers-digest",
+              "domain": "cointelegraph.com",
+              "country": "China"
+            },
+            {
+              "title": "4 Reasons This Could Be the Most Important Week of August for Bitcoin and XRP",
+              "url": "https://finance.yahoo.com/markets/crypto/articles/4-reasons-could-most-important-210327553.html",
+              "domain": "finance.yahoo.com",
+              "country": "United States"
+            },
+            {
+              "title": "XRP ETF Buying Has Dropped 96 % Since Launch : Can Inflows Reach Standard Chartered $8 Billion Forecast ? ",
+              "url": "https://finance.yahoo.com/markets/crypto/articles/xrp-etf-buying-dropped-96-180201578.html",
+              "domain": "finance.yahoo.com",
+              "country": "United States"
+            },
+            {
+              "title": "Bitcoin Slides Below US$63 , 000 ; Crypto Friday Wrap",
+              "url": "https://www.riotimesonline.com/crypto-markets-bitcoin-majors-saturday-august-15-2026/",
+              "domain": "riotimesonline.com",
+              "country": "Brazil"
+            }
+          ]
+        }
+      },
+      {
+        "name": "BNB",
+        "ticker": "BNB",
+        "sector": "Exchange / L1",
+        "price": 605.61,
+        "rsi": 62.8,
+        "volatility": 3.18,
+        "changes": {
+          "d1": -0.1,
+          "d7": 1.0,
+          "d30": 6.5
+        },
+        "levels": {
+          "pivot": 605.022312,
+          "support": 601.868438
+        },
+        "components": {
+          "momentum": 51,
+          "trend7d": 50,
+          "trend30d": 50,
+          "low_volatility": 97,
+          "rsi_balance": 83,
+          "market_depth": 95
+        },
+        "signal_long": 76,
+        "signal_short": 65,
+        "security": 93,
+        "risk": "low",
+        "spark": [
+          600.878073,
+          599.68764,
+          598.684624,
+          599.805533,
+          598.20726,
+          608.128116,
+          608.22792,
+          611.022621,
+          616.279209,
+          612.761825,
+          609.902655,
+          612.316112,
+          609.846116,
+          611.116101,
+          610.297351,
+          612.491117,
+          610.591122,
+          609.877923,
+          607.635367,
+          610.75377,
+          611.678144,
+          607.790863,
+          605.031013,
+          603.387573,
+          605.360732,
+          607.057139,
+          610.224076,
+          611.104714,
+          610.992492,
+          611.026566,
+          610.014502,
+          606.87771,
+          605.547843,
+          606.961559,
+          606.853881,
+          605.699667,
+          603.381944,
+          602.54276,
+          605.104373,
+          603.555971
+        ],
+        "thesis": "BNB: range-bound (30d -0.2%), RSI 63 (neutral), low volatility.",
+        "buy": "Add on pullbacks toward the 30-day pivot $605.02; stronger entry near support $601.87.",
+        "hold": "Hold while price stays above the pivot $605.02 and RSI holds the 40-68 band (now 63).",
+        "sell": "Trim if RSI runs above 72 or price closes below support $601.87 on rising volume.",
+        "flow_note": "",
+        "image": "https://coin-images.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1696501970",
+        "sources": [
+          {
+            "title": "CoinGecko market data",
+            "url": "https://www.coingecko.com/en/coins/binancecoin"
+          },
+          {
+            "title": "GDELT global news",
+            "url": "https://www.gdeltproject.org/"
+          }
+        ],
+        "rank": 4,
+        "tier": "crown",
+        "signal": 65,
+        "consensus": {
+          "direction": "Bullish",
+          "conviction": 41,
+          "votes": [
+            {
+              "source": "Quant",
+              "label": "Bullish"
+            },
+            {
+              "source": "Global news",
+              "label": "Neutral"
+            }
+          ],
+          "note": "1 of 2 signals lean bullish."
+        },
+        "news": {
+          "available": true,
+          "tone": 0.0,
+          "volume": 15,
+          "countries": [
+            "Taiwan",
+            "Turkey",
+            "United States",
+            "Philippines",
+            "United Kingdom"
+          ],
+          "headlines": [
+            {
+              "title": "BTC , ETH price news : Bitcoin tops $64 , 000 on Monday as traders await FOMC minutes",
+              "url": "https://www.coindesk.com/markets/2026/08/17/bitcoin-tops-usd64-000-in-asia-morning-hours-as-hype-jumps-8-on-the-week",
+              "domain": "coindesk.com",
+              "country": "United States"
+            },
+            {
+              "title": "Kripto hazine \u015firketleri ve kurumsal sermaye",
+              "url": "https://www.dunya.com/kose-yazisi/kripto-hazine-sirketleri-ve-kurumsal-sermaye/836420",
+              "domain": "dunya.com",
+              "country": "Turkey"
+            },
+            {
+              "title": "Why Chainlink Rose as Bitcoin and Uniswap Weakened",
+              "url": "https://www.dailyforex.com/forex-technical-analysis/2026/08/crypto-forecast-16-august-2026/248721",
+              "domain": "dailyforex.com",
+              "country": "United Kingdom"
+            },
+            {
+              "title": "2026 Newbie Guide _ How to Correctly Fill in Binance Referral Code \u3010 AB6688 \u3011 for 20 % Lifetime Fee Discount & Up to 6200 USDT Bonus \u2013 Full Walkthroughull Walkt",
+              "url": "https://blog.udn.com:443/662208c4/192105903",
+              "domain": "blog.udn.com",
+              "country": "Taiwan"
+            },
+            {
+              "title": "2026 Binance Registration Step - by - Step Guide _ Where to Enter Referral Code ( BF168 ) for 20 % Fee Discount & 6200 USDT Newcomer Rewards - \u661f\u9645\u6f2b\u6e38\u8005 \u7684\u90e8\u843d\u683c",
+              "url": "https://blog.udn.com:443/5615df35/192105272",
+              "domain": "blog.udn.com",
+              "country": "Taiwan"
+            },
+            {
+              "title": "Newbie Guide _ 2026 Bitget PC Official Website Registration & Secure Trading Full Walkthrough with Genuine Referral Code _ BG3388 _ - \u4ee3\u7801\u4e0e\u5496\u5561 \u7684\u90e8\u843d\u683c",
+              "url": "https://blog.udn.com:443/6c42d6cc/192103390",
+              "domain": "blog.udn.com",
+              "country": "Taiwan"
+            }
+          ]
+        }
+      },
+      {
+        "name": "TRON",
+        "ticker": "TRX",
+        "sector": "Smart Contract L1",
+        "price": 0.331291,
+        "rsi": 60.3,
+        "volatility": 2.25,
+        "changes": {
+          "d1": 0.1,
+          "d7": 0.2,
+          "d30": 2.5
+        },
+        "levels": {
+          "pivot": 0.331788,
+          "support": 0.330953
+        },
+        "components": {
+          "momentum": 50,
+          "trend7d": 50,
+          "trend30d": 50,
+          "low_volatility": 98,
+          "rsi_balance": 88,
+          "market_depth": 88
+        },
+        "signal_long": 75,
+        "signal_short": 65,
+        "security": 91,
+        "risk": "low",
+        "spark": [
+          0.331017,
+          0.33074,
+          0.33041,
+          0.330997,
+          0.331427,
+          0.336784,
+          0.334773,
+          0.334854,
+          0.334887,
+          0.333983,
+          0.336011,
+          0.336134,
+          0.335547,
+          0.33547,
+          0.335502,
+          0.337757,
+          0.333456,
+          0.334227,
+          0.333675,
+          0.334061,
+          0.33413,
+          0.333665,
+          0.333169,
+          0.332555,
+          0.332392,
+          0.33237,
+          0.332952,
+          0.332368,
+          0.330767,
+          0.331194,
+          0.331248,
+          0.33083,
+          0.33084,
+          0.330953,
+          0.331634,
+          0.33196,
+          0.331186,
+          0.332151,
+          0.332253,
+          0.332952
+        ],
+        "thesis": "TRON: range-bound (30d -0.0%), RSI 60 (neutral), low volatility.",
+        "buy": "Add on pullbacks toward the 30-day pivot $0.33; stronger entry near support $0.33.",
+        "hold": "Hold while price stays above the pivot $0.33 and RSI holds the 40-68 band (now 60).",
+        "sell": "Trim if RSI runs above 72 or price closes below support $0.33 on rising volume.",
+        "flow_note": "",
+        "image": "https://coin-images.coingecko.com/coins/images/1094/large/photo_2026-04-13_09-59-16.png?1776048311",
+        "sources": [
+          {
+            "title": "CoinGecko market data",
+            "url": "https://www.coingecko.com/en/coins/tron"
+          },
+          {
+            "title": "GDELT global news",
+            "url": "https://www.gdeltproject.org/"
+          }
+        ],
+        "rank": 5,
+        "tier": "crown",
+        "signal": 65,
+        "consensus": {
+          "direction": "Bullish",
+          "conviction": 41,
+          "votes": [
+            {
+              "source": "Quant",
+              "label": "Bullish"
+            },
+            {
+              "source": "Global news",
+              "label": "Neutral"
+            }
+          ],
+          "note": "1 of 2 signals lean bullish."
+        },
+        "news": {
+          "available": true,
+          "tone": -0.46,
+          "volume": 0,
+          "countries": [],
+          "headlines": []
+        }
+      },
+      {
+        "name": "Monero",
+        "ticker": "XMR",
+        "sector": "Privacy",
+        "price": 412.45,
+        "rsi": 56.5,
+        "volatility": 9.16,
+        "changes": {
+          "d1": -1.1,
+          "d7": 4.7,
+          "d30": 25.1
+        },
+        "levels": {
+          "pivot": 413.116794,
+          "support": 407.770058
+        },
+        "components": {
+          "momentum": 49,
+          "trend7d": 48,
+          "trend30d": 50,
+          "low_volatility": 92,
+          "rsi_balance": 97,
+          "market_depth": 71
+        },
+        "signal_long": 71,
+        "signal_short": 65,
+        "security": 84,
+        "risk": "low",
+        "spark": [
+          392.908565,
+          390.873667,
+          396.268391,
+          399.161922,
+          395.345055,
+          396.847925,
+          388.337204,
+          384.16645,
+          377.173834,
+          381.234788,
+          397.706002,
+          394.546046,
+          395.830041,
+          391.765341,
+          393.847165,
+          394.338588,
+          406.153989,
+          402.78715,
+          398.947031,
+          395.37383,
+          394.91384,
+          395.575265,
+          398.58555,
+          399.279659,
+          396.029418,
+          400.234756,
+          404.859269,
+          405.612203,
+          403.464378,
+          407.822494,
+          412.652759,
+          409.633946,
+          411.977051,
+          409.984933,
+          410.281402,
+          413.484624,
+          409.726569,
+          412.449347,
+          416.700408,
+          417.923591
+        ],
+        "thesis": "Monero: range-bound (30d +0.2%), RSI 56 (neutral), low volatility.",
+        "buy": "Add on pullbacks toward the 30-day pivot $413.12; stronger entry near support $407.77.",
+        "hold": "Hold while price stays above the pivot $413.12 and RSI holds the 40-68 band (now 56).",
+        "sell": "Trim if RSI runs above 72 or price closes below support $407.77 on rising volume.",
+        "flow_note": "",
+        "image": "https://coin-images.coingecko.com/coins/images/69/large/monero_logo.png?1696501460",
+        "sources": [
+          {
+            "title": "CoinGecko market data",
+            "url": "https://www.coingecko.com/en/coins/monero"
+          },
+          {
+            "title": "GDELT global news",
+            "url": "https://www.gdeltproject.org/"
+          }
+        ],
+        "rank": 6,
+        "tier": "core",
+        "signal": 65,
+        "consensus": {
+          "direction": "Bullish",
+          "conviction": 41,
+          "votes": [
+            {
+              "source": "Quant",
+              "label": "Bullish"
+            },
+            {
+              "source": "Global news",
+              "label": "Neutral"
+            }
+          ],
+          "note": "1 of 2 signals lean bullish."
+        },
+        "news": {
+          "available": true,
+          "tone": 0.0,
+          "volume": 5,
+          "countries": [
+            "United States",
+            "United Kingdom",
+            "India",
+            "China"
+          ],
+          "headlines": [
+            {
+              "title": "A serious Mac screen sharing vulnerability is being actively exploited",
+              "url": "https://9to5mac.com/2026/08/17/a-serious-mac-screen-sharing-vulnerability-is-being-actively-exploited/",
+              "domain": "9to5mac.com",
+              "country": "United States"
+            },
+            {
+              "title": "Why Chainlink Rose as Bitcoin and Uniswap Weakened",
+              "url": "https://www.dailyforex.com/forex-technical-analysis/2026/08/crypto-forecast-16-august-2026/248721",
+              "domain": "dailyforex.com",
+              "country": "United Kingdom"
+            },
+            {
+              "title": "Vulnerability giving attackers full control of Macs is under active exploitation",
+              "url": "https://arstechnica.com/security/2026/08/vulnerability-giving-attackers-full-control-of-macs-is-under-active-exploitation/",
+              "domain": "arstechnica.com",
+              "country": "United States"
+            },
+            {
+              "title": "Bitcoin under pressure below $64 , 300 ; why crypto markets remain cautious",
+              "url": "https://www.moneycontrol.com/news/business/personal-finance/bitcoin-under-pressure-below-64-300-why-crypto-markets-remain-cautious-14002634.html",
+              "domain": "moneycontrol.com",
+              "country": "India"
+            },
+            {
+              "title": "Coinsbuy confirms hack as investigator reports $7 . 9M stolen",
+              "url": "https://cointelegraph.com/news/coinsbuy-confirms-security-breach-after-wallets-reportedly-drained-of-79m",
+              "domain": "cointelegraph.com",
+              "country": "China"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Chainlink",
+        "ticker": "LINK",
+        "sector": "Oracles / DeFi",
+        "price": 9.5,
+        "rsi": 59.0,
+        "volatility": 10.07,
+        "changes": {
+          "d1": 2.3,
+          "d7": 14.8,
+          "d30": 15.3
+        },
+        "levels": {
+          "pivot": 9.423724,
+          "support": 9.311243
+        },
+        "components": {
+          "momentum": 48,
+          "trend7d": 52,
+          "trend30d": 51,
+          "low_volatility": 91,
+          "rsi_balance": 91,
+          "market_depth": 69
+        },
+        "signal_long": 70,
+        "signal_short": 65,
+        "security": 82,
+        "risk": "low",
+        "spark": [
+          8.304397,
+          8.233543,
+          8.299983,
+          8.406009,
+          8.434004,
+          8.667814,
+          8.544795,
+          8.615227,
+          8.770231,
+          8.714038,
+          8.736587,
+          8.841083,
+          8.747045,
+          8.755202,
+          8.646975,
+          8.77971,
+          8.690282,
+          8.792805,
+          8.767823,
+          8.875554,
+          8.820981,
+          8.752492,
+          8.791286,
+          8.761662,
+          8.945998,
+          8.96896,
+          9.575267,
+          9.312091,
+          9.30502,
+          9.508863,
+          9.539652,
+          9.429622,
+          9.384024,
+          9.427739,
+          9.344436,
+          9.423373,
+          9.365898,
+          9.499165,
+          9.410608,
+          9.414267
+        ],
+        "thesis": "Chainlink: range-bound (30d +1.2%), RSI 59 (neutral), low volatility.",
+        "buy": "Add on pullbacks toward the 30-day pivot $9.42; stronger entry near support $9.31.",
+        "hold": "Hold while price stays above the pivot $9.42 and RSI holds the 40-68 band (now 59).",
+        "sell": "Trim if RSI runs above 72 or price closes below support $9.31 on rising volume.",
+        "flow_note": "",
+        "image": "https://coin-images.coingecko.com/coins/images/877/large/Chainlink_Logo_500.png?1760023405",
+        "sources": [
+          {
+            "title": "CoinGecko market data",
+            "url": "https://www.coingecko.com/en/coins/chainlink"
+          }
+        ],
+        "rank": 7,
+        "tier": "core",
+        "signal": 65,
+        "consensus": {
+          "direction": "Bullish",
+          "conviction": 66,
+          "votes": [
+            {
+              "source": "Quant",
+              "label": "Bullish"
+            }
+          ],
+          "note": "1 of 1 signals lean bullish."
+        },
+        "news": {
+          "available": false,
+          "tone": 0.0,
+          "volume": 0,
+          "countries": [],
+          "headlines": []
+        }
+      },
+      {
+        "name": "Stellar",
+        "ticker": "XLM",
+        "sector": "Payments",
+        "price": 0.157573,
+        "rsi": 60.7,
+        "volatility": 6.2,
+        "changes": {
+          "d1": 0.6,
+          "d7": -3.0,
+          "d30": -14.5
+        },
+        "levels": {
+          "pivot": 0.157464,
+          "support": 0.156181
+        },
+        "components": {
+          "momentum": 51,
+          "trend7d": 50,
+          "trend30d": 49,
+          "low_volatility": 94,
+          "rsi_balance": 87,
+          "market_depth": 62
+        },
+        "signal_long": 68,
+        "signal_short": 65,
+        "security": 79,
+        "risk": "low",
+        "spark": [
+          0.162107,
+          0.162236,
+          0.161216,
+          0.161724,
+          0.16074,
+          0.160579,
+          0.15968,
+          0.161513,
+          0.161934,
+          0.161645,
+          0.159912,
+          0.161731,
+          0.158674,
+          0.159553,
+          0.159919,
+          0.161531,
+          0.160778,
+          0.160202,
+          0.159485,
+          0.159654,
+          0.159292,
+          0.159037,
+          0.158695,
+          0.158841,
+          0.159028,
+          0.158046,
+          0.15883,
+          0.158016,
+          0.157893,
+          0.158467,
+          0.157865,
+          0.157611,
+          0.156897,
+          0.157069,
+          0.156924,
+          0.157673,
+          0.156181,
+          0.156669,
+          0.158169,
+          0.157453
+        ],
+        "thesis": "Stellar: range-bound (30d -0.7%), RSI 61 (neutral), low volatility.",
+        "buy": "Add on pullbacks toward the 30-day pivot $0.16; stronger entry near support $0.16.",
+        "hold": "Hold while price stays above the pivot $0.16 and RSI holds the 40-68 band (now 61).",
+        "sell": "Trim if RSI runs above 72 or price closes below support $0.16 on rising volume.",
+        "flow_note": "",
+        "image": "https://coin-images.coingecko.com/coins/images/100/large/fmpFRHHQ_400x400.jpg?1735231350",
+        "sources": [
+          {
+            "title": "CoinGecko market data",
+            "url": "https://www.coingecko.com/en/coins/stellar"
+          },
+          {
+            "title": "GDELT global news",
+            "url": "https://www.gdeltproject.org/"
+          }
+        ],
+        "rank": 8,
+        "tier": "core",
+        "signal": 65,
+        "consensus": {
+          "direction": "Bearish",
+          "conviction": 41,
+          "votes": [
+            {
+              "source": "Quant",
+              "label": "Bearish"
+            },
+            {
+              "source": "Global news",
+              "label": "Neutral"
+            }
+          ],
+          "note": "1 of 2 signals lean bearish."
+        },
+        "news": {
+          "available": true,
+          "tone": 0.38,
           "volume": 0,
           "countries": [],
           "headlines": []
